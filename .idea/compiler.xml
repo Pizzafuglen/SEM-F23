@@ -6,11 +6,5 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AGVModule" />
-        <module name="WHModule" />
-        <module name="FlowController" />
-        <module name="ASModule" />
-      </profile>
-    </annotationProcessing>
   </component>
 </project>
