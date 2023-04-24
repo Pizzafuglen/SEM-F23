@@ -29,7 +29,7 @@ public class AGVController {
     public static String handlePostRequest(String json) throws IOException {
 
 
-            //String json = "{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}";
+        //String json = "{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}";
         System.out.println("landet");
         RequestBody body = RequestBody.create(JSON, json);
         Request request = new Request.Builder()

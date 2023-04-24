@@ -21,7 +21,7 @@ public class AGVHandler implements HttpHandler {
         String requestParamValue = null;
 
         if ("GET".equals(httpExchange.getRequestMethod())) {
-            requestParamValue = moveToChargerOperation(httpExchange);
+            requestParamValue = operation(httpExchange);
 
         } else if ("POST".equals(httpExchange)) {
 
@@ -30,22 +30,37 @@ public class AGVHandler implements HttpHandler {
         handleResponse(httpExchange, requestParamValue); //It then uses both the return value of the way we handled our request, and the http exchange, to execute the method that actually handles the response.
     }
 
-    private String moveToChargerOperation(HttpExchange httpExchange) throws IOException {
+    private String operation(HttpExchange httpExchange) throws IOException {
         System.out.println(httpExchange.getRequestURI());
         if (httpExchange.getRequestURI().toString().contains("MoveToAssemblyOperation")) {
             System.out.println("works");
 
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}"); // optimering her
-
-            return "wow"; // wtf
-
-
+            return "moved to assem"; // wtf
             //return split;
-        } else {
-            return "Undefined request URL";
+        } else if (httpExchange.getRequestURI().toString().contains("MoveToChargerOperation")){
+            AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"MoveToChargerOperation\"}");
+            return "Charging";
+        } else if (httpExchange.getRequestURI().toString().contains("MoveToStorageOperation")){
+            AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"MoveToStorageOperation\"}");
+            return "moved to storage";
+        } else if (httpExchange.getRequestURI().toString().contains("PutAssemblyOperation")){
+            AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PutAssemblyOperation\"}");
+            return "put assem";
+        } else if (httpExchange.getRequestURI().toString().contains("PickAssemblyOperation")){
+            AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PickAssemblyOperation\"}");
+            return "pick assem";
+        } else if (httpExchange.getRequestURI().toString().contains("PickWarehouseOperation")){
+            AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PickWarehouseOperation\"}");
+            return "pick ware";
+        } else if (httpExchange.getRequestURI().toString().contains("PutWarehouseOperation")){
+            AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PutWarehouseOperation\"}");
+            return "put ware";
         }
-
+        return "Undefined request URL";
     }
+
+
 
     private void handleResponse(HttpExchange httpExchange, String requestParamValue) throws IOException {
         String encoding = "UTF-8";
