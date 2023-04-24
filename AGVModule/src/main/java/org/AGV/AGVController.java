@@ -22,7 +22,7 @@ public class AGVController {
 
     public static void main(String[] args) throws IOException { // klasse for sig selv
         handleGetRequest();
-        handlePostRequest("{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}");
+        //handlePostRequest("{\"State\":1,\"Program name\":\"MoveToStorageOperation\"}");
 }
 
 
@@ -30,7 +30,7 @@ public class AGVController {
 
 
             //String json = "{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}";
-
+        System.out.println("landet");
         RequestBody body = RequestBody.create(JSON, json);
         Request request = new Request.Builder()
                 .url(SERVER_URL + "/v1/status")
@@ -41,8 +41,13 @@ public class AGVController {
         System.out.println("PUT request response: " + response.body().string());
 
         // kald en anden metode til sidst som executer
+
         return json;
     }
+
+
+
+
 
     //test status method
     public static void handleGetRequest() throws IOException {
