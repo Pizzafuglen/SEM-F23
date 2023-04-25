@@ -5,6 +5,6 @@ function loadCurrentState() {
             document.getElementById("charger").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "http://localhost:8001/MoveToStorageOperation", true);
+    xhttp.open("GET", "http://localhost:8001/MoveToStorageOperation", true); // post istedet for get
     xhttp.send();
 }

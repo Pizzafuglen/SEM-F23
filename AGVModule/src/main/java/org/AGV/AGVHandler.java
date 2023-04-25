@@ -67,15 +67,6 @@ public class AGVHandler implements HttpHandler {
         OutputStream outputStream = httpExchange.getResponseBody();
         StringBuilder htmlBuilder = new StringBuilder();
 
-        /*
-        This previous code snippet:
-         if (requestParamValue != null) {
-            htmlBuilder.append(requestParamValue);
-        } else {
-            htmlBuilder.append("this is when it is null");
-        }
-        Is redundant, as there is a better shorter method for doing the same thing (see example hereunder).
-         */
 
         htmlBuilder.append(Objects.requireNonNullElse(requestParamValue, "Object/value returned is null"));//This checks to see if requestParamValue is null, and if it is, appends the String instead of the value.
 
