@@ -25,7 +25,12 @@ public class WHHandler implements HttpHandler {
     }
 
     private String handleGet(HttpExchange he) {
-        return String.valueOf(ies.getBasicHttpBindingIEmulatorService().getInventory());
+        String getReturnValue = null;
+        switch (he.getRequestURI().toString()) {
+            case "localhost:8001/1/getInvetory":
+                getReturnValue = String.valueOf(ies.getBasicHttpBindingIEmulatorService().getInventory());
+        }
+        return getReturnValue;
     }
 
     private String handlePost(HttpExchange he) {

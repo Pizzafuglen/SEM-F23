@@ -9,14 +9,14 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 public class WHServer {
     public static void StartServer(ThreadPoolExecutor tpe) {
-        HttpServer hhs;
+        HttpServer hs;
 
         try {
-            hhs = HttpServer.create(new InetSocketAddress("localhost",8001),0);
-            hhs.createContext("/1/", new WHHandler());
+            hs = HttpServer.create(new InetSocketAddress("localhost",8001),0);
+            hs.createContext("/1/", new WHHandler());
 
-            hhs.setExecutor(tpe);
-            hhs.start();
+            hs.setExecutor(tpe);
+            hs.start();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

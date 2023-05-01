@@ -9,9 +9,6 @@
         <module name="ASModule" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ASModule" target="18" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
