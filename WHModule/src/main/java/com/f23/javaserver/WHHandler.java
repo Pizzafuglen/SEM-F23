@@ -27,14 +27,31 @@ public class WHHandler implements HttpHandler {
     private String handleGet(HttpExchange he) {
         String getReturnValue = null;
         switch (he.getRequestURI().toString()) {
-            case "localhost:8001/1/getInvetory":
+            case "localhost:8001/1/getInventory":
                 getReturnValue = String.valueOf(ies.getBasicHttpBindingIEmulatorService().getInventory());
+                break;
+            default:
+                getReturnValue = "Value is null";
         }
         return getReturnValue;
     }
 
     private String handlePost(HttpExchange he) {
-        return String.valueOf(ies.getBasicHttpBindingIEmulatorService().getInventory());
+        String postReturnValue = null;
+        switch (he.getRequestURI().toString()) {
+            case "https://localhost:8001/1/InsertItemInventory":
+                System.out.println("Test");
+                postReturnValue = String.valueOf(ies.getBasicHttpBindingIEmulatorService().getInventory());
+                break;
+
+            case "localhost:8001/1/PickItemInventory":
+                System.out.println(he.getRequestBody().toString());
+                break;
+
+            default:
+                postReturnValue = "Value is null";
+        }
+        return postReturnValue;
     }
 
     private void httpResponse(HttpExchange he, String reVal) throws IOException {

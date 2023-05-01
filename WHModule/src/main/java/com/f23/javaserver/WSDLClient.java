@@ -18,6 +18,4 @@ public class WSDLClient {
         ies.getBasicHttpBindingIEmulatorService().insertItem(trayId, itemName);
         return "Item: " + itemName + " placed successfully into tray: " + trayId;
     }
-
-    //new comment
 }
