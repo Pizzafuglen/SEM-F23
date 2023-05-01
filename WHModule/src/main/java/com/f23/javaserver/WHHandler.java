@@ -15,7 +15,7 @@ public class WHHandler implements HttpHandler {
     private String reVal;
     @Override
     public void handle(HttpExchange he) throws IOException {
-
+        System.out.println(he.getRequestMethod());
         switch (he.getRequestMethod()) {
             case "GET" -> reVal = handleGet(he);
             case "POST" -> reVal = handlePost(he);
@@ -27,20 +27,22 @@ public class WHHandler implements HttpHandler {
     private String handleGet(HttpExchange he) {
         String getReturnValue = null;
         switch (he.getRequestURI().toString()) {
-            case "localhost:8001/1/getInventory":
-                getReturnValue = String.valueOf(ies.getBasicHttpBindingIEmulatorService().getInventory());
+            case "http://localhost:8001/1/getInventory":
+                getReturnValue = String.valueOf(WSDLClient.getWHInventory());
                 break;
             default:
                 getReturnValue = "Value is null";
         }
+        System.out.println("Made it to get");
         return getReturnValue;
     }
 
     private String handlePost(HttpExchange he) {
         String postReturnValue = null;
-        switch (he.getRequestURI().toString()) {
-            case "https://localhost:8001/1/InsertItemInventory":
-                System.out.println("Test");
+        switch (he.getRequestURI().toString()) { //Potentially the switch case is what is messing it up
+            case "http://localhost:8001/1/InsertItemInventory":
+                System.out.println(he.getRequestURI());
+                System.out.println("test");
                 postReturnValue = String.valueOf(ies.getBasicHttpBindingIEmulatorService().getInventory());
                 break;
 
@@ -49,16 +51,16 @@ public class WHHandler implements HttpHandler {
                 break;
 
             default:
+                System.out.println("i got to default");
                 postReturnValue = "Value is null";
         }
+        System.out.println("made it to post");
         return postReturnValue;
     }
 
     private void httpResponse(HttpExchange he, String reVal) throws IOException {
         OutputStream os = he.getResponseBody();
         sb.append(reVal);
-
-        System.out.println(ies.getBasicHttpBindingIEmulatorService().getInventory().toString());
 
         String hr = StringEscapeUtils.escapeHtml4(sb.toString());
 
