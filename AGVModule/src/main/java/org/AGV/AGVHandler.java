@@ -5,10 +5,14 @@ import com.sun.net.httpserver.HttpHandler;
 
 import java.io.IOException;
 import java.io.OutputStream;
+import java.sql.PreparedStatement;
 import java.util.Objects;
 import org.apache.commons.lang3.StringEscapeUtils;
-
-
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 
 
 public class AGVHandler implements HttpHandler {
@@ -31,6 +35,7 @@ public class AGVHandler implements HttpHandler {
     }
 
     private String operation(HttpExchange httpExchange) throws IOException {
+
         System.out.println(httpExchange.getRequestURI());
         if (httpExchange.getRequestURI().toString().contains("MoveToAssemblyOperation")) {
             System.out.println("works");
@@ -40,6 +45,8 @@ public class AGVHandler implements HttpHandler {
             //return split;
         } else if (httpExchange.getRequestURI().toString().contains("MoveToChargerOperation")){
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"MoveToChargerOperation\"}");
+            String sql = "INSERT INTO AVG_table (name, age, city) VALUES (?, ?, ?)";
+            DBhandler.setData(1,"MoveToChargerOperation",1,100);
             return "Charging";
         } else if (httpExchange.getRequestURI().toString().contains("MoveToStorageOperation")){
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"MoveToStorageOperation\"}");

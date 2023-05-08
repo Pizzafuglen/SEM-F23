@@ -1,5 +1,12 @@
 package org.AGV;
 
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
+
+import java.io.IOException;
 import java.sql.*;
 
 public class DBhandler {
@@ -8,13 +15,14 @@ public class DBhandler {
     public static void main(String[] args) {
         getConnection("jdbc:mysql://localhost:3306/", "root", "Vithe!098");
         initialiseDatabase();
+        initialiseTable();
     }
 
     //DB connection
     public static Connection getConnection(String url, String user, String password) {
         try {
             if (c == null) {
-                Class.forName("com.mysql.jdbc.Driver");
+                Class.forName("com.mysql.cj.jdbc.Driver");
                 c = DriverManager.getConnection(url, user, password);
             }
         } catch (Exception e) {
@@ -29,8 +37,8 @@ public class DBhandler {
         Connection connection = getConnection("jdbc:mysql://localhost:3306/", "***", "***");
 
         String checkDatabase = "SHOW DATABASES LIKE 'ProductionLine';";
-        String useDatabase = "USE backlog";
-        String initializeDatabase = "CREATE DATABASE 'ProductionLine'";
+        String useDatabase = "USE ProductionLine";
+        String initializeDatabase = "CREATE DATABASE ProductionLine";
         try {
             if (connection != null) { // check if connection is not null
                 ResultSet resultSet = connection.prepareStatement(checkDatabase).executeQuery();
@@ -56,26 +64,49 @@ public class DBhandler {
     }
 
 
+
     //Laver tabel
     public static void initialiseTable() {
-        String initializerTable = "CREATE TABLE AGV_table (id int NOT NULL, time_started TIMESTAMP DEFAULT CURRENT_TIMESTAMP, program varchar NOT NULL, battery int NOT NULL, state int NOT NULL);";
+        String initializerTable = "CREATE TABLE AGV_table (id int NOT NULL, time_started TIMESTAMP DEFAULT CURRENT_TIMESTAMP, program VARCHAR(255) NOT NULL, battery int NOT NULL, state int NOT NULL);";
         try {
-            DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "***", "***").prepareStatement(initializerTable).executeUpdate();
+            DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "root", "Vithe!098").prepareStatement(initializerTable).executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
     // Send data TO Database
-    public static void setData(int id, int program, int C_state, int battery){
-        String statement = "INSERT INTO AGV:table (id, program, C_state, battery) VALUES ('" + id + "', '" + program + "', '" + C_state + "', '" + battery + "');";
+    public static void setData(int id, String program, int C_state, int battery){
+        /*
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+
+        // Create an instance of HttpGet request with the URL
+        HttpGet httpGet = new HttpGet("http://localhost:8082/v1/status/");
+
         try {
-            DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "***", "***").createStatement().executeUpdate(statement);
+            // Execute the request and get the response
+            CloseableHttpResponse response = httpClient.execute(httpGet);
+
+            // Extract the JSON content from the response body
+            String json = EntityUtils.toString(response.getEntity());
+
+            // Print the JSON content to the console
+            System.out.println(json);
+
+            // Close the response
+            response.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        */
+        String statement = "INSERT INTO AGV_table (id, program, C_state, battery) VALUES ('" + id + "', '" + program + "', '" + C_state + "', '" + battery + "');";
+        try {
+            DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "root", "Vithe!098").createStatement().executeUpdate(statement);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
     public static void resetDatabase(){
-        String statement = "DROP TABLE brewer_backlog;";
+        String statement = "DROP TABLE ProductionLine;";
         try {
             DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "***", "***").createStatement().executeUpdate(statement);
         } catch (SQLException e) {
