@@ -9,15 +9,14 @@ import java.io.OutputStream;
 public class WHHandler implements HttpHandler {
     @Override
     public void handle(HttpExchange he) throws IOException {
-        System.out.println(he.getRequestURI().toString().split("\\?")[1]);
-
         String reVal;
 
         if (he.getRequestURI().toString().contains("getInventory")) {
-            reVal = String.valueOf(WSDLClient.getWHInventory());
+            reVal = WSDLClient.getWHInventory();
         } else if (he.getRequestURI().toString().contains("pickSpecificTray")){
-            WSDLClient.pickSpecificTray(Integer.parseInt(he.getRequestURI().toString().split("\\?")[1]));
-            reVal = he.getRequestURI().toString().split("\\?")[1];
+            reVal = WSDLClient.pickSpecificTray(Integer.parseInt(he.getRequestURI().toString().split("\\?")[1]));
+        } else if (he.getRequestURI().toString().contains("putSpecificTray")){
+            reVal = WSDLClient.putSpecificTray(Integer.parseInt(he.getRequestURI().toString().split("\\?")[1]), he.getRequestURI().toString().split("\\?")[2]);
         } else {
             reVal = "Value is null";
         }

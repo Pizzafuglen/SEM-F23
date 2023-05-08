@@ -11,7 +11,7 @@ public class WSDLClient {
 
     public static String pickSpecificTray(int trayId) {
         ies.getBasicHttpBindingIEmulatorService().pickItem(trayId);
-        return "Picked tray: " + trayId + " successfully";
+        return "Picked tray: " + trayId  + " successfully";
     }
 
     public static String putSpecificTray(int trayId, String itemName) {
