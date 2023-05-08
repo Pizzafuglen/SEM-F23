@@ -56,6 +56,9 @@ public class AGVHandler implements HttpHandler {
         } else if (httpExchange.getRequestURI().toString().contains("PutWarehouseOperation")){
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PutWarehouseOperation\"}");
             return "put ware";
+        } else if (httpExchange.getRequestURI().toString().contains("2")){
+            AGVController.handlePostRequest("{\"State\":2}");
+            return "Executing";
         }
         return "Undefined request URL";
     }

@@ -1,10 +1,19 @@
-function loadCurrentState() {
+function loadCurrentOperation() {
+    console.log("hi");
     const xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("charger").innerHTML = this.responseText;
-        }
+
     };
-    xhttp.open("GET", "http://localhost:8001/MoveToStorageOperation", true); // post istedet for get
+    xhttp.open("GET", "http://localhost:8001/" + document.getElementById("operation").value, true); // post istedet for get
     xhttp.send();
+}
+
+let loadCurrentState= () =>{
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+
+    };
+    xhttp.open("GET", "http://localhost:8001/2", true); 
+    xhttp.send();
+
 }
