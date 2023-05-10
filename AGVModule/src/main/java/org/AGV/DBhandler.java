@@ -1,12 +1,5 @@
 package org.AGV;
 
-import org.apache.http.client.methods.CloseableHttpResponse;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.util.EntityUtils;
-
-import java.io.IOException;
 import java.sql.*;
 
 public class DBhandler {
@@ -67,7 +60,12 @@ public class DBhandler {
 
     //Laver tabel
     public static void initialiseTable() {
-        String initializerTable = "CREATE TABLE AGV_table (id int NOT NULL, time_started TIMESTAMP DEFAULT CURRENT_TIMESTAMP, program VARCHAR(255) NOT NULL, battery int NOT NULL, state int NOT NULL);";
+        String initializerTable = "CREATE TABLE AGV_table (\n" +
+                "id INT AUTO_INCREMENT PRIMARY KEY,\n" +
+                "program VARCHAR(255) NOT NULL,\n" +
+                "C_state INT NOT NULL,\n" +
+                "battery INT NOT NULL\n" +
+                ");";
         try {
             DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "root", "Vithe!098").prepareStatement(initializerTable).executeUpdate();
         } catch (SQLException e) {
@@ -75,31 +73,12 @@ public class DBhandler {
         }
     }
     // Send data TO Database
-    public static void setData(int id, String program, int C_state, int battery){
-        /*
-        CloseableHttpClient httpClient = HttpClients.createDefault();
-
-        // Create an instance of HttpGet request with the URL
-        HttpGet httpGet = new HttpGet("http://localhost:8082/v1/status/");
-
+    public static void setData(int id, String program, int C_state, int battery) {
+        // Construct an SQL insert statement with the extracted values
+        String statement = "INSERT INTO AGV_table (program, C_state, battery) " +
+                "VALUES ('" + program + "', '" + C_state + "', '" + battery + "');";
         try {
-            // Execute the request and get the response
-            CloseableHttpResponse response = httpClient.execute(httpGet);
-
-            // Extract the JSON content from the response body
-            String json = EntityUtils.toString(response.getEntity());
-
-            // Print the JSON content to the console
-            System.out.println(json);
-
-            // Close the response
-            response.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        */
-        String statement = "INSERT INTO AGV_table (id, program, C_state, battery) VALUES ('" + id + "', '" + program + "', '" + C_state + "', '" + battery + "');";
-        try {
+            // Execute the insert statement using the DBhandler class
             DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "root", "Vithe!098").createStatement().executeUpdate(statement);
         } catch (SQLException e) {
             throw new RuntimeException(e);

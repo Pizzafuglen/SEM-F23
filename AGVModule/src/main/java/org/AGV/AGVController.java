@@ -1,13 +1,18 @@
 package org.AGV;
 
 
+import com.google.gson.JsonObject;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.IOException;
+
+import static org.AGV.DBhandler.setData;
 
 public class AGVController {
 
@@ -26,8 +31,7 @@ public class AGVController {
 }
 
 
-    public static String handlePostRequest(String json) throws IOException {
-
+    public static String handlePostRequest(String json) throws IOException, JSONException {
 
         //String json = "{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}";
         System.out.println("landet");
@@ -38,9 +42,35 @@ public class AGVController {
                 .build();
 
         Response response = client.newCall(request).execute();
+        System.out.println(response.body().string());
+
+        String responseBody = response.body().string();
+        String cleanedInput = responseBody.replaceAll("[{}]", "");
+
+        String[] keyValuePairs = cleanedInput.split(",");
+
+        for (String pair : keyValuePairs) {
+
+            String[] parts = pair.split(":");
+            String key = parts[0].trim().replaceAll("\"", "");
+            String value = parts[1].trim().replaceAll("\"", "");
+
+            // Process the desired keys and values
+            if (key.equals("battery")) {
+                int batteryValue = Integer.parseInt(value);
+                System.out.println("Battery: " + batteryValue);
+            } else if (key.equals("program name")) {
+                System.out.println("Program name: " + value);
+            } else if (key.equals("state")) {
+                int stateValue = Integer.parseInt(value);
+                System.out.println("State: " + stateValue);
+            }
+
+        }
+
         System.out.println("PUT request response: " + response.body().string());
 
-        // kald en anden metode til sidst som executer
+        //setData(json); // Call the setData() method to store the data in the database
 
         return json;
     }
