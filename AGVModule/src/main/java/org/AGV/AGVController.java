@@ -44,32 +44,21 @@ public class AGVController {
         //System.out.println(response.body().string());
 
         String responseBody = response.body().string();
-        String cleanedInput = responseBody.replaceAll("[{}]", "");
-
-        String[] keyValuePairs = cleanedInput.split(",");
-
-        for (String pair : keyValuePairs) {
-
-            String[] parts = pair.split(":");
-            String key = parts[0].trim().replaceAll("\"", "");
-            String value = parts[1].trim().replaceAll("\"", "");
-
-            // Process the desired keys and values
-            if (key.equals("battery")) {
-                int batteryValue = Integer.parseInt(value);
-                System.out.println("Battery: " + batteryValue);
-            } else if (key.equals("program name")) {
-                System.out.println("Program name: " + value);
-            } else if (key.equals("state")) {
-                int stateValue = Integer.parseInt(value);
-                System.out.println("State: " + stateValue);
-            }
-
-        }
+        //String cleanedInput = responseBody.replaceAll("[{}]", "");
 
 
+        JSONObject jsonObject = new JSONObject(responseBody);
 
-        //setData(json); // Call the setData() method to store the data in the database
+        int battery = jsonObject.getInt("battery");
+        String programName = jsonObject.getString("program name");
+        int state = jsonObject.getInt("state");
+
+        System.out.println("Battery: " + battery);
+        System.out.println("Program Name: " + programName);
+        System.out.println("State: " + state);
+
+        DBhandler.setData(programName, state, battery);
+
 
         return json;
     }

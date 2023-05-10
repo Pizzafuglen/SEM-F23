@@ -73,7 +73,7 @@ public class DBhandler {
         }
     }
     // Send data TO Database
-    public static void setData(int id, String program, int C_state, int battery) {
+    public static void setData(String program, int C_state, int battery) {
         // Construct an SQL insert statement with the extracted values
         String statement = "INSERT INTO AGV_table (program, C_state, battery) " +
                 "VALUES ('" + program + "', '" + C_state + "', '" + battery + "');";
