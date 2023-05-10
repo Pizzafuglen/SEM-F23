@@ -32,8 +32,7 @@ public class AGVController {
 
 
     public static String handlePostRequest(String json) throws IOException, JSONException {
-
-        //String json = "{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}";
+//String json = "{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}";
         System.out.println("landet");
         RequestBody body = RequestBody.create(JSON, json);
         Request request = new Request.Builder()
@@ -42,7 +41,7 @@ public class AGVController {
                 .build();
 
         Response response = client.newCall(request).execute();
-        System.out.println(response.body().string());
+        //System.out.println(response.body().string());
 
         String responseBody = response.body().string();
         String cleanedInput = responseBody.replaceAll("[{}]", "");
@@ -68,7 +67,7 @@ public class AGVController {
 
         }
 
-        System.out.println("PUT request response: " + response.body().string());
+
 
         //setData(json); // Call the setData() method to store the data in the database
 
