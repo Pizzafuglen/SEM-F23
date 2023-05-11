@@ -44,14 +44,7 @@ public class AGVController {
         //System.out.println(response.body().string());
 
         String responseBody = response.body().string();
-        //String cleanedInput = responseBody.replaceAll("[{}]", "");        System.out.println("landet");
-        //        RequestBody body = RequestBody.create(JSON, json);
-        //        Request request = new Request.Builder()
-        //                .url(SERVER_URL + "/v1/status")
-        //                .put(body)
-        //                .build();
-        //
-        //        Response response = client.newCall(request).execute();
+        //String cleanedInput = responseBody.replaceAll("[{}]", "");
 
 
         JSONObject jsonObject = new JSONObject(responseBody);
