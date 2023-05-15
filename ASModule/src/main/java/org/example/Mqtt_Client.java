@@ -16,11 +16,10 @@ public class Mqtt_Client {
         try {
 
             //creating a mqtt client with the broker and client id, as well as an onMessageCallback-object
-            myClient = new MqttAsyncClient(broker,clientID);
+            myClient = new MqttAsyncClient(broker, clientID);
             OnMessageCallback myCallback = new OnMessageCallback();
 
             myClient.setCallback(myCallback);
-
 
 
         } catch (MqttException e) {
