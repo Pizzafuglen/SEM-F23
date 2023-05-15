@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js.js"></script>
+</head>
+<body>
+
+<!--
+    MoveToChargerOperationMove - OK
+    MoveToAssemblyOperationMove - OK
+    MoveToStorageOperationMove - OK
+    PutAssemblyOperationActivate - OK
+    PickAssemblyOperationActivate - OK
+    PickWarehouseOperationActivate - OK
+    PutWarehouseOperationActivate - OK
+    
+    States:
+    1 - Idle
+    2 - Executing
+    3 - Charging
+
+-->
+
+<select id="operation" onchange="loadCurrentOperation()">
+    <option selected disabled > Choose Operation ... </option>
+    <option value="MoveToChargerOperation">MoveToChargerOperation</option>
+    <option value="MoveToAssemblyOperationMove">MoveToAssemblyOperationMove</option>
+    <option value="MoveToStorageOperationMove">MoveToStorageOperationMove</option>
+    <option value="PutAssemblyOperationActivate">PutAssemblyOperationActivate</option>
+    <option value="PickAssemblyOperationActivate">PickAssemblyOperationActivate</option>
+    <option value="PickWarehouseOperationActivate">PickWarehouseOperationActivate</option>
+    <option value="PutWarehouseOperationActivate">PutWarehouseOperationActivate</option>
+
+
+
+  </select>
+
+  <button id="states" onclick="loadCurrentState()"> Start Operation </button>
+
+</body>
+</html>
