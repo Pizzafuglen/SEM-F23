@@ -18,4 +18,9 @@
       <module name="ASModule" options="" />
     </option>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AGVModule" options="" />
+    </option>
+  </component>
 </project>
