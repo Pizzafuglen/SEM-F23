@@ -8,6 +8,9 @@ import java.io.IOException;
 public class FlowHandler implements HttpHandler {
     @Override
     public void handle(HttpExchange exchange) throws IOException {
+        String reVal;
+
+        if ()
 
     }
 }
