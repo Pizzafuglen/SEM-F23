@@ -6,18 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stockInfo</title>
+    <script src="../FrontEnd/scripts.js"></script>
 </head>
 <body>
-    <ul class="TwoNavgrid">
-        <li><a class="gridIndex" href="../FrontEnd/productionInfo.html" id="navButton">INITIATE</a></li>
-        <li><a class="gridControl" href="../FrontEnd/home.html" id="navButton">CANCEL</a></li>
+    <ul class="OneNavgrid">
+        <li><a class="gridIndex" href="../FrontEnd/recipe.html" id="navButton">ST4-GROUP</a></li>
     </ul>
-    <section id="hisSec">
-        <label for="dbOutput">Stock info</label>
-        <br>
-        <textarea id="dbOutput"></textarea>
-        <br>
-        <button id="importDbData" onclick="pullDbData()">Update</button>
-    </section>
+    <div id="buttons">
+        <button id="redirectToProductionInfo">INITIATE</button>
+        <button id="redirectToHome">CANCEL</button>
+    </div>
 </body>
 </html>
