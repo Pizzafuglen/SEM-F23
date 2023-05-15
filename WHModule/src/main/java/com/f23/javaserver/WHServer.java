@@ -12,7 +12,7 @@ public class WHServer {
         HttpServer hs;
 
         try {
-            hs = HttpServer.create(new InetSocketAddress("localhost",8001),0);
+            hs = HttpServer.create(new InetSocketAddress("localhost", 8001), 0);
             hs.createContext("/1/", new WHHandler());
 
             hs.setExecutor(tpe);
@@ -21,6 +21,7 @@ public class WHServer {
             throw new RuntimeException(e);
         }
     }
+
     public static void main(String[] args) {
         ThreadPoolExecutor tpe = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
 

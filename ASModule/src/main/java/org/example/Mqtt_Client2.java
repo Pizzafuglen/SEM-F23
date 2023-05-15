@@ -61,6 +61,4 @@ public class Mqtt_Client2 {
             me.printStackTrace();
         }
     }
-
-
 }
