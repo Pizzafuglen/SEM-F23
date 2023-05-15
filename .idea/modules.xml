@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AGVModule/AGVModule.iml" filepath="$PROJECT_DIR$/AGVModule/AGVModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ASModule/ASModule.iml" filepath="$PROJECT_DIR$/ASModule/ASModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FlowController/FlowController.iml" filepath="$PROJECT_DIR$/FlowController/FlowController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SEM-F23.iml" filepath="$PROJECT_DIR$/.idea/SEM-F23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WHModule/WHModule.iml" filepath="$PROJECT_DIR$/WHModule/WHModule.iml" />
+    </modules>
+  </component>
+</project>
