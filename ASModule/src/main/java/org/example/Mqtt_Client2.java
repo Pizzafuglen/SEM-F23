@@ -8,9 +8,9 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 public class Mqtt_Client2 {
     public static void main(String[] args) {
-        String subTopic = "testtopic/me/22/13";
-        String pubTopic = "testtopic/me/22/13";
-        String content = "A????2";
+        String subTopic = "testtopic/#";
+        String pubTopic = "testtopic/#";
+        String content = "A????3";
         int qos = 2;
         String broker = "tcp://broker.emqx.io:1883";
         String clientId = "client-1";

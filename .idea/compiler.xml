@@ -12,11 +12,5 @@
         <module name="ASModule" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="AGVModule" target="9" />
-      <module name="ASModule" target="18" />
-      <module name="FlowController" target="1.6" />
-      <module name="WHModule" target="18" />
-    </bytecodeTargetLevel>
   </component>
 </project>
