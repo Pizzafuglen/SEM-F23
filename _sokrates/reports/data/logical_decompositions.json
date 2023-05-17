@@ -1,0 +1,205 @@
+[ {
+  "key" : "primary",
+  "components" : [ {
+    "name" : "AGVModule",
+    "filesCount" : 5,
+    "linesOfCode" : 235,
+    "numberOfRegexLineMatches" : 0,
+    "fileCountPerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 5,
+      "description" : [ ]
+    } ],
+    "linesOfCodePerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 235,
+      "description" : [ ]
+    } ]
+  }, {
+    "name" : "ASModule",
+    "filesCount" : 8,
+    "linesOfCode" : 187,
+    "numberOfRegexLineMatches" : 0,
+    "fileCountPerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 8,
+      "description" : [ ]
+    } ],
+    "linesOfCodePerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 187,
+      "description" : [ ]
+    } ]
+  }, {
+    "name" : "FlowController",
+    "filesCount" : 2,
+    "linesOfCode" : 34,
+    "numberOfRegexLineMatches" : 0,
+    "fileCountPerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 2,
+      "description" : [ ]
+    } ],
+    "linesOfCodePerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 34,
+      "description" : [ ]
+    } ]
+  }, {
+    "name" : "GUITest",
+    "filesCount" : 2,
+    "linesOfCode" : 36,
+    "numberOfRegexLineMatches" : 0,
+    "fileCountPerExtension" : [ {
+      "name" : "  *.html",
+      "value" : 1,
+      "description" : [ ]
+    }, {
+      "name" : "  *.js",
+      "value" : 1,
+      "description" : [ ]
+    } ],
+    "linesOfCodePerExtension" : [ {
+      "name" : "  *.html",
+      "value" : 21,
+      "description" : [ ]
+    }, {
+      "name" : "  *.js",
+      "value" : 15,
+      "description" : [ ]
+    } ]
+  }, {
+    "name" : "WHModule",
+    "filesCount" : 3,
+    "linesOfCode" : 71,
+    "numberOfRegexLineMatches" : 0,
+    "fileCountPerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 3,
+      "description" : [ ]
+    } ],
+    "linesOfCodePerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 71,
+      "description" : [ ]
+    } ]
+  } ],
+  "componentDependencies" : [ ],
+  "componentDependenciesErrors" : [ ],
+  "logicalDecomposition" : {
+    "name" : "primary",
+    "scope" : "main",
+    "filters" : [ ],
+    "componentsFolderDepth" : 1,
+    "minComponentsCount" : 0,
+    "components" : [ {
+      "name" : "AGVModule",
+      "sourceFileFilters" : [ {
+        "pathPattern" : "./AGVModule/.*",
+        "contentPattern" : "",
+        "exception" : false,
+        "note" : ""
+      } ],
+      "files" : [ ]
+    }, {
+      "name" : "ASModule",
+      "sourceFileFilters" : [ {
+        "pathPattern" : "./ASModule/.*",
+        "contentPattern" : "",
+        "exception" : false,
+        "note" : ""
+      } ],
+      "files" : [ ]
+    }, {
+      "name" : "FlowController",
+      "sourceFileFilters" : [ {
+        "pathPattern" : "./FlowController/.*",
+        "contentPattern" : "",
+        "exception" : false,
+        "note" : ""
+      } ],
+      "files" : [ ]
+    }, {
+      "name" : "GUITest",
+      "sourceFileFilters" : [ {
+        "pathPattern" : "./GUITest/.*",
+        "contentPattern" : "",
+        "exception" : false,
+        "note" : ""
+      } ],
+      "files" : [ ]
+    }, {
+      "name" : "WHModule",
+      "sourceFileFilters" : [ {
+        "pathPattern" : "./WHModule/.*",
+        "contentPattern" : "",
+        "exception" : false,
+        "note" : ""
+      } ],
+      "files" : [ ]
+    } ],
+    "metaComponents" : [ ],
+    "groups" : [ ],
+    "includeRemainingFiles" : true,
+    "dependenciesFinder" : {
+      "useBuiltInDependencyFinders" : true,
+      "rules" : [ ],
+      "metaRules" : [ ]
+    },
+    "renderingOptions" : {
+      "orientation" : "TB",
+      "maxNumberOfDependencies" : 100,
+      "renderComponentsWithoutDependencies" : true,
+      "renderIndirectDependencies" : false,
+      "renderInternalIndirectDependencies" : false,
+      "reverseDirection" : false
+    },
+    "includeExternalComponents" : true,
+    "dependencyLinkThreshold" : 1,
+    "duplicationLinkThreshold" : 50,
+    "temporalLinkThreshold" : 1,
+    "maxSearchDepthLines" : 200
+  },
+  "fileCountPerComponent" : [ {
+    "name" : "AGVModule",
+    "value" : 5,
+    "description" : [ ]
+  }, {
+    "name" : "ASModule",
+    "value" : 8,
+    "description" : [ ]
+  }, {
+    "name" : "FlowController",
+    "value" : 2,
+    "description" : [ ]
+  }, {
+    "name" : "GUITest",
+    "value" : 2,
+    "description" : [ ]
+  }, {
+    "name" : "WHModule",
+    "value" : 3,
+    "description" : [ ]
+  } ],
+  "linesOfCodePerComponent" : [ {
+    "name" : "AGVModule",
+    "value" : 235,
+    "description" : [ ]
+  }, {
+    "name" : "ASModule",
+    "value" : 187,
+    "description" : [ ]
+  }, {
+    "name" : "FlowController",
+    "value" : 34,
+    "description" : [ ]
+  }, {
+    "name" : "GUITest",
+    "value" : 36,
+    "description" : [ ]
+  }, {
+    "name" : "WHModule",
+    "value" : 71,
+    "description" : [ ]
+  } ]
+} ]

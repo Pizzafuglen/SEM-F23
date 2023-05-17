@@ -1,0 +1,3858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SEM-F23Contributors</title>
+  <style type="text/css" media="all">
+    body {
+      font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    table {
+      color: #333;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    th {
+      background: #F3F3F3;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    td {
+      background: #FFFFFF;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 0
+    }
+    h1 {
+      margin-bottom: 6px;
+    }
+    p {
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .reportSubtitle {
+      color: grey;
+    }
+    .group {
+      margin-bottom: 10px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+    }
+    .section {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+      padding: 0;
+    }
+    .sectionHeader {
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      background-color: lightskyblue;
+    }
+    .sectionTitle {
+      font-size: 140%;
+    }
+    .sectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSectionTitle {
+      font-size: 140%;
+    }
+    .subSectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSection {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .subSectionHeader {
+      border: solid lightgrey 1px;
+      padding: 6px;
+      background-color: lightgrey;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .sectionBody {
+      margin: 20px;
+    }
+.tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+.tab button {
+ font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+ font-size: 100%;
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+.tab button:hover {
+ background-color: #ddd;
+}
+.tab button.active {
+ background-color: #ccc;
+}
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ overflow-y: auto;
+ border-top: none;
+}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script type="text/javascript">
+    function showHide(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    }
+    function showHideDisappear(id) {
+      var e = document.getElementById(id);
+      e.style.display = '';      var eTrigger = document.getElementById(id + '_trigger');
+      eTrigger.style.display = 'none';
+    }
+    function openTab(evt, tabName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.className += " active";
+    }
+  </script>
+  
+</head>
+
+<body><div id="report">
+
+
+<div style='font-size: 36px; margin-top: 15px;'><a href='index.html' style="font-size: 100%;text-decoration:none">
+<img style='transform: scale(0.8); height: 48px' valign='middle' src='https://zeljkoobrenovic.github.io/sokrates-media/icons/repository.png'>
+<div style='display: inline-block; vertical-align: middle'><div style='color: #bbbbbb; font-size: 60%;'>SEM-F23</div><div style='height: 34px; font-size: 100%'>Contributors</div></div></div>
+</a>
+</div>
+
+<p style="margin-top: 12px; color: grey">An overview of contributor trends.</p>
+<div class="tab">
+  <button class='tablinks active' onclick='openTab(event, "contributors")'>Overview</button>
+  <button class='tablinks' onclick='openTab(event, "matrix")'>Contributors Matrix</button>
+  <button class='tablinks' onclick='openTab(event, "30_days")'>Past 30 Days</button>
+  <button class='tablinks' onclick='openTab(event, "90_days")'>Past 3 Months</button>
+  <button class='tablinks' onclick='openTab(event, "180_days")'>Past 6 Months</button>
+  <button class='tablinks' onclick='openTab(event, "365_days")'>Past Year</button>
+  <button class='tablinks' onclick='openTab(event, "data")'>Data</button>
+</div>
+<div id="contributors" class="tabcontent" style="display: block">
+<div style="margin-top: 10px">
+Zoomable circles (number of contributors per file): 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_30_main.html'>30 days</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_90_main.html'>90 days</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_180_main.html'>6 months</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_365_main.html'>past year</a>
+ | 
+<a style='text-decoration: none' target='_blank' href='visuals/zoomable_circles_contributors_main.html'>all time</a>
+<div style="color: grey; font-size: 80%">
+Files with only one contributor are shown as grey.
+</div>
+</div>
+<div style="">
+<h2>Recent Contributors (6 = 0 veterans + 6 rookies)</h2>
+<p style="color: grey">Contributed in past 6 months (a rookie = the first contribution in past year)</p>
+<p style="font-size: 80%">Past 30 days (6):</p>
+<div style='border:2px solid green; border-radius: 5px; display: inline-block;opacity:1.0' title='crose19@student.sdu.dk 22 commits (37%), between 2023-04-17 and 2023-05-15'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+</div>
+<div style='border:2px solid green; border-radius: 5px; display: inline-block;opacity:0.6363636363636365' title='91126094+harun-abdi@users.noreply.github.com 12 commits (20%), between 2023-04-24 and 2023-05-15'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+</div>
+<div style='border:2px solid green; border-radius: 5px; display: inline-block;opacity:0.49090909090909096' title='anden21@student.sdu.dk 8 commits (13%), between 2023-04-24 and 2023-05-15'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+</div>
+<div style='border:2px solid green; border-radius: 5px; display: inline-block;opacity:0.4181818181818182' title='91126091+vi-the@users.noreply.github.com 6 commits (10%), between 2023-04-24 and 2023-05-11'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+</div>
+<div style='border:2px solid green; border-radius: 5px; display: inline-block;opacity:0.4181818181818182' title='92362718+miffan20@users.noreply.github.com 6 commits (10%), between 2023-04-24 and 2023-04-24'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+</div>
+<div style='border:2px solid green; border-radius: 5px; display: inline-block;opacity:0.34545454545454546' title='90039392+pizzafuglen@users.noreply.github.com 4 commits (6%), between 2023-04-24 and 2023-05-15'>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 100 100"><rect width="100%" height="100%" fill="#FFFFFF"></rect><g transform="translate(50 50) scale(0.69 0.69) rotate(0) translate(-50 -50)" style="fill:#1A1A1A"><svg fill="#1A1A1A" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><g><circle cx="50.2" cy="23.8" r="22.8" fill="blue"></circle><path d="M87.1,99H13.3V75.4c0-13.1,10.5-23.6,23.6-23.6h26.7c13.1,0,23.6,10.5,23.6,23.6L87.1,99z" fill="blue"></path></g></g></svg></g></svg>
+
+</div>
+<hr/>
+<p style="font-size: 80%">No contributors in past 31 to 90 days.</p>
+<hr/>
+<p style="font-size: 80%">No contributors in past 91 to 180 days.</p>
+<h2 style="margin-top: 40px">Historical Contributors (0)</h2>
+<p style="color: grey">Last contributed more than 6 months ago</p>
+</div>
+</div>
+<div id="matrix" class="tabcontent" style="display: none">
+<div style="height: 20px">
+&nbsp;
+</div>
+<div class='subSection'><div class='subSectionHeader'>  <span class='subSectionTitle'>Contributors Matrix (Per Month)</span></div><div class='sectionBody'>
+<div style="width: 100%; overflow-x: scroll; overflow-y: scroll; max-height: 600px">
+<table>
+<tr>
+<td style="min-width: 200px; border: none; border: none"></td>
+<td style="max-width: 100px; text-align: center; border: none">Commits<br>(3m)</td>
+<td style="max-width: 100px; text-align: center; border: none">Commit<br>Days</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2023-05: 5 contributors ">
+5
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2023-04: 6 contributors ">
+6
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2023-03: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2023-02: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2023-01: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-12: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-11: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-10: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-09: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-08: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-07: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-06: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-05: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-04: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-03: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-02: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2022-01: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2021-12: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2021-11: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2021-10: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2021-09: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2021-08: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2021-07: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2021-06: 0 contributors ">
+-
+</div>
+</td>
+<td style="font-size: 70%; border: none; color: lightgrey; text-align: center">
+<div style="cursor: help;text-align: center" title="Month 2021-05: 0 contributors ">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+crose19@student.sdu.dk
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">22</td>
+<td style="text-align: center; border: none; font-weight: bold;">6</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.9; border-radius: 50%; width: 14px; height: 14px;" title="Month 2023-05: 4 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.7; border-radius: 50%; width: 10px; height: 10px;" title="Month 2023-04: 2 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+91126094+harun-abdi@users.noreply.github.com
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">12</td>
+<td style="text-align: center; border: none; font-weight: bold;">6</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.9; border-radius: 50%; width: 14px; height: 14px;" title="Month 2023-05: 4 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.7; border-radius: 50%; width: 10px; height: 10px;" title="Month 2023-04: 2 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+anden21@student.sdu.dk
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">8</td>
+<td style="text-align: center; border: none; font-weight: bold;">2</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.9; border-radius: 50%; width: 10px; height: 10px;" title="Month 2023-05: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.7; border-radius: 50%; width: 10px; height: 10px;" title="Month 2023-04: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+90039392+pizzafuglen@users.noreply.github.com
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">4</td>
+<td style="text-align: center; border: none; font-weight: bold;">2</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.9; border-radius: 50%; width: 10px; height: 10px;" title="Month 2023-05: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.7; border-radius: 50%; width: 10px; height: 10px;" title="Month 2023-04: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+91126091+vi-the@users.noreply.github.com
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">6</td>
+<td style="text-align: center; border: none; font-weight: bold;">5</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.9; border-radius: 50%; width: 14px; height: 14px;" title="Month 2023-05: 4 commit days">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.7; border-radius: 50%; width: 10px; height: 10px;" title="Month 2023-04: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+<tr>
+<td style="border: none; font-weight: bold;">
+92362718+miffan20@users.noreply.github.com
+</td>
+<td style="text-align: center; border: none; font-weight: bold;">6</td>
+<td style="text-align: center; border: none; font-weight: bold;">1</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="cursor: help;padding: 0; margin: 0; display: inline-block; background-color: #483D8B; opacity: 0.7; border-radius: 50%; width: 10px; height: 10px;" title="Month 2023-04: 1 commit day">
+
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+<td style="text-align: center; padding: 0; border: none; vertical-align: middle;">
+<div style="color: lightgrey; font-size: 80%">
+-
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div></div>
+</div>
+<div id="30_days" class="tabcontent" style="display: none">
+<br/>
+<p><b>6</b> contributors (<b>58</b> commits):</p>
+<div style='background-color: #75ADD2; display: inline-block; height: 20px; width: 228px' title='crose19@student.sdu.dk
+22 commits (38%)'>&nbsp;</div><div style='background-color: #584982; display: inline-block; height: 20px; width: 124px' title='91126094+harun-abdi@users.noreply.github.com
+12 commits (21%)
+top 2 contributors together (33% of contributors) = 58% of all commits'>&nbsp;</div><div style='background-color: #FFFD98; display: inline-block; height: 20px; width: 83px' title='anden21@student.sdu.dk
+8 commits (14%)
+top 3 contributors together (50% of contributors) = 72% of all commits'>&nbsp;</div><div style='background-color: #FCF7FF; display: inline-block; height: 20px; width: 62px' title='91126091+vi-the@users.noreply.github.com
+6 commits (10%)
+top 4 contributors together (66% of contributors) = 82% of all commits'>&nbsp;</div><div style='background-color: #61A99B; display: inline-block; height: 20px; width: 62px' title='92362718+miffan20@users.noreply.github.com
+6 commits (10%)
+top 5 contributors together (83% of contributors) = 93% of all commits'>&nbsp;</div><div style='background-color: #567E99; display: inline-block; height: 20px; width: 41px' title='90039392+pizzafuglen@users.noreply.github.com
+4 commits (7%)
+top 6 contributors together (100% of contributors) = 100% of all commits'>&nbsp;</div>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th>#</th>
+<th>Contributor<br></th>
+<th>First<br>Commit</th>
+<th>Latest<br>Commit</th>
+<th>Commits<br>Count</th>
+<th>File Updates<br>(per extension)</th>
+<tr style=''>
+<td>1.</td>
+<td>crose19@student.sdu.dk</td>
+<td>2023-04-17</td>
+<td>2023-05-15</td>
+<td>22 (37%)</td>
+<td>xml (72), java (62), class (29), gitignore (5), lst (4)</td>
+</tr>
+<tr style=''>
+<td>2.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>12 (20%)</td>
+<td>class (25), java (20), xml (12), js (3), html (2)</td>
+</tr>
+<tr style=''>
+<td>3.</td>
+<td>anden21@student.sdu.dk</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>8 (13%)</td>
+<td>xml (46), java (28), class (18), iml (7), lst (4)</td>
+</tr>
+<tr style=''>
+<td>4.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-11</td>
+<td>6 (10%)</td>
+<td>class (23), java (12), xml (7), html (2), js (1)</td>
+</tr>
+<tr style=''>
+<td>5.</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-04-24</td>
+<td>6 (10%)</td>
+<td>xml (24), class (14), java (12), iml (6)</td>
+</tr>
+<tr style=''>
+<td>6.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>4 (6%)</td>
+<td>xml (34), class (31), java (25), lst (4), gitignore (2)</td>
+</tr>
+</table>
+</div>
+<h2 style="margin-top: 40px; margin-bottom: 0;">Contributor Dependencies</h2>
+<p style="color: grey; font-size: 80%; margin-bottom: 12px;">A contributor dependency is detected if two contributors have changed the same files in the past 30 days.</p>
+<h3 style="margin-top: 20px">Contributor Dependencies via Shared Files</h2>
+ <a href="javascript:showHide('showMoreBlock_5');")> - show contributor dependencies 2D graph</a><span id="showMoreBlock_5" style="display: none;">
+<p style="color: grey">The number on lines shows the number of same files that both persons changed in past <b>30</b> days.</p>
+<div style="width: 100%; overflow: auto; font-weight: normal;">
+
+
+</div>
+<br/>
+<br/>
+<div style="">
+Download: 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_30_1.svg'>SVG</a>
+ 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_30_1.dot.txt'>DOT</a>
+ 
+<a style='text-decoration: none' target='_blank' href='https://obren.io/tools/graphviz/'>(open online Graphviz editor)</a>
+</div>
+</span>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_30_1_force_3d.html'>- open 3D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_30_2_force_3d.html'>- open 3D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_30_2_force_3d_only_shared_file.html'>- open 3D force graph (including only shared files)</a>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor 1</th>
+<th>Contributor 2</th>
+<th># shared files</th>
+<tr>
+<td>1.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_6');")>74 shared files</a><span id="showMoreBlock_6" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>FlowController/.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>git-history.txt
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>FlowController/.idea/.gitignore
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>FlowController/src/main/java/com/f23/javaserver/FlowServer.java
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>FlowController/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>ASModule/src/main/java/org/example/App.java
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>FlowController/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/classes/com/f23/javaserver/WSDLClient.class
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>FlowController/src/main/java/com/f23/javaserver/FlowHandler.java
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>FlowController/.idea/encodings.xml
+<br>WHModule/target/classes/com/f23/javaserver/WHHandler.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+<br>FlowController/.idea/misc.xml
+<br>.idea/runConfigurations.xml
+<br>WHModule/target/classes/com/f23/javaserver/WHServer.class
+<br>FlowController/.idea/compiler.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>anden21@student.sdu.dk</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_7');")>74 shared files</a><span id="showMoreBlock_7" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>.idea/workspace.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>.idea/uiDesigner.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27__Changes_.xml
+<br>ASModule/src/main/java/org/example/MyHttpServer.java
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>GUITest/html.html
+<br>GUITest/js.js
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>ASModule/src/main/java/org/example/MyHttpHandler.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+<br>.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27_[Changes]/shelved.patch
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_8');")>59 shared files</a><span id="showMoreBlock_8" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+</span>
+</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_9');")>24 shared files</a><span id="showMoreBlock_9" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+<br>AGVModule/src/main/java/org/AGV/HTTPServer.java
+</span>
+</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_10');")>23 shared files</a><span id="showMoreBlock_10" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/libraries/mysql_connector_j_8_0_33.xml
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>crose19@student.sdu.dk</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_11');")>23 shared files</a><span id="showMoreBlock_11" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/App.java
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>.idea/runConfigurations.xml
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_12');")>22 shared files</a><span id="showMoreBlock_12" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>anden21@student.sdu.dk</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_13');")>21 shared files</a><span id="showMoreBlock_13" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_14');")>17 shared files</a><span id="showMoreBlock_14" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/App.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_15');")>9 shared files</a><span id="showMoreBlock_15" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>.idea/uiDesigner.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>11.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_16');")>8 shared files</a><span id="showMoreBlock_16" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>.idea/uiDesigner.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>12.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_17');")>7 shared files</a><span id="showMoreBlock_17" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>13.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_18');")>6 shared files</a><span id="showMoreBlock_18" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>14.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_19');")>6 shared files</a><span id="showMoreBlock_19" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>15.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_20');")>5 shared files</a><span id="showMoreBlock_20" style="display: none;">
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+</table>
+</div>
+<h3 style="margin-top: 20px">Most Connected Contributors</h2>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor</th>
+<th># connections</th>
+<th># commits</th>
+<tr>
+<td>1.</td>
+<td>crose19@student.sdu.dk</td>
+<td>5</td>
+<td>22</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>anden21@student.sdu.dk</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>5</td>
+<td>4</td>
+</tr>
+</table>
+</div>
+<p style="margin-bottom: 0; margin-top: 10px;">C-median: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">A half of the contributors has more than 5.0 connections, and a half has less than this number.</p>
+<p style="margin-bottom: 0;">C-mean: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">An average number of connections a contributor has with other contributors.</p>
+<p style="margin-bottom: 0;">C-index: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 40px">There are 5.0 contributors with 5.0 or more connections.</p>
+</div>
+<div id="90_days" class="tabcontent" style="display: none">
+<br/>
+<p><b>6</b> contributors (<b>58</b> commits):</p>
+<div style='background-color: #75ADD2; display: inline-block; height: 20px; width: 228px' title='crose19@student.sdu.dk
+22 commits (38%)'>&nbsp;</div><div style='background-color: #584982; display: inline-block; height: 20px; width: 124px' title='91126094+harun-abdi@users.noreply.github.com
+12 commits (21%)
+top 2 contributors together (33% of contributors) = 58% of all commits'>&nbsp;</div><div style='background-color: #FFFD98; display: inline-block; height: 20px; width: 83px' title='anden21@student.sdu.dk
+8 commits (14%)
+top 3 contributors together (50% of contributors) = 72% of all commits'>&nbsp;</div><div style='background-color: #FCF7FF; display: inline-block; height: 20px; width: 62px' title='91126091+vi-the@users.noreply.github.com
+6 commits (10%)
+top 4 contributors together (66% of contributors) = 82% of all commits'>&nbsp;</div><div style='background-color: #61A99B; display: inline-block; height: 20px; width: 62px' title='92362718+miffan20@users.noreply.github.com
+6 commits (10%)
+top 5 contributors together (83% of contributors) = 93% of all commits'>&nbsp;</div><div style='background-color: #567E99; display: inline-block; height: 20px; width: 41px' title='90039392+pizzafuglen@users.noreply.github.com
+4 commits (7%)
+top 6 contributors together (100% of contributors) = 100% of all commits'>&nbsp;</div>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th>#</th>
+<th>Contributor<br></th>
+<th>First<br>Commit</th>
+<th>Latest<br>Commit</th>
+<th>Commits<br>Count</th>
+<th>File Updates<br>(per extension)</th>
+<tr style=''>
+<td>1.</td>
+<td>crose19@student.sdu.dk</td>
+<td>2023-04-17</td>
+<td>2023-05-15</td>
+<td>22 (37%)</td>
+<td>xml (72), java (62), class (29), gitignore (5), lst (4)</td>
+</tr>
+<tr style=''>
+<td>2.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>12 (20%)</td>
+<td>class (25), java (20), xml (12), js (3), html (2)</td>
+</tr>
+<tr style=''>
+<td>3.</td>
+<td>anden21@student.sdu.dk</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>8 (13%)</td>
+<td>xml (46), java (28), class (18), iml (7), lst (4)</td>
+</tr>
+<tr style=''>
+<td>4.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-11</td>
+<td>6 (10%)</td>
+<td>class (23), java (12), xml (7), html (2), js (1)</td>
+</tr>
+<tr style=''>
+<td>5.</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-04-24</td>
+<td>6 (10%)</td>
+<td>xml (24), class (14), java (12), iml (6)</td>
+</tr>
+<tr style=''>
+<td>6.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>4 (6%)</td>
+<td>xml (34), class (31), java (25), lst (4), gitignore (2)</td>
+</tr>
+</table>
+</div>
+<h2 style="margin-top: 40px; margin-bottom: 0;">Contributor Dependencies</h2>
+<p style="color: grey; font-size: 80%; margin-bottom: 12px;">A contributor dependency is detected if two contributors have changed the same files in the past 90 days.</p>
+<h3 style="margin-top: 20px">Contributor Dependencies via Shared Files</h2>
+ <a href="javascript:showHide('showMoreBlock_21');")> - show contributor dependencies 2D graph</a><span id="showMoreBlock_21" style="display: none;">
+<p style="color: grey">The number on lines shows the number of same files that both persons changed in past <b>90</b> days.</p>
+<div style="width: 100%; overflow: auto; font-weight: normal;">
+
+
+</div>
+<br/>
+<br/>
+<div style="">
+Download: 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_90_3.svg'>SVG</a>
+ 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_90_3.dot.txt'>DOT</a>
+ 
+<a style='text-decoration: none' target='_blank' href='https://obren.io/tools/graphviz/'>(open online Graphviz editor)</a>
+</div>
+</span>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_90_3_force_3d.html'>- open 3D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_90_4_force_3d.html'>- open 3D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_90_4_force_3d_only_shared_file.html'>- open 3D force graph (including only shared files)</a>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor 1</th>
+<th>Contributor 2</th>
+<th># shared files</th>
+<tr>
+<td>1.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_22');")>74 shared files</a><span id="showMoreBlock_22" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>FlowController/.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>git-history.txt
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>FlowController/.idea/.gitignore
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>FlowController/src/main/java/com/f23/javaserver/FlowServer.java
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>FlowController/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>ASModule/src/main/java/org/example/App.java
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>FlowController/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/classes/com/f23/javaserver/WSDLClient.class
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>FlowController/src/main/java/com/f23/javaserver/FlowHandler.java
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>FlowController/.idea/encodings.xml
+<br>WHModule/target/classes/com/f23/javaserver/WHHandler.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+<br>FlowController/.idea/misc.xml
+<br>.idea/runConfigurations.xml
+<br>WHModule/target/classes/com/f23/javaserver/WHServer.class
+<br>FlowController/.idea/compiler.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>anden21@student.sdu.dk</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_23');")>74 shared files</a><span id="showMoreBlock_23" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>.idea/workspace.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>.idea/uiDesigner.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27__Changes_.xml
+<br>ASModule/src/main/java/org/example/MyHttpServer.java
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>GUITest/html.html
+<br>GUITest/js.js
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>ASModule/src/main/java/org/example/MyHttpHandler.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+<br>.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27_[Changes]/shelved.patch
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_24');")>59 shared files</a><span id="showMoreBlock_24" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+</span>
+</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_25');")>24 shared files</a><span id="showMoreBlock_25" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+<br>AGVModule/src/main/java/org/AGV/HTTPServer.java
+</span>
+</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_26');")>23 shared files</a><span id="showMoreBlock_26" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/libraries/mysql_connector_j_8_0_33.xml
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>crose19@student.sdu.dk</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_27');")>23 shared files</a><span id="showMoreBlock_27" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/App.java
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>.idea/runConfigurations.xml
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_28');")>22 shared files</a><span id="showMoreBlock_28" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>anden21@student.sdu.dk</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_29');")>21 shared files</a><span id="showMoreBlock_29" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_30');")>17 shared files</a><span id="showMoreBlock_30" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/App.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_31');")>9 shared files</a><span id="showMoreBlock_31" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>.idea/uiDesigner.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>11.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_32');")>8 shared files</a><span id="showMoreBlock_32" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>.idea/uiDesigner.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>12.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_33');")>7 shared files</a><span id="showMoreBlock_33" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>13.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_34');")>6 shared files</a><span id="showMoreBlock_34" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>14.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_35');")>6 shared files</a><span id="showMoreBlock_35" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>15.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_36');")>5 shared files</a><span id="showMoreBlock_36" style="display: none;">
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+</table>
+</div>
+<h3 style="margin-top: 20px">Most Connected Contributors</h2>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor</th>
+<th># connections</th>
+<th># commits</th>
+<tr>
+<td>1.</td>
+<td>crose19@student.sdu.dk</td>
+<td>5</td>
+<td>22</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>anden21@student.sdu.dk</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>5</td>
+<td>4</td>
+</tr>
+</table>
+</div>
+<p style="margin-bottom: 0; margin-top: 10px;">C-median: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">A half of the contributors has more than 5.0 connections, and a half has less than this number.</p>
+<p style="margin-bottom: 0;">C-mean: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">An average number of connections a contributor has with other contributors.</p>
+<p style="margin-bottom: 0;">C-index: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 40px">There are 5.0 contributors with 5.0 or more connections.</p>
+</div>
+<div id="180_days" class="tabcontent" style="display: none">
+<br/>
+<p><b>6</b> contributors (<b>58</b> commits):</p>
+<div style='background-color: #75ADD2; display: inline-block; height: 20px; width: 228px' title='crose19@student.sdu.dk
+22 commits (38%)'>&nbsp;</div><div style='background-color: #584982; display: inline-block; height: 20px; width: 124px' title='91126094+harun-abdi@users.noreply.github.com
+12 commits (21%)
+top 2 contributors together (33% of contributors) = 58% of all commits'>&nbsp;</div><div style='background-color: #FFFD98; display: inline-block; height: 20px; width: 83px' title='anden21@student.sdu.dk
+8 commits (14%)
+top 3 contributors together (50% of contributors) = 72% of all commits'>&nbsp;</div><div style='background-color: #FCF7FF; display: inline-block; height: 20px; width: 62px' title='91126091+vi-the@users.noreply.github.com
+6 commits (10%)
+top 4 contributors together (66% of contributors) = 82% of all commits'>&nbsp;</div><div style='background-color: #61A99B; display: inline-block; height: 20px; width: 62px' title='92362718+miffan20@users.noreply.github.com
+6 commits (10%)
+top 5 contributors together (83% of contributors) = 93% of all commits'>&nbsp;</div><div style='background-color: #567E99; display: inline-block; height: 20px; width: 41px' title='90039392+pizzafuglen@users.noreply.github.com
+4 commits (7%)
+top 6 contributors together (100% of contributors) = 100% of all commits'>&nbsp;</div>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th>#</th>
+<th>Contributor<br></th>
+<th>First<br>Commit</th>
+<th>Latest<br>Commit</th>
+<th>Commits<br>Count</th>
+<tr style=''>
+<td>1.</td>
+<td>crose19@student.sdu.dk</td>
+<td>2023-04-17</td>
+<td>2023-05-15</td>
+<td>22 (37%)</td>
+</tr>
+<tr style=''>
+<td>2.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>12 (20%)</td>
+</tr>
+<tr style=''>
+<td>3.</td>
+<td>anden21@student.sdu.dk</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>8 (13%)</td>
+</tr>
+<tr style=''>
+<td>4.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-11</td>
+<td>6 (10%)</td>
+</tr>
+<tr style=''>
+<td>5.</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-04-24</td>
+<td>6 (10%)</td>
+</tr>
+<tr style=''>
+<td>6.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>4 (6%)</td>
+</tr>
+</table>
+</div>
+<h2 style="margin-top: 40px; margin-bottom: 0;">Contributor Dependencies</h2>
+<p style="color: grey; font-size: 80%; margin-bottom: 12px;">A contributor dependency is detected if two contributors have changed the same files in the past 180 days.</p>
+<h3 style="margin-top: 20px">Contributor Dependencies via Shared Files</h2>
+ <a href="javascript:showHide('showMoreBlock_37');")> - show contributor dependencies 2D graph</a><span id="showMoreBlock_37" style="display: none;">
+<p style="color: grey">The number on lines shows the number of same files that both persons changed in past <b>180</b> days.</p>
+<div style="width: 100%; overflow: auto; font-weight: normal;">
+
+
+</div>
+<br/>
+<br/>
+<div style="">
+Download: 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_180_5.svg'>SVG</a>
+ 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_180_5.dot.txt'>DOT</a>
+ 
+<a style='text-decoration: none' target='_blank' href='https://obren.io/tools/graphviz/'>(open online Graphviz editor)</a>
+</div>
+</span>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_180_5_force_3d.html'>- open 3D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_180_6_force_3d.html'>- open 3D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_180_6_force_3d_only_shared_file.html'>- open 3D force graph (including only shared files)</a>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor 1</th>
+<th>Contributor 2</th>
+<th># shared files</th>
+<tr>
+<td>1.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_38');")>74 shared files</a><span id="showMoreBlock_38" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>FlowController/.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>git-history.txt
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>FlowController/.idea/.gitignore
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>FlowController/src/main/java/com/f23/javaserver/FlowServer.java
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>FlowController/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>ASModule/src/main/java/org/example/App.java
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>FlowController/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/classes/com/f23/javaserver/WSDLClient.class
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>FlowController/src/main/java/com/f23/javaserver/FlowHandler.java
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>FlowController/.idea/encodings.xml
+<br>WHModule/target/classes/com/f23/javaserver/WHHandler.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+<br>FlowController/.idea/misc.xml
+<br>.idea/runConfigurations.xml
+<br>WHModule/target/classes/com/f23/javaserver/WHServer.class
+<br>FlowController/.idea/compiler.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>anden21@student.sdu.dk</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_39');")>74 shared files</a><span id="showMoreBlock_39" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>.idea/workspace.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>.idea/uiDesigner.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27__Changes_.xml
+<br>ASModule/src/main/java/org/example/MyHttpServer.java
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>GUITest/html.html
+<br>GUITest/js.js
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>ASModule/src/main/java/org/example/MyHttpHandler.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+<br>.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27_[Changes]/shelved.patch
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_40');")>59 shared files</a><span id="showMoreBlock_40" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+</span>
+</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_41');")>24 shared files</a><span id="showMoreBlock_41" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+<br>AGVModule/src/main/java/org/AGV/HTTPServer.java
+</span>
+</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_42');")>23 shared files</a><span id="showMoreBlock_42" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/libraries/mysql_connector_j_8_0_33.xml
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>crose19@student.sdu.dk</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_43');")>23 shared files</a><span id="showMoreBlock_43" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/App.java
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>.idea/runConfigurations.xml
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_44');")>22 shared files</a><span id="showMoreBlock_44" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>anden21@student.sdu.dk</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_45');")>21 shared files</a><span id="showMoreBlock_45" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_46');")>17 shared files</a><span id="showMoreBlock_46" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/App.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_47');")>9 shared files</a><span id="showMoreBlock_47" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>.idea/uiDesigner.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>11.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_48');")>8 shared files</a><span id="showMoreBlock_48" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>.idea/uiDesigner.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>12.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_49');")>7 shared files</a><span id="showMoreBlock_49" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>13.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_50');")>6 shared files</a><span id="showMoreBlock_50" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>14.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_51');")>6 shared files</a><span id="showMoreBlock_51" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>15.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_52');")>5 shared files</a><span id="showMoreBlock_52" style="display: none;">
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+</table>
+</div>
+<h3 style="margin-top: 20px">Most Connected Contributors</h2>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor</th>
+<th># connections</th>
+<th># commits</th>
+<tr>
+<td>1.</td>
+<td>crose19@student.sdu.dk</td>
+<td>5</td>
+<td>22</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>anden21@student.sdu.dk</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>5</td>
+<td>4</td>
+</tr>
+</table>
+</div>
+<p style="margin-bottom: 0; margin-top: 10px;">C-median: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">A half of the contributors has more than 5.0 connections, and a half has less than this number.</p>
+<p style="margin-bottom: 0;">C-mean: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">An average number of connections a contributor has with other contributors.</p>
+<p style="margin-bottom: 0;">C-index: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 40px">There are 5.0 contributors with 5.0 or more connections.</p>
+</div>
+<div id="365_days" class="tabcontent" style="display: none">
+<br/>
+<p><b>6</b> contributors (<b>58</b> commits):</p>
+<div style='background-color: #75ADD2; display: inline-block; height: 20px; width: 228px' title='crose19@student.sdu.dk
+22 commits (38%)'>&nbsp;</div><div style='background-color: #584982; display: inline-block; height: 20px; width: 124px' title='91126094+harun-abdi@users.noreply.github.com
+12 commits (21%)
+top 2 contributors together (33% of contributors) = 58% of all commits'>&nbsp;</div><div style='background-color: #FFFD98; display: inline-block; height: 20px; width: 83px' title='anden21@student.sdu.dk
+8 commits (14%)
+top 3 contributors together (50% of contributors) = 72% of all commits'>&nbsp;</div><div style='background-color: #FCF7FF; display: inline-block; height: 20px; width: 62px' title='91126091+vi-the@users.noreply.github.com
+6 commits (10%)
+top 4 contributors together (66% of contributors) = 82% of all commits'>&nbsp;</div><div style='background-color: #61A99B; display: inline-block; height: 20px; width: 62px' title='92362718+miffan20@users.noreply.github.com
+6 commits (10%)
+top 5 contributors together (83% of contributors) = 93% of all commits'>&nbsp;</div><div style='background-color: #567E99; display: inline-block; height: 20px; width: 41px' title='90039392+pizzafuglen@users.noreply.github.com
+4 commits (7%)
+top 6 contributors together (100% of contributors) = 100% of all commits'>&nbsp;</div>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th>#</th>
+<th>Contributor<br></th>
+<th>First<br>Commit</th>
+<th>Latest<br>Commit</th>
+<th>Commits<br>Count</th>
+<tr style=''>
+<td>1.</td>
+<td>crose19@student.sdu.dk</td>
+<td>2023-04-17</td>
+<td>2023-05-15</td>
+<td>22 (37%)</td>
+</tr>
+<tr style=''>
+<td>2.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>12 (20%)</td>
+</tr>
+<tr style=''>
+<td>3.</td>
+<td>anden21@student.sdu.dk</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>8 (13%)</td>
+</tr>
+<tr style=''>
+<td>4.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-11</td>
+<td>6 (10%)</td>
+</tr>
+<tr style=''>
+<td>5.</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-04-24</td>
+<td>6 (10%)</td>
+</tr>
+<tr style=''>
+<td>6.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>2023-04-24</td>
+<td>2023-05-15</td>
+<td>4 (6%)</td>
+</tr>
+</table>
+</div>
+<h2 style="margin-top: 40px; margin-bottom: 0;">Contributor Dependencies</h2>
+<p style="color: grey; font-size: 80%; margin-bottom: 12px;">A contributor dependency is detected if two contributors have changed the same files in the past 365 days.</p>
+<h3 style="margin-top: 20px">Contributor Dependencies via Shared Files</h2>
+ <a href="javascript:showHide('showMoreBlock_53');")> - show contributor dependencies 2D graph</a><span id="showMoreBlock_53" style="display: none;">
+<p style="color: grey">The number on lines shows the number of same files that both persons changed in past <b>365</b> days.</p>
+<div style="width: 100%; overflow: auto; font-weight: normal;">
+
+
+</div>
+<br/>
+<br/>
+<div style="">
+Download: 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_365_7.svg'>SVG</a>
+ 
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_365_7.dot.txt'>DOT</a>
+ 
+<a style='text-decoration: none' target='_blank' href='https://obren.io/tools/graphviz/'>(open online Graphviz editor)</a>
+</div>
+</span>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_365_7_force_3d.html'>- open 3D force graph</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_365_8_force_3d.html'>- open 3D force graph (including all files)</a>
+<br/>
+<a style='text-decoration: none' target='_blank' href='visuals/people_dependencies_via_files_365_8_force_3d_only_shared_file.html'>- open 3D force graph (including only shared files)</a>
+<br/>
+<br/>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor 1</th>
+<th>Contributor 2</th>
+<th># shared files</th>
+<tr>
+<td>1.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_54');")>74 shared files</a><span id="showMoreBlock_54" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>FlowController/.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>git-history.txt
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>FlowController/.idea/.gitignore
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>FlowController/src/main/java/com/f23/javaserver/FlowServer.java
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>FlowController/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>ASModule/src/main/java/org/example/App.java
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>FlowController/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/classes/com/f23/javaserver/WSDLClient.class
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>FlowController/src/main/java/com/f23/javaserver/FlowHandler.java
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>FlowController/.idea/encodings.xml
+<br>WHModule/target/classes/com/f23/javaserver/WHHandler.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+<br>FlowController/.idea/misc.xml
+<br>.idea/runConfigurations.xml
+<br>WHModule/target/classes/com/f23/javaserver/WHServer.class
+<br>FlowController/.idea/compiler.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>anden21@student.sdu.dk</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_55');")>74 shared files</a><span id="showMoreBlock_55" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>.idea/workspace.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>.idea/uiDesigner.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27__Changes_.xml
+<br>ASModule/src/main/java/org/example/MyHttpServer.java
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>GUITest/html.html
+<br>GUITest/js.js
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>ASModule/src/main/java/org/example/MyHttpHandler.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+<br>.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27_[Changes]/shelved.patch
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_56');")>59 shared files</a><span id="showMoreBlock_56" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>WHModule/src/main/java/Implementation.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItem.class
+<br>WHModule/target/surefire-reports/org.example.AppMQTTHandler.txt
+<br>.idea/jarRepositories.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/ObjectFactory.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItemResponse.class
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java
+<br>WHModule/pom.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WHServer.java
+<br>WHModule/.idea/jarRepositories.xml
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>WHModule/.idea/encodings.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java
+<br>ASModule/ASModule.iml
+<br>WHModule/.idea/vcs.xml
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/package-info.class
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventory.class
+<br>WHModule/target/classes/Implementation.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java
+<br>WHModule/.idea/.gitignore
+<br>WHModule/target/surefire-reports/TEST-org.example.AppMQTTHandler.xml
+<br>WHModule/.idea/compiler.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/GetInventoryResponse.class
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>WHModule/.idea/misc.xml
+<br>WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/IEmulatorService.class
+<br>ASModule/pom.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+<br>WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/PickItemResponse.class
+<br>AGVModule/src/main/java/org/AGV/AGVServlet.java
+<br>AGVModule/pom.xml
+<br>WHModule/target/WHModule-1.0-SNAPSHOT.jar
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java
+<br>WHModule/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3
+<br>WHModule/target/maven-archiver/pom.properties
+<br>.idea/modules.xml
+<br>WHModule/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+<br>WHModule/target/classes/com/baeldung/soap/ws/client/generated/InsertItem.class
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java
+</span>
+</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_57');")>24 shared files</a><span id="showMoreBlock_57" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+<br>AGVModule/src/main/java/org/AGV/HTTPServer.java
+</span>
+</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_58');")>23 shared files</a><span id="showMoreBlock_58" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/libraries/mysql_connector_j_8_0_33.xml
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>crose19@student.sdu.dk</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_59');")>23 shared files</a><span id="showMoreBlock_59" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/App.java
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>.idea/runConfigurations.xml
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>7.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_60');")>22 shared files</a><span id="showMoreBlock_60" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/AGVHandler.java
+<br>FlowController/target/classes/org/example/App.class
+<br>WHModule/target/classes/org/example/App.class
+<br>AGVModule/target/classes/org/AGV/JsonExtractor.class
+<br>test/html.html
+<br>.idea/compiler.xml
+<br>AGVModule/src/main/java/org/AGV/AGVController.java
+<br>AGVModule/target/classes/org/AGV/AGVController.class
+<br>AGVModule/src/main/java/org/AGV/DBhandler.java
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>AGVModule/src/main/java/org/AGV/d.java
+<br>AGVModule/target/classes/org/AGV/DBhandler.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>test/js.js
+<br>AGVModule/target/classes/org/AGV/HTTPServer.class
+<br>AGVModule/target/classes/org/AGV/AGVHandler.class
+<br>AGVModule/target/test-classes/org/example/AppTest.class
+<br>FlowController/target/test-classes/org/example/AppTest.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>8.</td>
+<td>anden21@student.sdu.dk</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_61');")>21 shared files</a><span id="showMoreBlock_61" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback2.class
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/src/main/java/org/example/Mqtt_Client2.java
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback2.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/vcs.xml
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>ASModule/target/classes/org/example/Mqtt_Client2.class
+<br>.idea/SEM-F23.iml
+</span>
+</td>
+</tr>
+<tr>
+<td>9.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_62');")>17 shared files</a><span id="showMoreBlock_62" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/jarRepositories.xml
+<br>.idea/compiler.xml
+<br>ASModule/src/main/java/org/example/OnMessageCallback.java
+<br>.idea/libraries/Maven__junit_junit_3_8_1.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/ASModule.iml
+<br>ASModule/target/classes/org/example/Mqtt_Client.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>ASModule/pom.xml
+<br>ASModule/src/main/java/org/example/App.java
+<br>ASModule/src/main/java/org/example/Mqtt_Client.java
+<br>.idea/modules.xml
+<br>.idea/libraries/Maven__org_eclipse_paho_org_eclipse_paho_client_mqttv3_1_2_2.xml
+<br>ASModule/target/classes/org/example/OnMessageCallback.class
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>10.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_63');")>9 shared files</a><span id="showMoreBlock_63" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>.idea/uiDesigner.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>11.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_64');")>8 shared files</a><span id="showMoreBlock_64" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/misc.xml
+<br>.idea/uiDesigner.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>12.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>crose19@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_65');")>7 shared files</a><span id="showMoreBlock_65" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>13.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>anden21@student.sdu.dk</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_66');")>6 shared files</a><span id="showMoreBlock_66" style="display: none;">
+<br>WHModule/target/test-classes/org/example/AppTest.class
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>AGVModule/pom.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>14.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_67');")>6 shared files</a><span id="showMoreBlock_67" style="display: none;">
+<br>.idea/misc.xml
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+<tr>
+<td>15.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>
+ <a href="javascript:showHide('showMoreBlock_68');")>5 shared files</a><span id="showMoreBlock_68" style="display: none;">
+<br>.idea/compiler.xml
+<br>ASModule/target/test-classes/org/example/AppTest.class
+<br>ASModule/target/classes/org/example/App.class
+<br>.idea/encodings.xml
+<br>.idea/runConfigurations.xml
+</span>
+</td>
+</tr>
+</table>
+</div>
+<h3 style="margin-top: 20px">Most Connected Contributors</h2>
+<div style="max-height: 600px; overflow-y: scroll; overflow-x: hidden;">
+<table>
+<th></th>
+<th>Contributor</th>
+<th># connections</th>
+<th># commits</th>
+<tr>
+<td>1.</td>
+<td>crose19@student.sdu.dk</td>
+<td>5</td>
+<td>22</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>91126094+harun-abdi@users.noreply.github.com</td>
+<td>5</td>
+<td>12</td>
+</tr>
+<tr>
+<td>3.</td>
+<td>anden21@student.sdu.dk</td>
+<td>5</td>
+<td>8</td>
+</tr>
+<tr>
+<td>4.</td>
+<td>91126091+vi-the@users.noreply.github.com</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>5.</td>
+<td>92362718+miffan20@users.noreply.github.com</td>
+<td>5</td>
+<td>6</td>
+</tr>
+<tr>
+<td>6.</td>
+<td>90039392+pizzafuglen@users.noreply.github.com</td>
+<td>5</td>
+<td>4</td>
+</tr>
+</table>
+</div>
+<p style="margin-bottom: 0; margin-top: 10px;">C-median: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">A half of the contributors has more than 5.0 connections, and a half has less than this number.</p>
+<p style="margin-bottom: 0;">C-mean: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 20px">An average number of connections a contributor has with other contributors.</p>
+<p style="margin-bottom: 0;">C-index: 5.0</p>
+<p style="color: grey; font-size: 80%; margin-bottom: 40px">There are 5.0 contributors with 5.0 or more connections.</p>
+</div>
+<div id="data" class="tabcontent" style="display: none">
+<ul>
+<li>
+<a style='text-decoration: none' target='_blank' href='../data/text/contributors.txt'>Contributors' details...</a>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

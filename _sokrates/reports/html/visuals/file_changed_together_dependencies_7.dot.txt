@@ -1,0 +1,76 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="deepskyblue2"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+
+
+
+    "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]" [label=" 8 ", penwidth="8", color="#00688bDB"];
+    "[AGVModule/src/main/java/org/AGV/AGVHandler.java]" -- "[AGVModule/src/main/java/org/AGV/AGVController.java]" [label=" 7 ", penwidth="7", color="#00688bC9"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]" [label=" 6 ", penwidth="6", color="#00688bB7"];
+    "[ASModule/src/main/java/org/example/Mqtt_Client.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" [label=" 6 ", penwidth="6", color="#00688bB7"];
+    "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "[ASModule/src/main/java/org/example/OnMessageCallback.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client.java]" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "[AGVModule/src/main/java/org/AGV/HTTPServer.java]" -- "[AGVModule/src/main/java/org/AGV/AGVHandler.java]" [label=" 5 ", penwidth="5", color="#00688bA5"];
+    "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]" -- "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[ASModule/src/main/java/org/example/OnMessageCallback2.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[ASModule/src/main/java/org/example/OnMessageCallback2.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client.java]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[AGVModule/src/main/java/org/AGV/DBhandler.java]" -- "[AGVModule/src/main/java/org/AGV/AGVHandler.java]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[AGVModule/src/main/java/org/AGV/DBhandler.java]" -- "[AGVModule/src/main/java/org/AGV/AGVController.java]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[AGVModule/src/main/java/org/AGV/HTTPServer.java]" -- "[AGVModule/src/main/java/org/AGV/AGVController.java]" [label=" 4 ", penwidth="4", color="#00688b93"];
+    "[AGVModule/src/main/java/org/AGV/d.java]" -- "[AGVModule/src/main/java/org/AGV/DBhandler.java]" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "[AGVModule/src/main/java/org/AGV/d.java]" -- "[AGVModule/src/main/java/org/AGV/AGVHandler.java]" [label=" 3 ", penwidth="3", color="#00688b82"];
+    "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[GUITest/html.html]" -- "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[GUITest/js.js]" -- "[GUITest/html.html]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]" -- "[GUITest/html.html]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]" -- "[GUITest/js.js]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[AGVModule/src/main/java/org/AGV/HTTPServer.java]" -- "[AGVModule/src/main/java/org/AGV/DBhandler.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[AGVModule/src/main/java/org/AGV/d.java]" -- "[AGVModule/src/main/java/org/AGV/AGVController.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]" -- "[GUITest/js.js]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[GUITest/html.html]" -- "[ASModule/src/main/java/org/example/Mqtt_Client.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[AGVModule/src/main/java/org/AGV/d.java]" -- "[AGVModule/src/main/java/org/AGV/HTTPServer.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]" -- "[GUITest/html.html]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[GUITest/js.js]" -- "[ASModule/src/main/java/org/example/Mqtt_Client.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[GUITest/js.js]" -- "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]" -- "[GUITest/js.js]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]" -- "[GUITest/html.html]" [label=" 2 ", penwidth="2", color="#00688b70"];
+    "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" -- "[ASModule/src/main/java/org/example/ASServer.java]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[ASModule/src/main/java/org/example/OnMessageCallback2.java]" -- "[ASModule/src/main/java/org/example/OnMessageCallback.java]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]" -- "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" -- "[ASModule/src/main/java/org/example/ASHandler.java]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[ASModule/src/main/java/org/example/ASServer.java]" -- "[ASModule/src/main/java/org/example/ASHandler.java]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+    "[ASModule/src/main/java/org/example/OnMessageCallback.java]" -- "[ASModule/src/main/java/org/example/Mqtt_Client2.java]" [label=" 1 ", penwidth="1", color="#00688b5E"];
+
+}

@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>public static void StartMQTTClient()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public static void StartMQTTClient()</h3>
+<p style="margin-top: 4px">in <i>ASModule/src/main/java/org/example/ASServer.java [30:51]</i></p>
+<ul>
+    <li><b>9</b> lines of code</li>
+    <li><b>3</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public static void StartMQTTClient(ThreadPoolExecutor tpe){
+        // Set up the MQTT client
+        String publisherId = UUID.randomUUID().toString();
+        try {
+            IMqttClient publisher = new MqttClient(&quot;tcp://iot.eclipse.org:1883&quot;,publisherId);
+        } catch (MqttException e) {
+            throw new RuntimeException(e);
+        }
+
+        /*
+        try {
+            //mqttClient.connect();
+            //mqttClient.subscribe(&quot;tcp://broker.emqx.io:1883&quot;);
+        } catch (MqttException e) {
+            throw new RuntimeException(e);
+        }
+
+         */
+
+        // Wait for messages to arrive
+        while (true) {}
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

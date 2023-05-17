@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>ASModule/src/main/java/org/example/OnMessageCallback2.java</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">ASModule/src/main/java/org/example/OnMessageCallback2.java (<b>17</b> lines of code) (<a href="OnMessageCallback2.java">raw</a>):</h3>
+<div id="editor">package org.example;
+
+import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
+import org.eclipse.paho.client.mqttv3.MqttCallback;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+
+public class OnMessageCallback2 implements MqttCallback {
+
+    public void connectionLost(Throwable cause) {
+        // After the connection is lost, it usually reconnects here
+        System.out.println(&quot;disconnect，you can reconnect&quot;);
+    }
+
+    public void messageArrived(String topic, MqttMessage message) throws Exception {
+        // The messages obtained after subscribe will be executed here
+        System.out.println(&quot;Received message topic:&quot; + topic);
+        System.out.println(&quot;Received message Qos:&quot; + message.getQos());
+        System.out.println(&quot;Received message content:&quot; + new String(message.getPayload()));
+
+    }
+
+    public void deliveryComplete(IMqttDeliveryToken token) {
+        System.out.println(&quot;deliveryComplete---------&quot; + token.isComplete());
+    }
+
+
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/java");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>public static void main()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public static void main()</h3>
+<p style="margin-top: 4px">in <i>AGVModule/src/main/java/org/AGV/HTTPServer.java [12:25]</i></p>
+<ul>
+    <li><b>11</b> lines of code</li>
+    <li><b>2</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public static void main(String[] args) {
+        try {
+            HttpServer server = HttpServer.create(new InetSocketAddress(&quot;localhost&quot;, 8001), 0);
+            ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
+
+            server.createContext(&quot;/&quot;, new AGVHandler());//Here we create the context for the URLs that are used in the HTTP data transfer
+            server.setExecutor(threadPoolExecutor);
+
+            server.start(); //This is the heart of the system, where we assign the server-object a thread-pool, to keep it running
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

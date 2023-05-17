@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>public static void main()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public static void main()</h3>
+<p style="margin-top: 4px">in <i>ASModule/src/main/java/org/example/Mqtt_Client2.java [10:58]</i></p>
+<ul>
+    <li><b>36</b> lines of code</li>
+    <li><b>2</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public static void main(String[] args) {
+        String subTopic = &quot;emulator/operation&quot;;
+        String pubTopic = &quot;emulator/operation&quot;;
+        String content = &quot;A????3&quot;;
+        int qos = 2;
+        String broker = &quot;mqtt://localhost:1883/&quot;;
+        String clientId = &quot;client-1&quot;;
+        MemoryPersistence persistence = new MemoryPersistence();
+
+        try {
+            MqttClient client = new MqttClient(broker, clientId);
+
+            // MQTT connection option
+            MqttConnectOptions connOpts = new MqttConnectOptions();
+            // retain session
+            connOpts.setCleanSession(true);
+            // set callback
+            client.setCallback(new OnMessageCallback()); // ved ikke hvad den g&oslash;r
+            // establish a connection
+            System.out.println(&quot;Connecting to broker: &quot; + broker);
+            client.connect(connOpts);
+
+            System.out.println(&quot;Connected&quot;);
+
+            // Subscribe
+            client.subscribe(subTopic);
+
+
+            // Required parameters for message publishing
+            System.out.println(&quot;Publishing message: &quot; + content);
+            System.out.println(&quot;-----------------------&quot;);
+            MqttMessage message = new MqttMessage(content.getBytes());
+            message.setQos(qos);
+            client.publish(pubTopic, message);
+            System.out.println(&quot;Message published&quot;);
+
+            client.disconnect();
+            System.out.println(&quot;Disconnected&quot;);
+            client.close();
+            System.exit(0);
+        } catch (MqttException me) {
+            System.out.println(&quot;reason &quot; + me.getReasonCode());
+            System.out.println(&quot;msg &quot; + me.getMessage());
+            System.out.println(&quot;loc &quot; + me.getLocalizedMessage());
+            System.out.println(&quot;cause &quot; + me.getCause());
+            System.out.println(&quot;excep &quot; + me);
+            me.printStackTrace();
+        }
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

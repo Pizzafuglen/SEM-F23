@@ -1,0 +1,6 @@
+Path	Lines of Code
+AGVModule/src/main/java/org/AGV/AGVController.java	46
+AGVModule/src/main/java/org/AGV/AGVHandler.java	71
+AGVModule/src/main/java/org/AGV/DBhandler.java	79
+AGVModule/src/main/java/org/AGV/HTTPServer.java	18
+AGVModule/src/main/java/org/AGV/d.java	21

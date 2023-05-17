@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>ASModule/src/main/java/org/example/ASServer.java</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">ASModule/src/main/java/org/example/ASServer.java (<b>36</b> lines of code) (<a href="ASServer.java">raw</a>):</h3>
+<div id="editor">package org.example;
+
+import com.sun.net.httpserver.HttpServer;
+import org.eclipse.paho.client.mqttv3.IMqttClient;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttException;
+
+import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.util.UUID;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
+
+
+public class ASServer {
+    public static void StartServer(ThreadPoolExecutor tpe) {
+        HttpServer hs;
+
+        try {
+            hs = HttpServer.create(new InetSocketAddress(&quot;localhost&quot;, 8001), 0);
+            hs.createContext(&quot;/1/&quot;, new ASHandler());
+
+            hs.setExecutor(tpe);
+            hs.start();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static void StartMQTTClient(ThreadPoolExecutor tpe){
+        // Set up the MQTT client
+        String publisherId = UUID.randomUUID().toString();
+        try {
+            IMqttClient publisher = new MqttClient(&quot;tcp://iot.eclipse.org:1883&quot;,publisherId);
+        } catch (MqttException e) {
+            throw new RuntimeException(e);
+        }
+
+        /*
+        try {
+            //mqttClient.connect();
+            //mqttClient.subscribe(&quot;tcp://broker.emqx.io:1883&quot;);
+        } catch (MqttException e) {
+            throw new RuntimeException(e);
+        }
+
+         */
+
+        // Wait for messages to arrive
+        while (true) {}
+    }
+
+    public static void main(String[] args) {
+        ThreadPoolExecutor tpe = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
+
+        ASServer.StartServer(tpe);
+    }
+}
+
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/java");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

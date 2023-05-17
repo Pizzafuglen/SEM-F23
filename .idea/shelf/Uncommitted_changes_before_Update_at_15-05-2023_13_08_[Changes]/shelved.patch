@@ -1,0 +1,15 @@
+Index: ASModule/src/main/java/org/example/MyHttpHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.example;\r\n\r\nimport com.sun.net.httpserver.HttpExchange;\r\nimport com.sun.net.httpserver.HttpHandler;\r\nimport org.json.simple.JSONObject;\r\n\r\nimport java.io.IOException;\r\nimport java.io.InputStream;\r\nimport java.io.OutputStream;\r\n\r\npublic class MyHttpHandler implements HttpHandler {\r\n    @Override\r\n    public void handle(HttpExchange exchange) throws IOException {\r\n\r\n        if (\"GET\".equals(exchange.getRequestMethod())) {\r\n            OutputStream outputStream = exchange.getResponseBody();\r\n            String responseToBeSentBack = \"Hej Mikkel\";\r\n            exchange.sendResponseHeaders(200, responseToBeSentBack.length());\r\n        }\r\n\r\n    }\r\n}\r\n
+===================================================================
+diff --git a/ASModule/src/main/java/org/example/MyHttpHandler.java b/ASModule/src/main/java/org/example/MyHttpHandler.java
+--- a/ASModule/src/main/java/org/example/MyHttpHandler.java	
++++ b/ASModule/src/main/java/org/example/MyHttpHandler.java	
+@@ -17,6 +17,5 @@
+             String responseToBeSentBack = "Hej Mikkel";
+             exchange.sendResponseHeaders(200, responseToBeSentBack.length());
+         }
+-
+     }
+ }

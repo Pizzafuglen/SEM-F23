@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>public void messageArrived()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public void messageArrived()</h3>
+<p style="margin-top: 4px">in <i>ASModule/src/main/java/org/example/OnMessageCallback.java [14:19]</i></p>
+<ul>
+    <li><b>5</b> lines of code</li>
+    <li><b>1</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public void messageArrived(String topic, MqttMessage message) throws Exception {
+        // The messages obtained after subscribe will be executed here
+        System.out.println(&quot;Received message topic:&quot; + topic);
+        System.out.println(&quot;Received message Qos:&quot; + message.getQos());
+        System.out.println(&quot;Received message content:&quot; + new String(message.getPayload()));
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d110668c-6198-4361-8481-6f7fcc5c4402" name="Changes" comment="Construction of the FlowServer and FlowHandler">
+      <change afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_13_08_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_13_08_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../53c11f24-724c-4c65-8104-3fef7d2ae66b-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/Callback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/MQTTHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/TestPublish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/Callback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/MQTTHandler$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/Mqtt_Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/Mqtt_Client2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/OnMessageCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/OnMessageCallback2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/analysisResults.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/buildAndDeploymentFilesPaths.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/concerns.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/contributors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/dependencies.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/duplicates.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/executionTimes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/executionTimes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/extra_analysis/config_by_file_age.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/extra_analysis/config_by_file_change_frequency.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/extra_analysis/config_by_file_freshness.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/extra_analysis/config_original.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/files.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/generatedFilesPaths.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/logical_decompositions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/mainFiles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/mainFilesPaths.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/otherFilesPaths.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/testFiles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/testFilesPaths.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_build_and_deployment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_component_primary_AGVModule.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_component_primary_ASModule.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_component_primary_FlowController.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_component_primary_GUITest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_component_primary_WHModule.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_concern_general_TODOs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_concern_general_Unclassified.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_generated.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_main.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_other.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/aspect_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/contributors.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/controls.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/dependencies_primary.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/duplicates.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/excluded_files_ignored_extensions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/excluded_files_ignored_rules.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/mainFiles.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/mainFilesWithHistory.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/mainFilesWithoutHistory.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/metrics.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/metrics_trend.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/metrics_trend_conditional_complexity_loc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/metrics_trend_loc_duplication.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/metrics_trend_loc_file_size.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/metrics_trend_loc_logical_decompositions.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/metrics_trend_loc_per_extension.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/metrics_trend_unit_size_loc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/temporal_dependencies.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/temporal_dependencies_30_days.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/temporal_dependencies_different_folders.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/temporal_dependencies_different_folders_30_days.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/textualSummary.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/unit_duplicates.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/text/units.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/data/units.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/Commits.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/Components.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/ConditionalComplexity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/Contributors.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/Controls.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/Duplication.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/FeaturesOfInterest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/FileAge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/FileChangeFrequency.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/FileSize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/FileTemporalDependencies.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/Metrics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/Notes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/SourceCodeOverview.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/Trend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/UnitSize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/bubble_chart_components_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_1.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_1_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_3.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_3_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_4.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_4_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_6.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_6_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_7.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_7_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_9.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_9_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_with_commits_2_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_with_commits_5_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/file_changed_together_dependencies_with_commits_8_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/files_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/force_3d_dependencies_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/logical_decomposition_file_changed_together_dependencies_1.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/logical_decomposition_file_changed_together_dependencies_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_180_5.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_180_5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_180_5_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_180_5_force_3d_only_shared_file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_30_1.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_30_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_30_1_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_30_1_force_3d_only_shared_file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_365_7.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_365_7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_365_7_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_365_7_force_3d_only_shared_file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_90_3.dot.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_90_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_90_3_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_90_3_force_3d_only_shared_file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_via_files_180_6_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_via_files_180_6_force_3d_only_shared_file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_via_files_30_2_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_via_files_30_2_force_3d_only_shared_file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_via_files_365_8_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_via_files_365_8_force_3d_only_shared_file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_via_files_90_4_force_3d.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/people_dependencies_via_files_90_4_force_3d_only_shared_file.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/racing_charts_component_commits_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/racing_charts_component_commits_12_months_window_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/tree_map_components_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/units_3d_complexity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/units_3d_size.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_build.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_commits.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_commits_180_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_commits_30_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_commits_365_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_commits_90_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_contributors_180_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_contributors_30_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_contributors_365_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_contributors_90_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_contributors_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_generated.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_age_coloring.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_age_coloring_categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_contributors_count_coloring.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_contributors_count_coloring_categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_freshness_coloring.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_freshness_coloring_categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_loc_coloring.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_loc_coloring_categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_update_frequency_coloring.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_main_update_frequency_coloring_categories.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_other.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_circles_test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_build.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_commits.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_commits_180_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_commits_30_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_commits_365_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_commits_90_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_contributors_180_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_contributors_30_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_contributors_365_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_contributors_90_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_contributors_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_generated.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_other.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/html/visuals/zoomable_sunburst_test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_duplicates/longest_duplicates_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_duplicates/longest_duplicates_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_duplicates/longest_duplicates_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_1.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_10.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_11.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_12.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_13.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_14.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_15.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_16.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_17.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_18.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_19.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_2.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_20.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_21.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_22.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_23.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_24.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_25.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_26.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_27.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_28.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_29.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_3.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_30.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_31.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_32.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_33.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_34.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_35.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_36.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_37.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_38.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_39.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_4.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_40.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_41.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_42.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_43.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_44.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_5.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_6.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_7.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_8.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/longest_unit/longest_unit_9.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_1.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_10.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_11.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_12.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_13.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_14.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_15.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_16.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_17.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_18.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_19.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_2.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_20.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_21.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_22.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_23.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_24.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_25.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_26.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_27.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_28.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_29.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_3.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_30.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_31.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_32.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_33.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_34.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_35.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_36.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_37.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_38.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_39.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_4.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_40.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_41.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_42.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_43.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_44.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_5.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_6.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_7.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_8.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/most_complex_unit/most_complex_unit_9.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/fragments/unit_duplicates/unit_duplicates_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/AGVController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/AGVController.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/AGVHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/AGVHandler.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/DBhandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/DBhandler.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/HTTPServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/HTTPServer.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/d.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/AGVModule/src/main/java/org/AGV/d.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/ASHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/ASHandler.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/ASServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/ASServer.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/Callback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/Callback.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/Mqtt_Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/Mqtt_Client.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/Mqtt_Client2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/Mqtt_Client2.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/OnMessageCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/OnMessageCallback.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/OnMessageCallback2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/OnMessageCallback2.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/ASModule/src/main/java/org/example/Test.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/FlowController/src/main/java/com/f23/javaserver/FlowHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/FlowController/src/main/java/com/f23/javaserver/FlowHandler.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/FlowController/src/main/java/com/f23/javaserver/FlowServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/FlowController/src/main/java/com/f23/javaserver/FlowServer.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/GUITest/html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/GUITest/html.html.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/GUITest/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/GUITest/js.js.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/WHModule/src/main/java/com/f23/javaserver/WHHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/WHModule/src/main/java/com/f23/javaserver/WHHandler.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/WHModule/src/main/java/com/f23/javaserver/WHServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/WHModule/src/main/java/com/f23/javaserver/WHServer.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/WHModule/src/main/java/com/f23/javaserver/WSDLClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../_sokrates/reports/src/main/WHModule/src/main/java/com/f23/javaserver/WSDLClient.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bb9607ff-d3f4-444e-93b8-0bfb95ffd14b-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c215f3eb-d577-4d54-8b4c-d79a9899f0a6-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c2714ff1-12e7-4454-9e9e-a7bbea2b1b3b-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c8ebc0ae-76ca-43a6-b9af-f1b2351c1ce2-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../c9c2fdfe-2213-4eab-84a2-76b75e896946-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cd0d309d-7de7-4036-ba82-e5a7f25a1490-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../d4554fc8-c9b2-4e40-8ce6-8b19824242bd-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../e23d810a-2ae6-4321-ad8c-f8b40a63d246-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../f8f6b1f7-d963-4ceb-8235-99cff30393da-tcplocalhost1883/.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_11_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_11_40__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/Mqtt_Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/Mqtt_Client2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/OnMessageCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/OnMessageCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/src/test/java/org/example/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/src/test/java/org/example/AppMQTTHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../git-history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../git-history.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\PHP\php.exe" />
+  <component name="ProjectId" id="2PVURRh5RRe6D4zqehe57Lmslgp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d110668c-6198-4361-8481-6f7fcc5c4402" name="Changes" comment="" />
+      <created>1683541738185</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683541738185</updated>
+      <workItem from="1683541741461" duration="1310000" />
+      <workItem from="1683699370158" duration="28000" />
+      <workItem from="1684136924807" duration="25000" />
+      <workItem from="1684136962603" duration="3246000" />
+      <workItem from="1684342085417" duration="598000" />
+    </task>
+    <task id="LOCAL-00001" summary="Construction of the FlowServer and FlowHandler">
+      <created>1683542440656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1683542440656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Construction of the FlowServer and FlowHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Construction of the FlowServer and FlowHandler" />
+  </component>
+</project>

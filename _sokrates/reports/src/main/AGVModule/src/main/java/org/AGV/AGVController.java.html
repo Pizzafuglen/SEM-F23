@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>AGVModule/src/main/java/org/AGV/AGVController.java</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">AGVModule/src/main/java/org/AGV/AGVController.java (<b>46</b> lines of code) (<a href="AGVController.java">raw</a>):</h3>
+<div id="editor">package org.AGV;
+
+
+import com.google.gson.JsonObject;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
+import static org.AGV.DBhandler.setData;
+
+public class AGVController {
+
+    AGVHandler AGV = new AGVHandler();
+
+
+    private static final String SERVER_URL = &quot;http://localhost:8082&quot;;
+
+    private static final MediaType JSON = MediaType.parse(&quot;application/json; charset=utf-8&quot;);
+
+    private static final OkHttpClient client = new OkHttpClient(); //&aelig;ndre til httpclient
+
+    public static void main(String[] args) throws IOException { // klasse for sig selv
+        handleGetRequest();
+        //handlePostRequest(&quot;{\&quot;State\&quot;:1,\&quot;Program name\&quot;:\&quot;MoveToStorageOperation\&quot;}&quot;);
+}
+
+
+    public static String handlePostRequest(String json) throws IOException, JSONException {
+//String json = &quot;{\&quot;State\&quot;:1,\&quot;Program name\&quot;:\&quot;MoveToAssemblyOperation\&quot;}&quot;;
+        System.out.println(&quot;landet&quot;);
+        RequestBody body = RequestBody.create(JSON, json);
+        Request request = new Request.Builder()
+                .url(SERVER_URL + &quot;/v1/status&quot;)
+                .put(body)
+                .build();
+
+        Response response = client.newCall(request).execute();
+        //System.out.println(response.body().string());
+
+        String responseBody = response.body().string();
+        //String cleanedInput = responseBody.replaceAll(&quot;[{}]&quot;, &quot;&quot;);
+
+
+        JSONObject jsonObject = new JSONObject(responseBody);
+
+        int battery = jsonObject.getInt(&quot;battery&quot;);
+        String programName = jsonObject.getString(&quot;program name&quot;);
+        int state = jsonObject.getInt(&quot;state&quot;);
+
+        System.out.println(&quot;Battery: &quot; + battery);
+        System.out.println(&quot;Program Name: &quot; + programName);
+        System.out.println(&quot;State: &quot; + state);
+
+        DBhandler.setData(programName, state, battery);
+
+
+        return json;
+    }
+
+    // metode til at execute
+
+
+
+    //test status method
+    public static void handleGetRequest() throws IOException {
+        //GET request
+        Request request = new Request.Builder()
+                .url(SERVER_URL + &quot;/v1/status&quot;)
+                .build();
+
+        Response response = client.newCall(request).execute();
+        System.out.println(&quot;GET request response: &quot; + response.body().string());
+    }
+
+
+
+}
+
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/java");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

@@ -1,0 +1,7 @@
+Contributor	#commits (all time)	#commits (30 days)	#commits (90 days)	#commits (180 days)	#commits (365 days)	first commit	last commit
+crose19@student.sdu.dk	22	22	22	22	22	2023-04-17	2023-05-15	37%
+91126094+harun-abdi@users.noreply.github.com	12	12	12	12	12	2023-04-24	2023-05-15	20%
+anden21@student.sdu.dk	8	8	8	8	8	2023-04-24	2023-05-15	13%
+91126091+vi-the@users.noreply.github.com	6	6	6	6	6	2023-04-24	2023-05-11	10%
+92362718+miffan20@users.noreply.github.com	6	6	6	6	6	2023-04-24	2023-04-24	10%
+90039392+pizzafuglen@users.noreply.github.com	4	4	4	4	4	2023-04-24	2023-05-15	6%

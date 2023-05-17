@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>public static String handlePostRequest()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public static String handlePostRequest()</h3>
+<p style="margin-top: 4px">in <i>AGVModule/src/main/java/org/AGV/AGVController.java [34:64]</i></p>
+<ul>
+    <li><b>19</b> lines of code</li>
+    <li><b>1</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public static String handlePostRequest(String json) throws IOException, JSONException {
+//String json = &quot;{\&quot;State\&quot;:1,\&quot;Program name\&quot;:\&quot;MoveToAssemblyOperation\&quot;}&quot;;
+        System.out.println(&quot;landet&quot;);
+        RequestBody body = RequestBody.create(JSON, json);
+        Request request = new Request.Builder()
+                .url(SERVER_URL + &quot;/v1/status&quot;)
+                .put(body)
+                .build();
+
+        Response response = client.newCall(request).execute();
+        //System.out.println(response.body().string());
+
+        String responseBody = response.body().string();
+        //String cleanedInput = responseBody.replaceAll(&quot;[{}]&quot;, &quot;&quot;);
+
+
+        JSONObject jsonObject = new JSONObject(responseBody);
+
+        int battery = jsonObject.getInt(&quot;battery&quot;);
+        String programName = jsonObject.getString(&quot;program name&quot;);
+        int state = jsonObject.getInt(&quot;state&quot;);
+
+        System.out.println(&quot;Battery: &quot; + battery);
+        System.out.println(&quot;Program Name: &quot; + programName);
+        System.out.println(&quot;State: &quot; + state);
+
+        DBhandler.setData(programName, state, battery);
+
+
+        return json;
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

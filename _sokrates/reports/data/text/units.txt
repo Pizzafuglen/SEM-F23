@@ -1,0 +1,396 @@
+id: 1
+unit: public static void main()
+file: ASModule/src/main/java/org/example/Mqtt_Client2.java
+start line: 10
+end line: 58
+size: 36 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 2
+unit: private String operation()
+file: AGVModule/src/main/java/org/AGV/AGVHandler.java
+start line: 42
+end line: 82
+size: 30 LOC
+McCabe index: 9
+number of parameters: 1
+
+id: 3
+unit: public static void initialiseDatabase()
+file: AGVModule/src/main/java/org/AGV/DBhandler.java
+start line: 29
+end line: 57
+size: 28 LOC
+McCabe index: 6
+number of parameters: 0
+
+id: 4
+unit: public static String handlePostRequest()
+file: AGVModule/src/main/java/org/AGV/AGVController.java
+start line: 34
+end line: 64
+size: 19 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 5
+unit: private void handleResponse()
+file: AGVModule/src/main/java/org/AGV/AGVHandler.java
+start line: 86
+end line: 102
+size: 13 LOC
+McCabe index: 1
+number of parameters: 2
+
+id: 6
+unit: public static void initialiseTable()
+file: AGVModule/src/main/java/org/AGV/DBhandler.java
+start line: 62
+end line: 74
+size: 13 LOC
+McCabe index: 2
+number of parameters: 0
+
+id: 7
+unit: public void handle()
+file: WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+start line: 12
+end line: 26
+size: 13 LOC
+McCabe index: 4
+number of parameters: 1
+
+id: 8
+unit: public void handle()
+file: AGVModule/src/main/java/org/AGV/AGVHandler.java
+start line: 25
+end line: 40
+size: 12 LOC
+McCabe index: 4
+number of parameters: 1
+
+id: 9
+unit: public static void main()
+file: AGVModule/src/main/java/org/AGV/d.java
+start line: 11
+end line: 33
+size: 12 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 10
+unit: public static void main()
+file: ASModule/src/main/java/org/example/Test.java
+start line: 10
+end line: 26
+size: 12 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 11
+unit: public static Connection getConnection()
+file: AGVModule/src/main/java/org/AGV/DBhandler.java
+start line: 15
+end line: 25
+size: 11 LOC
+McCabe index: 3
+number of parameters: 3
+
+id: 12
+unit: public static void main()
+file: AGVModule/src/main/java/org/AGV/HTTPServer.java
+start line: 12
+end line: 25
+size: 11 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 13
+unit: public static void StartServer()
+file: ASModule/src/main/java/org/example/ASServer.java
+start line: 16
+end line: 28
+size: 11 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 14
+unit: public static void main()
+file: ASModule/src/main/java/org/example/Mqtt_Client.java
+start line: 10
+end line: 30
+size: 11 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 15
+unit: public static void StartServer()
+file: FlowController/src/main/java/com/f23/javaserver/FlowServer.java
+start line: 11
+end line: 23
+size: 11 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 16
+unit: public static void StartServer()
+file: WHModule/src/main/java/com/f23/javaserver/WHServer.java
+start line: 11
+end line: 23
+size: 11 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 17
+unit: private void httpResponse()
+file: ASModule/src/main/java/org/example/ASHandler.java
+start line: 20
+end line: 32
+size: 10 LOC
+McCabe index: 1
+number of parameters: 2
+
+id: 18
+unit: private void httpResponse()
+file: WHModule/src/main/java/com/f23/javaserver/WHHandler.java
+start line: 28
+end line: 40
+size: 10 LOC
+McCabe index: 1
+number of parameters: 2
+
+id: 19
+unit: public static void setData()
+file: AGVModule/src/main/java/org/AGV/DBhandler.java
+start line: 76
+end line: 86
+size: 9 LOC
+McCabe index: 2
+number of parameters: 3
+
+id: 20
+unit: public static void StartMQTTClient()
+file: ASModule/src/main/java/org/example/ASServer.java
+start line: 30
+end line: 51
+size: 9 LOC
+McCabe index: 3
+number of parameters: 1
+
+id: 21
+unit: public static void resetDatabase()
+file: AGVModule/src/main/java/org/AGV/DBhandler.java
+start line: 87
+end line: 94
+size: 8 LOC
+McCabe index: 2
+number of parameters: 0
+
+id: 22
+unit: public static void handleGetRequest()
+file: AGVModule/src/main/java/org/AGV/AGVController.java
+start line: 71
+end line: 79
+size: 7 LOC
+McCabe index: 1
+number of parameters: 0
+
+id: 23
+unit: function loadCurrentOperation()
+file: GUITest/js.js
+start line: 1
+end line: 9
+size: 6 LOC
+McCabe index: 1
+number of parameters: 0
+
+id: 24
+unit: public static void main()
+file: AGVModule/src/main/java/org/AGV/DBhandler.java
+start line: 8
+end line: 12
+size: 5 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 25
+unit: public void messageArrived()
+file: ASModule/src/main/java/org/example/OnMessageCallback.java
+start line: 14
+end line: 19
+size: 5 LOC
+McCabe index: 1
+number of parameters: 2
+
+id: 26
+unit: public void messageArrived()
+file: ASModule/src/main/java/org/example/OnMessageCallback2.java
+start line: 14
+end line: 20
+size: 5 LOC
+McCabe index: 1
+number of parameters: 2
+
+id: 27
+unit: public static void main()
+file: ASModule/src/main/java/org/example/ASServer.java
+start line: 53
+end line: 57
+size: 4 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 28
+unit: public void handle()
+file: FlowController/src/main/java/com/f23/javaserver/FlowHandler.java
+start line: 10
+end line: 15
+size: 4 LOC
+McCabe index: 2
+number of parameters: 1
+
+id: 29
+unit: public static void main()
+file: FlowController/src/main/java/com/f23/javaserver/FlowServer.java
+start line: 24
+end line: 28
+size: 4 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 30
+unit: public static void main()
+file: WHModule/src/main/java/com/f23/javaserver/WHServer.java
+start line: 25
+end line: 29
+size: 4 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 31
+unit: public static String pickSpecificTray()
+file: WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+start line: 12
+end line: 15
+size: 4 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 32
+unit: public static String putSpecificTray()
+file: WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+start line: 17
+end line: 20
+size: 4 LOC
+McCabe index: 1
+number of parameters: 2
+
+id: 33
+unit: public static void main()
+file: AGVModule/src/main/java/org/AGV/AGVController.java
+start line: 28
+end line: 31
+size: 3 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 34
+unit: public void handle()
+file: ASModule/src/main/java/org/example/ASHandler.java
+start line: 12
+end line: 18
+size: 3 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 35
+unit: public void connectionLost()
+file: ASModule/src/main/java/org/example/OnMessageCallback.java
+start line: 9
+end line: 12
+size: 3 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 36
+unit: public void deliveryComplete()
+file: ASModule/src/main/java/org/example/OnMessageCallback.java
+start line: 21
+end line: 23
+size: 3 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 37
+unit: public void connectionLost()
+file: ASModule/src/main/java/org/example/OnMessageCallback2.java
+start line: 9
+end line: 12
+size: 3 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 38
+unit: public void deliveryComplete()
+file: ASModule/src/main/java/org/example/OnMessageCallback2.java
+start line: 22
+end line: 24
+size: 3 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 39
+unit: public static String getWHInventory()
+file: WHModule/src/main/java/com/f23/javaserver/WSDLClient.java
+start line: 8
+end line: 10
+size: 3 LOC
+McCabe index: 1
+number of parameters: 0
+
+id: 40
+unit: public void connectionLost()
+file: ASModule/src/main/java/org/example/Callback.java
+start line: 9
+end line: 11
+size: 2 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 41
+unit: public void messageArrived()
+file: ASModule/src/main/java/org/example/Callback.java
+start line: 14
+end line: 16
+size: 2 LOC
+McCabe index: 1
+number of parameters: 2
+
+id: 42
+unit: public void deliveryComplete()
+file: ASModule/src/main/java/org/example/Callback.java
+start line: 19
+end line: 21
+size: 2 LOC
+McCabe index: 1
+number of parameters: 1
+
+id: 43
+unit: xhttp.onreadystatechange = function()
+file: GUITest/js.js
+start line: 4
+end line: 6
+size: 2 LOC
+McCabe index: 1
+number of parameters: 0
+
+id: 44
+unit: xhttp.onreadystatechange = function()
+file: GUITest/js.js
+start line: 13
+end line: 15
+size: 2 LOC
+McCabe index: 1
+number of parameters: 0
+

@@ -1,0 +1,18 @@
+duplicated block id: 1
+size: 9 cleaned lines of code
+in 2 files:
+ - ASModule/src/main/java/org/example/ASHandler.java (20:31)
+ - WHModule/src/main/java/com/f23/javaserver/WHHandler.java (28:39)
+
+duplicated block id: 2
+size: 8 cleaned lines of code
+in 2 files:
+ - ASModule/src/main/java/org/example/OnMessageCallback.java (9:22)
+ - ASModule/src/main/java/org/example/OnMessageCallback2.java (9:23)
+
+duplicated block id: 3
+size: 6 cleaned lines of code
+in 2 files:
+ - FlowController/src/main/java/com/f23/javaserver/FlowServer.java (18:25)
+ - WHModule/src/main/java/com/f23/javaserver/WHServer.java (18:26)
+

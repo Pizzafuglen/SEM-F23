@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ad42c0e-2278-4b83-8271-f8080ecc6fe2" name="Changes" comment="Changes made to WHHandler.java and WSDLClient.java">
+      <change afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_13_08_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_13_08_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../386054ca-4ede-41f7-93d4-6ce3bb7d7a56-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/Callback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/Callback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/Mqtt_Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/Mqtt_Client2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/OnMessageCallback.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/OnMessageCallback2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../adb95929-dcc4-40c8-85d5-78e5d31e0dd1-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cfed5c98-8492-436d-a01c-5fca9f1ee049-tcplocalhost1883/.lck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client-1-tcpbrokeremqxio1883/.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_11_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_11_40__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/Mqtt_Client2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/Mqtt_Client2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/OnMessageCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/OnMessageCallback.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$/.." source="main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\PHP\php.exe" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2OrcPRZfYTUSlWv0bjhyjAcPeai" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TODO_SCOPE": "All Places",
+    "WebServerToolWindowFactoryState": "false",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="settings.xml" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.WHServer">
+    <configuration name="Implementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Implementation" />
+      <module name="WHModule" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WHServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.f23.javaserver.WHServer" />
+      <module name="WHModule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.f23.javaserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WHServer" />
+        <item itemvalue="Application.Implementation" />
+        <item itemvalue="Application.WHServer" />
+        <item itemvalue="Application.Implementation" />
+        <item itemvalue="Application.WHServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ad42c0e-2278-4b83-8271-f8080ecc6fe2" name="Changes" comment="" />
+      <created>1682322122100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682322122100</updated>
+      <workItem from="1682322125560" duration="10110000" />
+      <workItem from="1682333469687" duration="4896000" />
+      <workItem from="1682338458983" duration="337000" />
+      <workItem from="1682923144212" duration="176000" />
+      <workItem from="1682923334113" duration="11456000" />
+      <workItem from="1682937490995" duration="108000" />
+      <workItem from="1682961242814" duration="2760000" />
+      <workItem from="1683061436188" duration="598000" />
+      <workItem from="1683110392699" duration="779000" />
+      <workItem from="1683196910406" duration="5073000" />
+      <workItem from="1683532944646" duration="7358000" />
+      <workItem from="1683541963180" duration="1102000" />
+      <workItem from="1684140594415" duration="1204000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial functionality created using wsimport&#10;- Remember to use the IES object as the base for all wsdl calls">
+      <created>1682332485288</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682332485288</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Small change">
+      <created>1682333487798</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682333487798</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Created 3 classes&#10;- WHHandler.java&#10;- WHServer.java&#10;- WSDLClient.java">
+      <created>1682334965178</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682334965178</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Work begun on the WHHandler.java and WHServer.java">
+      <created>1682338226277</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682338226277</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Work started on the implementation of the WHHandler.java and he WSDLClient.java&#10;&#10;- handleGet is in the works&#10;- getWHInventory, pickSpecificTray, putSpecificTray all implemented">
+      <created>1682930480544</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682930480544</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fix">
+      <created>1682931018905</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682931018905</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Small changes&#10;- Created Tester.html &amp; TestJS.js">
+      <created>1682937549427</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682937549427</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Small changes&#10;- Changed Tester.html &amp; TestJS.js">
+      <created>1682963984451</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682963984452</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Changes made to the WHHandler.java&#10;- Changed the way the handle method works, and reduced the amount of methods">
+      <created>1683205470654</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683205470654</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changes made to WHHandler.java and WSDLClient.java">
+      <created>1683541502996</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683541502996</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial functionality created using wsimport&#10;- Remember to use the IES object as the base for all wsdl calls" />
+    <MESSAGE value="Small change" />
+    <MESSAGE value="Created 3 classes&#10;- WHHandler.java&#10;- WHServer.java&#10;- WSDLClient.java" />
+    <MESSAGE value="Work begun on the WHHandler.java and WHServer.java" />
+    <MESSAGE value="Work started on the implementation of the WHHandler.java and he WSDLClient.java&#10;&#10;- handleGet is in the works&#10;- getWHInventory, pickSpecificTray, putSpecificTray all implemented" />
+    <MESSAGE value="Fix" />
+    <MESSAGE value="Small changes&#10;- Created Tester.html &amp; TestJS.js" />
+    <MESSAGE value="Small changes&#10;- Changed Tester.html &amp; TestJS.js" />
+    <MESSAGE value="Changes made to the WHHandler.java&#10;- Changed the way the handle method works, and reduced the amount of methods" />
+    <MESSAGE value="Changes made to WHHandler.java and WSDLClient.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes made to WHHandler.java and WSDLClient.java" />
+  </component>
+</project>

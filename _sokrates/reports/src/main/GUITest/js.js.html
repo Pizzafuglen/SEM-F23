@@ -1,0 +1,44 @@
+<html>
+<head>
+    <title>GUITest/js.js</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">GUITest/js.js (<b>15</b> lines of code) (<a href="js.js">raw</a>):</h3>
+<div id="editor">function loadCurrentOperation() {
+    console.log(&quot;hi&quot;);
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+
+    };
+    xhttp.open(&quot;GET&quot;, &quot;http://localhost:8001/&quot; + document.getElementById(&quot;operation&quot;).value, true); // post istedet for get
+    xhttp.send();
+}
+
+let loadCurrentState= () =&gt;{
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+
+    };
+    xhttp.open(&quot;GET&quot;, &quot;http://localhost:8001/2&quot;, true); 
+    xhttp.send();
+
+}</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/javascript");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

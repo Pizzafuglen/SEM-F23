@@ -1,0 +1,369 @@
+{
+  "metadata" : {
+    "name" : "SEM-F23",
+    "description" : "",
+    "tooltip" : "",
+    "logoLink" : "",
+    "links" : [ ]
+  },
+  "summary" : [ ],
+  "srcRoot" : "..",
+  "extensions" : [ "java", "xml", "patch", "txt", "md", "js", "html" ],
+  "ignore" : [ {
+    "pathPattern" : ".*/[.][a-zA-Z0-9_]+.*",
+    "contentPattern" : "",
+    "exception" : false,
+    "note" : "Hidden files and folders"
+  }, {
+    "pathPattern" : ".*/git[-]history[.]txt",
+    "contentPattern" : "",
+    "exception" : false,
+    "note" : "Git history"
+  }, {
+    "pathPattern" : ".*/git[-][a-zA-Z0-9_]+[.]txt",
+    "contentPattern" : "",
+    "exception" : false,
+    "note" : "Git data exports for sokrates analyses"
+  } ],
+  "main" : {
+    "name" : "main",
+    "sourceFileFilters" : [ {
+      "pathPattern" : ".*",
+      "contentPattern" : "",
+      "exception" : false,
+      "note" : ""
+    } ],
+    "files" : [ ]
+  },
+  "test" : {
+    "name" : "test",
+    "sourceFileFilters" : [ {
+      "pathPattern" : ".*/[Tt]est/.*",
+      "contentPattern" : "",
+      "exception" : false,
+      "note" : "Test files"
+    } ],
+    "files" : [ ]
+  },
+  "generated" : {
+    "name" : "generated",
+    "sourceFileFilters" : [ {
+      "pathPattern" : ".*/generated/.*",
+      "contentPattern" : "",
+      "exception" : false,
+      "note" : "Generated files"
+    } ],
+    "files" : [ ]
+  },
+  "buildAndDeployment" : {
+    "name" : "build and deployment",
+    "sourceFileFilters" : [ {
+      "pathPattern" : ".*/pom[.]xml",
+      "contentPattern" : "",
+      "exception" : false,
+      "note" : "Maven configuration"
+    } ],
+    "files" : [ ]
+  },
+  "other" : {
+    "name" : "other",
+    "sourceFileFilters" : [ {
+      "pathPattern" : ".*[.]patch",
+      "contentPattern" : "",
+      "exception" : false,
+      "note" : "Configuration"
+    }, {
+      "pathPattern" : ".*[.]txt",
+      "contentPattern" : "",
+      "exception" : false,
+      "note" : "Text files"
+    }, {
+      "pathPattern" : ".*[.]md",
+      "contentPattern" : "",
+      "exception" : false,
+      "note" : "Markdown files"
+    }, {
+      "pathPattern" : ".*/README[.][a-z0-9]+",
+      "contentPattern" : "",
+      "exception" : false,
+      "note" : "Text files"
+    } ],
+    "files" : [ ]
+  },
+  "logicalDecompositions" : [ {
+    "name" : "file age",
+    "scope" : "main",
+    "filters" : [ ],
+    "componentsFolderDepth" : 0,
+    "minComponentsCount" : 0,
+    "components" : [ {
+      "name" : "1-30 days old",
+      "sourceFileFilters" : [ ],
+      "files" : [ "AGVModule/src/main/java/org/AGV/AGVController.java", "AGVModule/src/main/java/org/AGV/AGVHandler.java", "AGVModule/src/main/java/org/AGV/d.java", "AGVModule/src/main/java/org/AGV/DBhandler.java", "AGVModule/src/main/java/org/AGV/HTTPServer.java", "ASModule/src/main/java/org/example/ASHandler.java", "ASModule/src/main/java/org/example/ASServer.java", "ASModule/src/main/java/org/example/Mqtt_Client.java", "ASModule/src/main/java/org/example/Mqtt_Client2.java", "ASModule/src/main/java/org/example/OnMessageCallback.java", "ASModule/src/main/java/org/example/OnMessageCallback2.java", "FlowController/src/main/java/com/f23/javaserver/FlowHandler.java", "FlowController/src/main/java/com/f23/javaserver/FlowServer.java", "GUITest/html.html", "GUITest/js.js", "WHModule/src/main/java/com/f23/javaserver/WHHandler.java", "WHModule/src/main/java/com/f23/javaserver/WHServer.java", "WHModule/src/main/java/com/f23/javaserver/WSDLClient.java" ]
+    }, {
+      "name" : "31-90 days old",
+      "sourceFileFilters" : [ ],
+      "files" : [ ]
+    }, {
+      "name" : "91-180 days old",
+      "sourceFileFilters" : [ ],
+      "files" : [ ]
+    }, {
+      "name" : "181-365 year old",
+      "sourceFileFilters" : [ ],
+      "files" : [ ]
+    }, {
+      "name" : "366+ year old",
+      "sourceFileFilters" : [ ],
+      "files" : [ ]
+    } ],
+    "metaComponents" : [ ],
+    "groups" : [ ],
+    "includeRemainingFiles" : true,
+    "dependenciesFinder" : {
+      "useBuiltInDependencyFinders" : false,
+      "rules" : [ ],
+      "metaRules" : [ ]
+    },
+    "renderingOptions" : {
+      "orientation" : "TB",
+      "maxNumberOfDependencies" : 100,
+      "renderComponentsWithoutDependencies" : true,
+      "renderIndirectDependencies" : false,
+      "renderInternalIndirectDependencies" : false,
+      "reverseDirection" : false
+    },
+    "includeExternalComponents" : true,
+    "dependencyLinkThreshold" : 1,
+    "duplicationLinkThreshold" : 50,
+    "temporalLinkThreshold" : 1,
+    "maxSearchDepthLines" : 200
+  } ],
+  "concernGroups" : [ {
+    "name" : "general",
+    "concerns" : [ {
+      "name" : "TODOs",
+      "sourceFileFilters" : [ {
+        "pathPattern" : "",
+        "contentPattern" : ".*(TODO|FIXME)( |:|\t).*",
+        "exception" : false,
+        "note" : ""
+      } ],
+      "files" : [ ],
+      "textOperations" : [ ]
+    } ],
+    "metaConcerns" : [ ]
+  } ],
+  "goalsAndControls" : [ {
+    "goal" : "Keep the system simple and easy to change",
+    "description" : "Aim at keeping the system size modest (less than 200,000 LOC is good), duplication low (less than 5% is good), files small (no files longer than 1000 LOC is good), and units simple (no units with more than 25 decision points is good).",
+    "controls" : [ {
+      "metric" : "LINES_OF_CODE_MAIN",
+      "description" : "Total number of lines of main code",
+      "desiredRange" : {
+        "min" : "0",
+        "max" : "200000",
+        "tolerance" : "20000"
+      }
+    }, {
+      "metric" : "DUPLICATION_PERCENTAGE",
+      "description" : "System duplication",
+      "desiredRange" : {
+        "min" : "0",
+        "max" : "5",
+        "tolerance" : "1"
+      }
+    }, {
+      "metric" : "VERY_HIGH_RISK_FILE_SIZE_COUNT",
+      "description" : "The number of very large files",
+      "desiredRange" : {
+        "min" : "0",
+        "max" : "0",
+        "tolerance" : "1"
+      }
+    }, {
+      "metric" : "CONDITIONAL_COMPLEXITY_VERY_HIGH_RISK_COUNT",
+      "description" : "Number of very complex units",
+      "desiredRange" : {
+        "min" : "0",
+        "max" : "0",
+        "tolerance" : "1"
+      }
+    } ]
+  } ],
+  "trendAnalysis" : {
+    "saveHistory" : false,
+    "frequency" : "weekly",
+    "maxReferencePointsForAnalysis" : 20,
+    "historyFolder" : "history"
+  },
+  "fileHistoryAnalysis" : {
+    "importPath" : "",
+    "ignoreContributors" : [ ".*\\[bot\\].*" ],
+    "anonymizeContributors" : false,
+    "transformContributorEmails" : [ ]
+  },
+  "analysis" : {
+    "skipDuplication" : false,
+    "skipDependencies" : false,
+    "saveSourceFiles" : true,
+    "saveCodeFragments" : true,
+    "maxFileSizeBytes" : 1000000,
+    "maxLines" : 10000,
+    "maxLineLength" : 1000,
+    "maxTemporalDependenciesDepthDays" : 180,
+    "locDuplicationThreshold" : 10000000,
+    "minDuplicationBlockLoc" : 6,
+    "maxTopListSize" : 50,
+    "analyzerOverrides" : [ ],
+    "fileSizeThresholds" : {
+      "low" : 100,
+      "medium" : 200,
+      "high" : 500,
+      "veryHigh" : 1000
+    },
+    "fileAgeThresholds" : {
+      "low" : 30,
+      "medium" : 90,
+      "high" : 180,
+      "veryHigh" : 365
+    },
+    "fileUpdateFrequencyThresholds" : {
+      "low" : 5,
+      "medium" : 20,
+      "high" : 50,
+      "veryHigh" : 100
+    },
+    "fileContributorsCountThresholds" : {
+      "low" : 1,
+      "medium" : 5,
+      "high" : 10,
+      "veryHigh" : 25
+    },
+    "unitSizeThresholds" : {
+      "low" : 10,
+      "medium" : 20,
+      "high" : 50,
+      "veryHigh" : 100
+    },
+    "conditionalComplexityThresholds" : {
+      "low" : 5,
+      "medium" : 10,
+      "high" : 25,
+      "veryHigh" : 50
+    },
+    "customHtmlReportHeaderFragment" : "",
+    "analyzeConcernOverlaps" : false
+  },
+  "tagRules" : [ {
+    "tag" : "jenkins",
+    "color" : "#7CB9E8",
+    "pathPatterns" : [ "(|.*/)Jenkinsfile", "(|.*/)Jenkinsfile[.][a-z0-9_]+" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "travis",
+    "color" : "#7CB9E8",
+    "pathPatterns" : [ "(|.*/)[.]travis[.]ya?ml" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "github actions",
+    "color" : "#7CB9E8",
+    "pathPatterns" : [ "(|.*/)[.]github[/]workflows[/].*" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "circleci",
+    "color" : "#7CB9E8",
+    "pathPatterns" : [ "(|.*/)[.]circleci.*" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "gitlab",
+    "color" : "#7CB9E8",
+    "pathPatterns" : [ "(|.*/)[.]gitlab.*" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "maven",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)pom[.]xml" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "npm",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)package[.]json" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "yarn",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)[.]yarnrc", "(|.*/)yarn[.]lock" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "babel",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)[.]babel[.]config[.]json" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "gradle",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)build[.]gradle" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "sbt",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)build[.]sbt" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "bazel",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)BUILD[.]bazel" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "pip",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)pip[.]conf", "(|.*/)Pipfile" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "nuget",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)[.]nuget/.*", "(|.*/)[.]nuget[.]config" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "aws codebuild",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)buildspec[.]yml" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "renovate",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)renovate[.]json5?" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "dependabot",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)dependabot[.]ya?ml" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "gemfile",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)Gemfile" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "podfile",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)Podfile" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "make",
+    "color" : "#B9D9EB",
+    "pathPatterns" : [ "(|.*/)Makefile" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "docker",
+    "color" : "#A3C1AD",
+    "pathPatterns" : [ "(|.*/)Dockerfile" ],
+    "excludePathPatterns" : [ ]
+  }, {
+    "tag" : "helm",
+    "color" : "#A3C1AD",
+    "pathPatterns" : [ "(|.*/)helmfile[.]ya?ml", "(|.*/)[.]helmignore" ],
+    "excludePathPatterns" : [ ]
+  } ]
+}

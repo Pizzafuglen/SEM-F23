@@ -1,0 +1,23 @@
+file 1	file 2	# same commits	# commits file 1	# commits file 2
+GUITest/js.js	ASModule/src/main/java/org/example/Mqtt_Client2.java	2	2	7
+FlowController/src/main/java/com/f23/javaserver/FlowHandler.java	WHModule/src/main/java/com/f23/javaserver/WHHandler.java	2	4	11
+WHModule/src/main/java/com/f23/javaserver/WSDLClient.java	GUITest/js.js	2	9	2
+WHModule/src/main/java/com/f23/javaserver/WHServer.java	GUITest/js.js	2	6	2
+WHModule/src/main/java/com/f23/javaserver/WHHandler.java	GUITest/html.html	2	11	2
+WHModule/src/main/java/com/f23/javaserver/WHServer.java	GUITest/html.html	2	6	2
+WHModule/src/main/java/com/f23/javaserver/WSDLClient.java	ASModule/src/main/java/org/example/Mqtt_Client2.java	2	9	7
+WHModule/src/main/java/com/f23/javaserver/WHServer.java	ASModule/src/main/java/org/example/Mqtt_Client2.java	2	6	7
+GUITest/html.html	ASModule/src/main/java/org/example/Mqtt_Client2.java	2	2	7
+WHModule/src/main/java/com/f23/javaserver/WHHandler.java	ASModule/src/main/java/org/example/Mqtt_Client2.java	2	11	7
+WHModule/src/main/java/com/f23/javaserver/WSDLClient.java	GUITest/html.html	2	9	2
+WHModule/src/main/java/com/f23/javaserver/WHHandler.java	ASModule/src/main/java/org/example/Mqtt_Client.java	2	11	10
+WHModule/src/main/java/com/f23/javaserver/WHServer.java	ASModule/src/main/java/org/example/Mqtt_Client.java	2	6	10
+FlowController/src/main/java/com/f23/javaserver/FlowServer.java	WHModule/src/main/java/com/f23/javaserver/WSDLClient.java	2	4	9
+WHModule/src/main/java/com/f23/javaserver/WHHandler.java	GUITest/js.js	2	11	2
+WHModule/src/main/java/com/f23/javaserver/WSDLClient.java	ASModule/src/main/java/org/example/Mqtt_Client.java	2	9	10
+FlowController/src/main/java/com/f23/javaserver/FlowHandler.java	WHModule/src/main/java/com/f23/javaserver/WSDLClient.java	2	4	9
+GUITest/html.html	ASModule/src/main/java/org/example/Mqtt_Client.java	2	2	10
+GUITest/js.js	ASModule/src/main/java/org/example/Mqtt_Client.java	2	2	10
+FlowController/src/main/java/com/f23/javaserver/FlowServer.java	WHModule/src/main/java/com/f23/javaserver/WHHandler.java	2	4	11
+FlowController/src/main/java/com/f23/javaserver/FlowServer.java	WHModule/src/main/java/com/f23/javaserver/WHServer.java	1	4	6
+FlowController/src/main/java/com/f23/javaserver/FlowHandler.java	WHModule/src/main/java/com/f23/javaserver/WHServer.java	1	4	6
