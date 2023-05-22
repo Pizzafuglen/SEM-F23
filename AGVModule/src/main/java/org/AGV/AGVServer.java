@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class AGVServer {
     public static void main(String[] args) {
         try {
-            HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 8001), 0);
+            HttpServer server = HttpServer.create(new InetSocketAddress("localhost", 8002), 0);
             ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) Executors.newFixedThreadPool(10);
 
             server.createContext("/2/", new AGVHandler());//Here we create the context for the URLs that are used in the HTTP data transfer

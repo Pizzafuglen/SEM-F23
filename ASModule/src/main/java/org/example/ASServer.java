@@ -17,7 +17,7 @@ public class ASServer {
         HttpServer hs;
 
         try {
-            hs = HttpServer.create(new InetSocketAddress("localhost", 8001), 0);
+            hs = HttpServer.create(new InetSocketAddress("localhost", 8003), 0);
             hs.createContext("/3/", new ASHandler());
 
             hs.setExecutor(tpe);

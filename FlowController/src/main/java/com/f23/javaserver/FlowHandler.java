@@ -7,10 +7,12 @@ import java.io.IOException;
 
 public class FlowHandler implements HttpHandler {
     @Override
-    public void handle(HttpExchange exchange) throws IOException {
+    public void handle(HttpExchange he) throws IOException {
         String reVal;
 
-        if ()
+        if (he.getRequestURI().toString().contains("initProdDrone")) {
+
+        }
 
     }
 }

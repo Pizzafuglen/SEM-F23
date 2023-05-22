@@ -12,7 +12,7 @@ public class FlowServer {
         HttpServer hs;
 
         try {
-            hs = HttpServer.create(new InetSocketAddress("localhost",8001),0);
+            hs = HttpServer.create(new InetSocketAddress("localhost",7999),0);
             hs.createContext("/", new FlowHandler());
 
             hs.setExecutor(tpe);
