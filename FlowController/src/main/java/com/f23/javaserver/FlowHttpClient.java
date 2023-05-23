@@ -20,27 +20,108 @@ public class FlowHttpClient {
 
         return "Initiated prod with ID " + prodId;
     }
+
     public static String AGVMoveToAssemblyStation() {
-        return "test";
+        URL url;
+        try {
+            url = new URL("http://localhost:8001/2/moveToAssemblyStationOperation");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return "Moved to AssemblyStation";
     }
+
     public static String AGVMoveToWarehouse() {
-        return "test";
+        URL url;
+        try {
+            url = new URL("http://localhost:8001/2/moveToWarehouseOperation");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return "Moved to Warehouse";
     }
+
     public static String AGVPickAssemblyStation() {
-        return "test";
+        URL url;
+        try {
+            url = new URL("http://localhost:8001/2/pickAssemblyOperation");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return "Assembly picked";
     }
+
     public static String AGVPickWarehouse() {
-        return "test";
+        URL url;
+        try {
+            url = new URL("http://localhost:8001/2/pickWarehouseOperation");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return "Warehouse picked";
     }
+
     public static String AGVPutAssemblyStation() {
-        return "test";
+        URL url;
+        try {
+            url = new URL("http://localhost:8001/2/putAssemblyOperation");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return "Assembly Station put";
     }
+
     public static String AGVPutWarehouse() {
-        return "test";
+        URL url;
+        try {
+            url = new URL("http://localhost:8001/2/putWarehouseOperation");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return "Warehouse put";
     }
+
     public static String AGVMoveToCharger() {
-        return "test";
+        URL url;
+        try {
+            url = new URL("http://localhost:8001/2/moveToChargerOperation");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return "AGV move to charger";
     }
+
     public static String WHPutTray(int trayId, String itemName) {
         URL url;
         StringBuilder content;
@@ -56,6 +137,7 @@ public class FlowHttpClient {
 
         return "Put into tray" + trayId + " item " + itemName + " successfully";
     }
+
     public static String WHPickTray(int trayId) {
         URL url;
         StringBuilder content;
@@ -71,6 +153,7 @@ public class FlowHttpClient {
 
         return "Picked tray" + trayId + " successfully";
     }
+
     public static String WHGetInventory() {
         URL url;
         StringBuilder content;
