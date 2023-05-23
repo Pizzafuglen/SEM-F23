@@ -9,7 +9,7 @@ public class FlowHttpClient {
     public static String ASStartProd(String prodId) {
         URL url;
         try {
-            url = new URL("http://localhost:8001/1/startProd?" + prodId);
+            url = new URL("http://localhost:8001/3/startProd?" + prodId);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
 
@@ -19,6 +19,27 @@ public class FlowHttpClient {
         }
 
         return "Initiated prod with ID " + prodId;
+    }
+    public static String AGVMoveToAssemblyStation() {
+        return "test";
+    }
+    public static String AGVMoveToWarehouse() {
+        return "test";
+    }
+    public static String AGVPickAssemblyStation() {
+        return "test";
+    }
+    public static String AGVPickWarehouse() {
+        return "test";
+    }
+    public static String AGVPutAssemblyStation() {
+        return "test";
+    }
+    public static String AGVPutWarehouse() {
+        return "test";
+    }
+    public static String AGVMoveToCharger() {
+        return "test";
     }
     public static String WHPutTray(int trayId, String itemName) {
         URL url;

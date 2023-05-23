@@ -21,36 +21,38 @@ public class AGVHandler implements HttpHandler {
     }
 
     private String operation(HttpExchange httpExchange) throws IOException, JSONException {
-        if (httpExchange.getRequestURI().toString().contains("moveToAssemblyOperation")) {
-            System.out.println("works");
+        if (httpExchange.getRequestURI().toString().contains("moveToAssemblyStationOperation")) {
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"MoveToAssemblyOperation\"}"); // optimering her
-            return "moved to assem";
+            return "Moved to Assembly";
             //return split;
         } else if (httpExchange.getRequestURI().toString().contains("moveToChargerOperation")) {
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"MoveToChargerOperation\"}");
-            return "Charging";
-        } else if (httpExchange.getRequestURI().toString().contains("moveToStorageOperation")) {
+            return "Moved to Charging";
+        } else if (httpExchange.getRequestURI().toString().contains("moveToWarehouseOperation")) {
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"MoveToStorageOperation\"}");
-            //int id  = Integer.parseInt(httpExchange.getRequestURI().toString().split("\\?")[1].split("=")[1].split("_")[0]);
-            //String program = String(httpExchange.getRequestURI().split("\\?")[1].split("=")[1].split("_")[1]);
-            //int C_state = Integer.parseInt(httpExchange.getRequestURI().toString().split("\\?")[1].split("=")[1].split("_")[2]);
-            //int battery = Integer.parseInt(httpExchange.getRequestURI().toString().split("\\?")[1].split("=")[1].split("_")[3]);
-            //System.out.println(battery+C_state);
-            //DBhandler.setData(id, C_state, battery);
 
-            return "moved to storage";
+            /*
+            int id  = Integer.parseInt(httpExchange.getRequestURI().toString().split("\\?")[1].split("=")[1].split("_")[0]);
+            String program = String(httpExchange.getRequestURI().split("\\?")[1].split("=")[1].split("_")[1]);
+            int C_state = Integer.parseInt(httpExchange.getRequestURI().toString().split("\\?")[1].split("=")[1].split("_")[2]);
+            int battery = Integer.parseInt(httpExchange.getRequestURI().toString().split("\\?")[1].split("=")[1].split("_")[3]);
+            System.out.println(battery+C_state);
+            DBhandler.setData(id, C_state, battery);
+             */
+
+            return "Moved to Warehouse";
         } else if (httpExchange.getRequestURI().toString().contains("putAssemblyOperation")) {
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PutAssemblyOperation\"}");
-            return "put assem";
+            return "Put AssemblyStation";
         } else if (httpExchange.getRequestURI().toString().contains("pickAssemblyOperation")) {
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PickAssemblyOperation\"}");
-            return "pick assem";
+            return "Pick AssemblyStation";
         } else if (httpExchange.getRequestURI().toString().contains("pickWarehouseOperation")) {
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PickWarehouseOperation\"}");
-            return "pick ware";
+            return "Pick Warehouse";
         } else if (httpExchange.getRequestURI().toString().contains("putWarehouseOperation")) {
             AGVController.handlePostRequest("{\"State\":1,\"Program name\":\"PutWarehouseOperation\"}");
-            return "put ware";
+            return "Put Warehouse";
         } else if (httpExchange.getRequestURI().toString().contains("2")) {
             AGVController.handlePostRequest("{\"State\":2}");
             return "Executing";
