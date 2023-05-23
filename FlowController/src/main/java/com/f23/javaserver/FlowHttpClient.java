@@ -4,9 +4,22 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.*;
-import java.net.http.HttpRequest;
 
 public class FlowHttpClient {
+    public static String ASStartProd(String prodId) {
+        URL url;
+        try {
+            url = new URL("http://localhost:8001/1/startProd?" + prodId);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return "Initiated prod with ID " + prodId;
+    }
     public static String WHPutTray(int trayId, String itemName) {
         URL url;
         StringBuilder content;

@@ -14,7 +14,7 @@ public class ASHandler implements HttpHandler {
         String reVal;
         if (he.getRequestURI().toString().contains("startProd")) {
             try {
-                reVal = MQTTHandler.InitiateProd("19999");
+                reVal = MQTTHandler.InitiateProd(he.getRequestURI().toString().split("\\?")[1]);
             } catch (MqttException e) {
                 throw new RuntimeException(e);
             }
