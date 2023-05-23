@@ -7,10 +7,37 @@ import java.net.*;
 import java.net.http.HttpRequest;
 
 public class FlowHttpClient {
-    public static void main(String[] args) {
-        System.out.println(InitDroneProd());
+    public static String WHPutTray(int trayId, String itemName) {
+        URL url;
+        StringBuilder content;
+        try {
+            url = new URL("http://localhost:8001/1/putSpecificTray?" + trayId + "?" + itemName);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return "Put into tray" + trayId + " item " + itemName + " successfully";
     }
-    public static String InitDroneProd() {
+    public static String WHPickTray(int trayId) {
+        URL url;
+        StringBuilder content;
+        try {
+            url = new URL("http://localhost:8001/1/pickSpecificTray?" + trayId);
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.disconnect();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        return "Picked tray" + trayId + " successfully";
+    }
+    public static String WHGetInventory() {
         URL url;
         StringBuilder content;
         try {
