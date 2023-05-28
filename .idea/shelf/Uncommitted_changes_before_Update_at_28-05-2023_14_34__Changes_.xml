@@ -1,0 +1,54 @@
+<changelist name="Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]" date="1685277286315" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 28-05-2023 14:34 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="FlowController/target/classes/com/f23/javaserver/FlowHandler.class" />
+    <option name="AFTER_PATH" value="FlowController/target/classes/com/f23/javaserver/FlowHandler.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]/FlowHandler.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AGVModule/target/classes/org/AGV/AGVHandler.class" />
+    <option name="AFTER_PATH" value="AGVModule/target/classes/org/AGV/AGVHandler.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]/AGVHandler.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AGVModule/target/classes/org/AGV/AGVController.class" />
+    <option name="AFTER_PATH" value="AGVModule/target/classes/org/AGV/AGVController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]/AGVController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ASModule/target/classes/org/example/ASServer.class" />
+    <option name="AFTER_PATH" value="ASModule/target/classes/org/example/ASServer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]/ASServer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AGVModule/target/classes/org/AGV/JsonExtractor.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="FlowController/target/classes/com/f23/javaserver/FlowHttpClient.class" />
+    <option name="AFTER_PATH" value="FlowController/target/classes/com/f23/javaserver/FlowHttpClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]/FlowHttpClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="AGVModule/target/classes/org/AGV/HTTPServer.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ASModule/target/classes/org/example/App.class" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="AGVModule/target/classes/org/AGV/AGVServer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]/AGVServer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ASModule/target/classes/org/example/ASHandler.class" />
+    <option name="AFTER_PATH" value="ASModule/target/classes/org/example/ASHandler.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28-05-2023_14_34_[Changes]/ASHandler.class" />
+  </binary>
+</changelist>
