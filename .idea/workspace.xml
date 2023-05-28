@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8babf97e-5072-4a23-9643-8feac0974ef8" name="Changes" comment="Changes made to the FlowHttpClient.java and the AGVHandler.java in terms of streamlining the latter and building out the former">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlowController/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlowController/src/main/java/com/f23/javaserver/FlowHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/src/main/java/com/f23/javaserver/FlowHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlowController/src/main/java/com/f23/javaserver/FlowHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/src/main/java/com/f23/javaserver/FlowHttpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Pages/FINISHED.html" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Pages/FINISHED.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Pages/HOME.html" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Pages/HOME.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Pages/LOG.html" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Pages/LOG.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Pages/RECIPE.html" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Pages/RECIPE.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/Pages/STOCKINFO.html" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/Pages/STOCKINFO.html" afterDir="false" />
     </list>
     <list id="d03e175b-7036-4057-b5bc-54cddd6720d9" name="Changes by chris" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,13 +35,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\PHP\php.exe" />
   <component name="ProjectId" id="2PpAFW33YNWWsRsA4eDN8zOWjWk" />
   <component name="ProjectLevelVcsManager">
@@ -53,8 +49,9 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;GuiFrontend&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -162,6 +159,7 @@
       <workItem from="1684495629175" duration="1196000" />
       <workItem from="1684740746153" duration="8027000" />
       <workItem from="1684862910376" duration="3628000" />
+      <workItem from="1685290980053" duration="1294000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1684143684162</created>
