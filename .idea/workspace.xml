@@ -4,11 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8babf97e-5072-4a23-9643-8feac0974ef8" name="Changes" comment="Changes made to the FlowHttpClient.java and the AGVHandler.java in terms of streamlining the latter and building out the former">
+    <list default="true" id="8babf97e-5072-4a23-9643-8feac0974ef8" name="Changes" comment="Changes made that should make the project code base be done">
+      <change afterPath="$PROJECT_DIR$/AGVModule/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AGVModule/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AGVModule/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AGVModule/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AGVModule/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AGVModule/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASModule/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASModule/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASModule/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASModule/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASModule/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ASModule/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlowController/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlowController/src/main/java/com/f23/javaserver/FlowHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/src/main/java/com/f23/javaserver/FlowHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlowController/src/main/java/com/f23/javaserver/FlowHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/src/main/java/com/f23/javaserver/FlowHttpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGVModule/target/classes/org/AGV/AGVController.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGVModule/target/classes/org/AGV/AGVController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGVModule/target/classes/org/AGV/AGVHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGVModule/target/classes/org/AGV/AGVHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGVModule/target/classes/org/AGV/HTTPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGVModule/target/classes/org/AGV/AGVServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGVModule/target/classes/org/AGV/JsonExtractor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASModule/target/classes/org/example/ASHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/ASModule/target/classes/org/example/ASHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASModule/target/classes/org/example/ASServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/ASModule/target/classes/org/example/ASServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ASModule/target/classes/org/example/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlowController/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlowController/target/classes/com/f23/javaserver/FlowHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/target/classes/com/f23/javaserver/FlowHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlowController/target/classes/com/f23/javaserver/FlowHttpClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/FlowController/target/classes/com/f23/javaserver/FlowHttpClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/finished.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/productionInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/productionInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/recipe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WHModule/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WHModule/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="d03e175b-7036-4057-b5bc-54cddd6720d9" name="Changes by chris" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +83,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/chris/Skrivebord/MyAsteroidsRepoPossibleSolution&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -161,7 +189,9 @@
       <workItem from="1684493179879" duration="597000" />
       <workItem from="1684495629175" duration="1196000" />
       <workItem from="1684740746153" duration="8027000" />
-      <workItem from="1684862910376" duration="3628000" />
+      <workItem from="1684862910376" duration="3993000" />
+      <workItem from="1685218943220" duration="1451000" />
+      <workItem from="1685264803502" duration="4358000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <created>1684143684162</created>
@@ -191,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684838934249</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changes made that should make the project code base be done">
+      <created>1684866803551</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684866803551</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +250,7 @@
     <MESSAGE value="." />
     <MESSAGE value="Changes made to the AS module as well as some minor refactoring to the other packages. Not been tested cause I couldn't be bothered.&#10;&#10;(Reduced the size of the AGV handler - there was no reason for some sections of the code)" />
     <MESSAGE value="Changes made to the FlowHttpClient.java and the AGVHandler.java in terms of streamlining the latter and building out the former" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes made to the FlowHttpClient.java and the AGVHandler.java in terms of streamlining the latter and building out the former" />
+    <MESSAGE value="Changes made that should make the project code base be done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes made that should make the project code base be done" />
   </component>
 </project>

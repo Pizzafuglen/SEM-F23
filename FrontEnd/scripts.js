@@ -12,7 +12,7 @@ var redirectButton = document.getElementById("redirectToHome");
 //add a click event listener to the button
 redirectButton.addEventListener('click', function(){
 //send the url and redirect
-var urlToSend = "http://127.0.0.1:5500/FrontEnd/home.html"
+var urlToSend = "http://localhost/FrontEnd/home.html"
 redirectTo(urlToSend);
 });
 })

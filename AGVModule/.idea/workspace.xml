@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="37ac346c-1c01-480d-b65b-1330c564951b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/AGV/AGVServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ASModule/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/AGV/AGVController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/AGV/AGVController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/AGV/AGVHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/AGV/AGVHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/AGV/HTTPServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/AGV/JsonExtractor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/target/classes/org/example/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlowController/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlowController/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WHModule/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../WHModule/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\PHP\php.exe" />
+  <component name="ProjectId" id="2QCofYs5uGnSJFC3yxilTdvPUH9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AGVServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.AGV.AGVServer" />
+      <module name="AGVModule" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.AGV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AGVServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="37ac346c-1c01-480d-b65b-1330c564951b" name="Changes" comment="" />
+      <created>1684867028341</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684867028341</updated>
+      <workItem from="1684867030237" duration="511000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
