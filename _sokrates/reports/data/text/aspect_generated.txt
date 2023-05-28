@@ -1,0 +1,11 @@
+Path	Lines of Code
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventory.java	10
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/GetInventoryResponse.java	21
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService.java	39
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/IEmulatorService_Service.java	60
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItem.java	29
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/InsertItemResponse.java	21
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/ObjectFactory.java	137
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItem.java	19
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/PickItemResponse.java	21
+WHModule/src/main/java/com/baeldung/soap/ws/client/generated/package-info.java	2

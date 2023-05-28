@@ -1,0 +1,924 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "commit_ffc470dacaea572506fa8c1ee20327a4061e1928",
+    "size" : 2
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "size" : 7
+  }, {
+    "id" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "size" : 4
+  }, {
+    "id" : "[GUITest/html.html]",
+    "size" : 2
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "size" : 10
+  }, {
+    "id" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "size" : 7
+  }, {
+    "id" : "commit_1abc8b6152addade15ca96cccb319725a99e1a4e",
+    "size" : 2
+  }, {
+    "id" : "commit_d4df91e2dd44e9ed3042d02e75fe7461822909b7",
+    "size" : 2
+  }, {
+    "id" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "size" : 4
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/ASServer.java]",
+    "size" : 1
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "size" : 8
+  }, {
+    "id" : "commit_dc057eaa2e1b996c38786695d559768529b5f3c7",
+    "size" : 2
+  }, {
+    "id" : "commit_d15f664b57cc78c5978889f5486cf8d4ca5029f7",
+    "size" : 3
+  }, {
+    "id" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "size" : 9
+  }, {
+    "id" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "size" : 5
+  }, {
+    "id" : "commit_61b94e12107e71b3451366dc865a12e97fa57f6d",
+    "size" : 3
+  }, {
+    "id" : "commit_872db0aefde15280a73098434793bc08c1ba435b",
+    "size" : 3
+  }, {
+    "id" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "size" : 4
+  }, {
+    "id" : "commit_e2a517e60fbe6a46094b71eb0e976b23cd60985c",
+    "size" : 2
+  }, {
+    "id" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "size" : 8
+  }, {
+    "id" : "commit_fee019726c4bde780fa1c1f81690889d0769c668",
+    "size" : 2
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "size" : 5
+  }, {
+    "id" : "commit_805f25940a045cf0ada94754b29989f79407620d",
+    "size" : 2
+  }, {
+    "id" : "commit_8d7ab110d620c62bc186e8719e9176b4bcfb9166",
+    "size" : 2
+  }, {
+    "id" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "size" : 4
+  }, {
+    "id" : "commit_dee51aea1d9c53939ab74d2de10343cb9a9a6df6",
+    "size" : 3
+  }, {
+    "id" : "commit_5239a49d7e3b723124ca97eb3b75d3f1d9bb3aa5",
+    "size" : 2
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "size" : 5
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "size" : 3
+  }, {
+    "id" : "commit_2163e5832832d2bff185623b14eb2df155a7f432",
+    "size" : 3
+  }, {
+    "id" : "[GUITest/js.js]",
+    "size" : 2
+  }, {
+    "id" : "commit_1054c84b7cf70ad7b73acff4c7f66e5adec003da",
+    "size" : 3
+  }, {
+    "id" : "commit_a4a6a1be0e8655fbc6ab4cd21be8db888ec13935",
+    "size" : 2
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "size" : 5
+  }, {
+    "id" : "commit_d1628e21a19d232fdb4b54d278409bd274f129db",
+    "size" : 2
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/ASHandler.java]",
+    "size" : 1
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "size" : 9
+  }, {
+    "id" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "size" : 5
+  }, {
+    "id" : "commit_f41460fb3f24dd01475debb08ad7f734e7f6a68d",
+    "size" : 2
+  }, {
+    "id" : "commit_1bb11d309ef6ea6ad6f562f41f71bc55929f5afb",
+    "size" : 3
+  }, {
+    "id" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "size" : 5
+  }, {
+    "id" : "commit_fdebc8fe31ecbd37610b17e76d464d7d93d9a7c1",
+    "size" : 2
+  }, {
+    "id" : "commit_7abb296a5fd9efa50cd79198664cf1e5e83da728",
+    "size" : 3
+  }, {
+    "id" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "size" : 7
+  }, {
+    "id" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "size" : 6
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "size" : 4
+  }, {
+    "id" : "commit_bc7b25c6210728346aa0b22ddceb3ae2964a08ac",
+    "size" : 3
+  }, {
+    "id" : "commit_bc28a1adf56225baf096b448c2a9a45d042c578e",
+    "size" : 3
+  } ],
+  "links" : [ {
+    "source" : "commit_1054c84b7cf70ad7b73acff4c7f66e5adec003da",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "commit_1054c84b7cf70ad7b73acff4c7f66e5adec003da",
+    "count" : 2
+  }, {
+    "source" : "commit_1054c84b7cf70ad7b73acff4c7f66e5adec003da",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_1054c84b7cf70ad7b73acff4c7f66e5adec003da",
+    "count" : 2
+  }, {
+    "source" : "commit_e2a517e60fbe6a46094b71eb0e976b23cd60985c",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 1
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "commit_e2a517e60fbe6a46094b71eb0e976b23cd60985c",
+    "count" : 1
+  }, {
+    "source" : "commit_e2a517e60fbe6a46094b71eb0e976b23cd60985c",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_e2a517e60fbe6a46094b71eb0e976b23cd60985c",
+    "count" : 1
+  }, {
+    "source" : "commit_bc7b25c6210728346aa0b22ddceb3ae2964a08ac",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "commit_bc7b25c6210728346aa0b22ddceb3ae2964a08ac",
+    "count" : 2
+  }, {
+    "source" : "commit_bc7b25c6210728346aa0b22ddceb3ae2964a08ac",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_bc7b25c6210728346aa0b22ddceb3ae2964a08ac",
+    "count" : 2
+  }, {
+    "source" : "commit_805f25940a045cf0ada94754b29989f79407620d",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 1
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "commit_805f25940a045cf0ada94754b29989f79407620d",
+    "count" : 1
+  }, {
+    "source" : "commit_805f25940a045cf0ada94754b29989f79407620d",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_805f25940a045cf0ada94754b29989f79407620d",
+    "count" : 1
+  }, {
+    "source" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "count" : 6
+  }, {
+    "source" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "count" : 6
+  }, {
+    "source" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "count" : 6
+  }, {
+    "source" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "count" : 6
+  }, {
+    "source" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 3
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "count" : 3
+  }, {
+    "source" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 3
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "count" : 3
+  }, {
+    "source" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 4
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "count" : 4
+  }, {
+    "source" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "count" : 4
+  }, {
+    "source" : "commit_fdebc8fe31ecbd37610b17e76d464d7d93d9a7c1",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_fdebc8fe31ecbd37610b17e76d464d7d93d9a7c1",
+    "count" : 1
+  }, {
+    "source" : "commit_fdebc8fe31ecbd37610b17e76d464d7d93d9a7c1",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 1
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "commit_fdebc8fe31ecbd37610b17e76d464d7d93d9a7c1",
+    "count" : 1
+  }, {
+    "source" : "commit_d15f664b57cc78c5978889f5486cf8d4ca5029f7",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_d15f664b57cc78c5978889f5486cf8d4ca5029f7",
+    "count" : 2
+  }, {
+    "source" : "commit_d15f664b57cc78c5978889f5486cf8d4ca5029f7",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "commit_d15f664b57cc78c5978889f5486cf8d4ca5029f7",
+    "count" : 2
+  }, {
+    "source" : "commit_bc28a1adf56225baf096b448c2a9a45d042c578e",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_bc28a1adf56225baf096b448c2a9a45d042c578e",
+    "count" : 2
+  }, {
+    "source" : "commit_bc28a1adf56225baf096b448c2a9a45d042c578e",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "commit_bc28a1adf56225baf096b448c2a9a45d042c578e",
+    "count" : 2
+  }, {
+    "source" : "commit_d1628e21a19d232fdb4b54d278409bd274f129db",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_d1628e21a19d232fdb4b54d278409bd274f129db",
+    "count" : 1
+  }, {
+    "source" : "commit_d1628e21a19d232fdb4b54d278409bd274f129db",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 1
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "commit_d1628e21a19d232fdb4b54d278409bd274f129db",
+    "count" : 1
+  }, {
+    "source" : "commit_1bb11d309ef6ea6ad6f562f41f71bc55929f5afb",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_1bb11d309ef6ea6ad6f562f41f71bc55929f5afb",
+    "count" : 2
+  }, {
+    "source" : "commit_1bb11d309ef6ea6ad6f562f41f71bc55929f5afb",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "commit_1bb11d309ef6ea6ad6f562f41f71bc55929f5afb",
+    "count" : 2
+  }, {
+    "source" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "count" : 4
+  }, {
+    "source" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "count" : 4
+  }, {
+    "source" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "count" : 4
+  }, {
+    "source" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "count" : 4
+  }, {
+    "source" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 3
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "count" : 3
+  }, {
+    "source" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 3
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "count" : 3
+  }, {
+    "source" : "commit_dee51aea1d9c53939ab74d2de10343cb9a9a6df6",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_dee51aea1d9c53939ab74d2de10343cb9a9a6df6",
+    "count" : 2
+  }, {
+    "source" : "commit_dee51aea1d9c53939ab74d2de10343cb9a9a6df6",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "commit_dee51aea1d9c53939ab74d2de10343cb9a9a6df6",
+    "count" : 2
+  }, {
+    "source" : "commit_872db0aefde15280a73098434793bc08c1ba435b",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_872db0aefde15280a73098434793bc08c1ba435b",
+    "count" : 2
+  }, {
+    "source" : "commit_872db0aefde15280a73098434793bc08c1ba435b",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "commit_872db0aefde15280a73098434793bc08c1ba435b",
+    "count" : 2
+  }, {
+    "source" : "commit_7abb296a5fd9efa50cd79198664cf1e5e83da728",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_7abb296a5fd9efa50cd79198664cf1e5e83da728",
+    "count" : 2
+  }, {
+    "source" : "commit_7abb296a5fd9efa50cd79198664cf1e5e83da728",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "commit_7abb296a5fd9efa50cd79198664cf1e5e83da728",
+    "count" : 2
+  }, {
+    "source" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 6
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "count" : 6
+  }, {
+    "source" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 6
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "count" : 6
+  }, {
+    "source" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 6
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "count" : 6
+  }, {
+    "source" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 6
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "count" : 6
+  }, {
+    "source" : "commit_f41460fb3f24dd01475debb08ad7f734e7f6a68d",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "commit_f41460fb3f24dd01475debb08ad7f734e7f6a68d",
+    "count" : 1
+  }, {
+    "source" : "commit_f41460fb3f24dd01475debb08ad7f734e7f6a68d",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "commit_f41460fb3f24dd01475debb08ad7f734e7f6a68d",
+    "count" : 1
+  }, {
+    "source" : "commit_1054c84b7cf70ad7b73acff4c7f66e5adec003da",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "commit_1054c84b7cf70ad7b73acff4c7f66e5adec003da",
+    "count" : 2
+  }, {
+    "source" : "commit_bc7b25c6210728346aa0b22ddceb3ae2964a08ac",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "commit_bc7b25c6210728346aa0b22ddceb3ae2964a08ac",
+    "count" : 2
+  }, {
+    "source" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "count" : 6
+  }, {
+    "source" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "count" : 6
+  }, {
+    "source" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 4
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "count" : 4
+  }, {
+    "source" : "commit_d15f664b57cc78c5978889f5486cf8d4ca5029f7",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "commit_d15f664b57cc78c5978889f5486cf8d4ca5029f7",
+    "count" : 2
+  }, {
+    "source" : "commit_8d7ab110d620c62bc186e8719e9176b4bcfb9166",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "commit_8d7ab110d620c62bc186e8719e9176b4bcfb9166",
+    "count" : 1
+  }, {
+    "source" : "commit_8d7ab110d620c62bc186e8719e9176b4bcfb9166",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_8d7ab110d620c62bc186e8719e9176b4bcfb9166",
+    "count" : 1
+  }, {
+    "source" : "commit_bc28a1adf56225baf096b448c2a9a45d042c578e",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "commit_bc28a1adf56225baf096b448c2a9a45d042c578e",
+    "count" : 2
+  }, {
+    "source" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "count" : 4
+  }, {
+    "source" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "count" : 4
+  }, {
+    "source" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "count" : 3
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "target" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "count" : 3
+  }, {
+    "source" : "commit_fee019726c4bde780fa1c1f81690889d0769c668",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "target" : "commit_fee019726c4bde780fa1c1f81690889d0769c668",
+    "count" : 1
+  }, {
+    "source" : "commit_fee019726c4bde780fa1c1f81690889d0769c668",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_fee019726c4bde780fa1c1f81690889d0769c668",
+    "count" : 1
+  }, {
+    "source" : "commit_dc057eaa2e1b996c38786695d559768529b5f3c7",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "target" : "commit_dc057eaa2e1b996c38786695d559768529b5f3c7",
+    "count" : 1
+  }, {
+    "source" : "commit_dc057eaa2e1b996c38786695d559768529b5f3c7",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_dc057eaa2e1b996c38786695d559768529b5f3c7",
+    "count" : 1
+  }, {
+    "source" : "commit_5239a49d7e3b723124ca97eb3b75d3f1d9bb3aa5",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "target" : "commit_5239a49d7e3b723124ca97eb3b75d3f1d9bb3aa5",
+    "count" : 1
+  }, {
+    "source" : "commit_5239a49d7e3b723124ca97eb3b75d3f1d9bb3aa5",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_5239a49d7e3b723124ca97eb3b75d3f1d9bb3aa5",
+    "count" : 1
+  }, {
+    "source" : "commit_a4a6a1be0e8655fbc6ab4cd21be8db888ec13935",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "target" : "commit_a4a6a1be0e8655fbc6ab4cd21be8db888ec13935",
+    "count" : 1
+  }, {
+    "source" : "commit_a4a6a1be0e8655fbc6ab4cd21be8db888ec13935",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "commit_a4a6a1be0e8655fbc6ab4cd21be8db888ec13935",
+    "count" : 1
+  }, {
+    "source" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "count" : 3
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "target" : "commit_03e685e1df702d5c75404655d0f9ec29217c99ab",
+    "count" : 3
+  }, {
+    "source" : "commit_dee51aea1d9c53939ab74d2de10343cb9a9a6df6",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "target" : "commit_dee51aea1d9c53939ab74d2de10343cb9a9a6df6",
+    "count" : 2
+  }, {
+    "source" : "commit_872db0aefde15280a73098434793bc08c1ba435b",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "target" : "commit_872db0aefde15280a73098434793bc08c1ba435b",
+    "count" : 2
+  }, {
+    "source" : "commit_7abb296a5fd9efa50cd79198664cf1e5e83da728",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "target" : "commit_7abb296a5fd9efa50cd79198664cf1e5e83da728",
+    "count" : 2
+  }, {
+    "source" : "commit_2163e5832832d2bff185623b14eb2df155a7f432",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "commit_2163e5832832d2bff185623b14eb2df155a7f432",
+    "count" : 2
+  }, {
+    "source" : "commit_2163e5832832d2bff185623b14eb2df155a7f432",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "commit_2163e5832832d2bff185623b14eb2df155a7f432",
+    "count" : 2
+  }, {
+    "source" : "commit_1bb11d309ef6ea6ad6f562f41f71bc55929f5afb",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "commit_1bb11d309ef6ea6ad6f562f41f71bc55929f5afb",
+    "count" : 2
+  }, {
+    "source" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "count" : 4
+  }, {
+    "source" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "count" : 4
+  }, {
+    "source" : "commit_1abc8b6152addade15ca96cccb319725a99e1a4e",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "commit_1abc8b6152addade15ca96cccb319725a99e1a4e",
+    "count" : 1
+  }, {
+    "source" : "commit_1abc8b6152addade15ca96cccb319725a99e1a4e",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 1
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "commit_1abc8b6152addade15ca96cccb319725a99e1a4e",
+    "count" : 1
+  }, {
+    "source" : "commit_d4df91e2dd44e9ed3042d02e75fe7461822909b7",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "target" : "commit_d4df91e2dd44e9ed3042d02e75fe7461822909b7",
+    "count" : 1
+  }, {
+    "source" : "commit_d4df91e2dd44e9ed3042d02e75fe7461822909b7",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "target" : "commit_d4df91e2dd44e9ed3042d02e75fe7461822909b7",
+    "count" : 1
+  }, {
+    "source" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "count" : 3
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "target" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "count" : 3
+  }, {
+    "source" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "count" : 3
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "target" : "commit_34b3e87948ee72b878d59158109a95075106a650",
+    "count" : 3
+  }, {
+    "source" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "count" : 4
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "target" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "count" : 4
+  }, {
+    "source" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "target" : "commit_5e0dbfdc98b717b3ba01119ae669b4917dae2129",
+    "count" : 4
+  }, {
+    "source" : "commit_ffc470dacaea572506fa8c1ee20327a4061e1928",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "target" : "commit_ffc470dacaea572506fa8c1ee20327a4061e1928",
+    "count" : 1
+  }, {
+    "source" : "commit_ffc470dacaea572506fa8c1ee20327a4061e1928",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "target" : "commit_ffc470dacaea572506fa8c1ee20327a4061e1928",
+    "count" : 1
+  }, {
+    "source" : "commit_2163e5832832d2bff185623b14eb2df155a7f432",
+    "target" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "target" : "commit_2163e5832832d2bff185623b14eb2df155a7f432",
+    "count" : 2
+  }, {
+    "source" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "target" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "target" : "commit_a859549c21245c403f60ecfd45951fc663182a6e",
+    "count" : 4
+  }, {
+    "source" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "target" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "target" : "commit_f0958c4177efae461d8d9cff36c93976a79b2d1c",
+    "count" : 4
+  }, {
+    "source" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "target" : "[GUITest/js.js]",
+    "count" : 6
+  }, {
+    "source" : "[GUITest/js.js]",
+    "target" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "count" : 6
+  }, {
+    "source" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "target" : "[GUITest/js.js]",
+    "count" : 6
+  }, {
+    "source" : "[GUITest/js.js]",
+    "target" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "count" : 6
+  }, {
+    "source" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "target" : "[GUITest/html.html]",
+    "count" : 6
+  }, {
+    "source" : "[GUITest/html.html]",
+    "target" : "commit_ac18ebc29b24ece31dbacf5c8e6bd52f54baf600",
+    "count" : 6
+  }, {
+    "source" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "target" : "[GUITest/html.html]",
+    "count" : 6
+  }, {
+    "source" : "[GUITest/html.html]",
+    "target" : "commit_8ce8a8ca404f962e2a6b186cc50951e71af74202",
+    "count" : 6
+  }, {
+    "source" : "commit_61b94e12107e71b3451366dc865a12e97fa57f6d",
+    "target" : "[ASModule/src/main/java/org/example/ASServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/ASServer.java]",
+    "target" : "commit_61b94e12107e71b3451366dc865a12e97fa57f6d",
+    "count" : 2
+  }, {
+    "source" : "commit_61b94e12107e71b3451366dc865a12e97fa57f6d",
+    "target" : "[ASModule/src/main/java/org/example/ASHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/ASHandler.java]",
+    "target" : "commit_61b94e12107e71b3451366dc865a12e97fa57f6d",
+    "count" : 2
+  }, {
+    "source" : "commit_61b94e12107e71b3451366dc865a12e97fa57f6d",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "commit_61b94e12107e71b3451366dc865a12e97fa57f6d",
+    "count" : 2
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

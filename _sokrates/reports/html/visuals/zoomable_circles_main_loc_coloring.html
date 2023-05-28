@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+    .node {
+        cursor: pointer;
+    }
+
+    .node:hover {
+        stroke: #000;
+        stroke-width: 1.5px;
+    }
+
+    .node--leaf {
+        fill: white;
+    }
+
+    .label {
+        font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-anchor: middle;
+        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+    }
+
+    .label,
+    .node--root,
+    .node--leaf {
+        pointer-events: none;
+    }
+
+</style>
+<svg width="960" height="960"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+    var svg = d3.select("svg"),
+        margin = 20,
+        diameter = +svg.attr("width"),
+        g = svg.append("g").attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
+
+    var color = d3.scaleLinear()
+        .domain([-1, 5])
+        .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
+        .interpolate(d3.interpolateHcl);
+
+    var pack = d3.pack()
+        .size([diameter - margin, diameter - margin])
+        .padding(2);
+
+
+    var root = {
+        "name": "cluster",
+        "children": [ {
+  "name" : "AGVModule",
+  "color" : "#1a9641",
+  "size" : 0,
+  "children" : [ {
+    "name" : "src",
+    "color" : "#1a9641",
+    "size" : 0,
+    "children" : [ {
+      "name" : "main",
+      "color" : "#1a9641",
+      "size" : 0,
+      "children" : [ {
+        "name" : "java",
+        "color" : "#1a9641",
+        "size" : 0,
+        "children" : [ {
+          "name" : "org",
+          "color" : "#1a9641",
+          "size" : 0,
+          "children" : [ {
+            "name" : "AGV",
+            "color" : "#1a9641",
+            "size" : 0,
+            "children" : [ {
+              "name" : "AGVController.java (46)",
+              "color" : "#1a9641",
+              "size" : 46,
+              "children" : [ ]
+            }, {
+              "name" : "AGVHandler.java (71)",
+              "color" : "#1a9641",
+              "size" : 71,
+              "children" : [ ]
+            }, {
+              "name" : "d.java (21)",
+              "color" : "#1a9641",
+              "size" : 21,
+              "children" : [ ]
+            }, {
+              "name" : "DBhandler.java (79)",
+              "color" : "#1a9641",
+              "size" : 79,
+              "children" : [ ]
+            }, {
+              "name" : "HTTPServer.java (18)",
+              "color" : "#1a9641",
+              "size" : 18,
+              "children" : [ ]
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+}, {
+  "name" : "ASModule",
+  "color" : "#1a9641",
+  "size" : 0,
+  "children" : [ {
+    "name" : "src",
+    "color" : "#1a9641",
+    "size" : 0,
+    "children" : [ {
+      "name" : "main",
+      "color" : "#1a9641",
+      "size" : 0,
+      "children" : [ {
+        "name" : "java",
+        "color" : "#1a9641",
+        "size" : 0,
+        "children" : [ {
+          "name" : "org",
+          "color" : "#1a9641",
+          "size" : 0,
+          "children" : [ {
+            "name" : "example",
+            "color" : "#1a9641",
+            "size" : 0,
+            "children" : [ {
+              "name" : "ASHandler.java (22)",
+              "color" : "#1a9641",
+              "size" : 22,
+              "children" : [ ]
+            }, {
+              "name" : "ASServer.java (36)",
+              "color" : "#1a9641",
+              "size" : 36,
+              "children" : [ ]
+            }, {
+              "name" : "Callback.java (15)",
+              "color" : "#1a9641",
+              "size" : 15,
+              "children" : [ ]
+            }, {
+              "name" : "Mqtt_Client.java (17)",
+              "color" : "#1a9641",
+              "size" : 17,
+              "children" : [ ]
+            }, {
+              "name" : "Mqtt_Client2.java (44)",
+              "color" : "#1a9641",
+              "size" : 44,
+              "children" : [ ]
+            }, {
+              "name" : "OnMessageCallback.java (17)",
+              "color" : "#1a9641",
+              "size" : 17,
+              "children" : [ ]
+            }, {
+              "name" : "OnMessageCallback2.java (17)",
+              "color" : "#1a9641",
+              "size" : 17,
+              "children" : [ ]
+            }, {
+              "name" : "Test.java (19)",
+              "color" : "#1a9641",
+              "size" : 19,
+              "children" : [ ]
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+}, {
+  "name" : "FlowController",
+  "color" : "#1a9641",
+  "size" : 0,
+  "children" : [ {
+    "name" : "src",
+    "color" : "#1a9641",
+    "size" : 0,
+    "children" : [ {
+      "name" : "main",
+      "color" : "#1a9641",
+      "size" : 0,
+      "children" : [ {
+        "name" : "java",
+        "color" : "#1a9641",
+        "size" : 0,
+        "children" : [ {
+          "name" : "com",
+          "color" : "#1a9641",
+          "size" : 0,
+          "children" : [ {
+            "name" : "f23",
+            "color" : "#1a9641",
+            "size" : 0,
+            "children" : [ {
+              "name" : "javaserver",
+              "color" : "#1a9641",
+              "size" : 0,
+              "children" : [ {
+                "name" : "FlowHandler.java (11)",
+                "color" : "#1a9641",
+                "size" : 11,
+                "children" : [ ]
+              }, {
+                "name" : "FlowServer.java (23)",
+                "color" : "#1a9641",
+                "size" : 23,
+                "children" : [ ]
+              } ]
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+}, {
+  "name" : "GUITest",
+  "color" : "#1a9641",
+  "size" : 0,
+  "children" : [ {
+    "name" : "html.html (21)",
+    "color" : "#1a9641",
+    "size" : 21,
+    "children" : [ ]
+  }, {
+    "name" : "js.js (15)",
+    "color" : "#1a9641",
+    "size" : 15,
+    "children" : [ ]
+  } ]
+}, {
+  "name" : "WHModule",
+  "color" : "#1a9641",
+  "size" : 0,
+  "children" : [ {
+    "name" : "src",
+    "color" : "#1a9641",
+    "size" : 0,
+    "children" : [ {
+      "name" : "main",
+      "color" : "#1a9641",
+      "size" : 0,
+      "children" : [ {
+        "name" : "java",
+        "color" : "#1a9641",
+        "size" : 0,
+        "children" : [ {
+          "name" : "com",
+          "color" : "#1a9641",
+          "size" : 0,
+          "children" : [ {
+            "name" : "f23",
+            "color" : "#1a9641",
+            "size" : 0,
+            "children" : [ {
+              "name" : "javaserver",
+              "color" : "#1a9641",
+              "size" : 0,
+              "children" : [ {
+                "name" : "WHHandler.java (32)",
+                "color" : "#1a9641",
+                "size" : 32,
+                "children" : [ ]
+              }, {
+                "name" : "WHServer.java (23)",
+                "color" : "#1a9641",
+                "size" : 23,
+                "children" : [ ]
+              }, {
+                "name" : "WSDLClient.java (16)",
+                "color" : "#1a9641",
+                "size" : 16,
+                "children" : [ ]
+              } ]
+            } ]
+          } ]
+        } ]
+      } ]
+    } ]
+  } ]
+} ]
+    }
+
+    root = d3.hierarchy(root)
+        .sum(function (d) {
+            return d.size;
+        })
+        .sort(function (a, b) {
+            return b.value - a.value;
+        });
+
+    var focus = root,
+        nodes = pack(root).descendants(),
+        view;
+
+    var circle = g.selectAll("circle")
+        .data(nodes)
+        .enter().append("circle")
+        .attr("class", function (d) {
+            return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root";
+        })
+        .style("fill", function (d) {
+            return d.children ? color(d.depth) : (d.data.color ? d.data.color : null);
+        })
+        .on("click", function (d) {
+            if (focus !== d) zoom(d), d3.event.stopPropagation();
+        });
+
+    var text = g.selectAll("text")
+        .data(nodes)
+        .enter().append("text")
+        .attr("class", "label")
+        .style("fill-opacity", function (d) {
+            return d.parent === root ? 1 : 0;
+        })
+        .style("display", function (d) {
+            return d.parent === root ? "inline" : "none";
+        })
+        .text(function (d) {
+            return d.data.name.length > 33 ? (d.data.name.substr(0, 14) + "..." + d.data.name.substr(d.data.name.length - 14))  : d.data.name;
+        });
+
+    var node = g.selectAll("circle,text");
+
+    svg
+        .style("background", color(-1))
+        .on("click", function () {
+            zoom(root);
+        });
+
+    zoomTo([root.x, root.y, root.r * 2 + margin]);
+
+    function zoom(d) {
+        var focus0 = focus;
+        focus = d;
+
+        var transition = d3.transition()
+            .duration(d3.event.altKey ? 7500 : 750)
+            .tween("zoom", function (d) {
+                var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
+                return function (t) {
+                    zoomTo(i(t));
+                };
+            });
+
+        transition.selectAll("text")
+            .filter(function (d) {
+                return d.parent === focus || this.style.display === "inline";
+            })
+            .style("fill-opacity", function (d) {
+                return d.parent === focus ? 1 : 0;
+            })
+            .on("start", function (d) {
+                if (d.parent === focus) this.style.display = "inline";
+            })
+            .on("end", function (d) {
+                if (d.parent !== focus) this.style.display = "none";
+            });
+    }
+
+    function zoomTo(v) {
+        var k = diameter / v[2];
+        view = v;
+        node.attr("transform", function (d) {
+            return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")";
+        });
+        circle.attr("r", function (d) {
+            return d.r * k;
+        });
+    }
+
+</script>

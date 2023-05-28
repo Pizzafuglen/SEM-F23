@@ -1,0 +1,121 @@
+[ {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/AGVController.java",
+  "extension" : "java",
+  "linesOfCode" : 46,
+  "components" : [ "primary::AGVModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/AGVHandler.java",
+  "extension" : "java",
+  "linesOfCode" : 71,
+  "components" : [ "primary::AGVModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/d.java",
+  "extension" : "java",
+  "linesOfCode" : 21,
+  "components" : [ "primary::AGVModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/DBhandler.java",
+  "extension" : "java",
+  "linesOfCode" : 79,
+  "components" : [ "primary::AGVModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/HTTPServer.java",
+  "extension" : "java",
+  "linesOfCode" : 18,
+  "components" : [ "primary::AGVModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/ASHandler.java",
+  "extension" : "java",
+  "linesOfCode" : 22,
+  "components" : [ "primary::ASModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/ASServer.java",
+  "extension" : "java",
+  "linesOfCode" : 36,
+  "components" : [ "primary::ASModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/Callback.java",
+  "extension" : "java",
+  "linesOfCode" : 15,
+  "components" : [ "primary::ASModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/Mqtt_Client.java",
+  "extension" : "java",
+  "linesOfCode" : 17,
+  "components" : [ "primary::ASModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/Mqtt_Client2.java",
+  "extension" : "java",
+  "linesOfCode" : 44,
+  "components" : [ "primary::ASModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/OnMessageCallback.java",
+  "extension" : "java",
+  "linesOfCode" : 17,
+  "components" : [ "primary::ASModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/OnMessageCallback2.java",
+  "extension" : "java",
+  "linesOfCode" : 17,
+  "components" : [ "primary::ASModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/Test.java",
+  "extension" : "java",
+  "linesOfCode" : 19,
+  "components" : [ "primary::ASModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "FlowController/src/main/java/com/f23/javaserver/FlowHandler.java",
+  "extension" : "java",
+  "linesOfCode" : 11,
+  "components" : [ "primary::FlowController" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "FlowController/src/main/java/com/f23/javaserver/FlowServer.java",
+  "extension" : "java",
+  "linesOfCode" : 23,
+  "components" : [ "primary::FlowController" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "GUITest/html.html",
+  "extension" : "html",
+  "linesOfCode" : 21,
+  "components" : [ "primary::GUITest" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "GUITest/js.js",
+  "extension" : "js",
+  "linesOfCode" : 15,
+  "components" : [ "primary::GUITest" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "WHModule/src/main/java/com/f23/javaserver/WHHandler.java",
+  "extension" : "java",
+  "linesOfCode" : 32,
+  "components" : [ "primary::WHModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "WHModule/src/main/java/com/f23/javaserver/WHServer.java",
+  "extension" : "java",
+  "linesOfCode" : 23,
+  "components" : [ "primary::WHModule" ],
+  "concerns" : [ "::Unclassified" ]
+}, {
+  "relativePath" : "WHModule/src/main/java/com/f23/javaserver/WSDLClient.java",
+  "extension" : "java",
+  "linesOfCode" : 16,
+  "components" : [ "primary::WHModule" ],
+  "concerns" : [ "::Unclassified" ]
+} ]

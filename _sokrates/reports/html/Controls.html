@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SEM-F23Goals & Controls</title>
+  <style type="text/css" media="all">
+    body {
+      font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    table {
+      color: #333;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    th {
+      background: #F3F3F3;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    td {
+      background: #FFFFFF;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 0
+    }
+    h1 {
+      margin-bottom: 6px;
+    }
+    p {
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .reportSubtitle {
+      color: grey;
+    }
+    .group {
+      margin-bottom: 10px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+    }
+    .section {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+      padding: 0;
+    }
+    .sectionHeader {
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      background-color: lightskyblue;
+    }
+    .sectionTitle {
+      font-size: 140%;
+    }
+    .sectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSectionTitle {
+      font-size: 140%;
+    }
+    .subSectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSection {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .subSectionHeader {
+      border: solid lightgrey 1px;
+      padding: 6px;
+      background-color: lightgrey;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .sectionBody {
+      margin: 20px;
+    }
+.tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+.tab button {
+ font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+ font-size: 100%;
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+.tab button:hover {
+ background-color: #ddd;
+}
+.tab button.active {
+ background-color: #ccc;
+}
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ overflow-y: auto;
+ border-top: none;
+}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script type="text/javascript">
+    function showHide(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    }
+    function showHideDisappear(id) {
+      var e = document.getElementById(id);
+      e.style.display = '';      var eTrigger = document.getElementById(id + '_trigger');
+      eTrigger.style.display = 'none';
+    }
+    function openTab(evt, tabName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.className += " active";
+    }
+  </script>
+  
+</head>
+
+<body><div id="report">
+
+
+<div style='font-size: 36px; margin-top: 15px;'><a href='index.html' style="font-size: 100%;text-decoration:none">
+<img style='transform: scale(0.8); height: 48px' valign='middle' src='https://zeljkoobrenovic.github.io/sokrates-media/icons/repository.png'>
+<div style='display: inline-block; vertical-align: middle'><div style='color: #bbbbbb; font-size: 60%;'>SEM-F23</div><div style='height: 34px; font-size: 100%'>Goals & Controls</div></div></div>
+</a>
+</div>
+
+<p style="margin-top: 12px; color: grey">Traffic lights for selected metrics.</p>
+<div class='section'><div class='sectionHeader'>  <span class='sectionTitle'>Intro</span></div><div class='sectionBody'>
+<ul>
+<li>Controls enable you to set traffic lights or alarms for any of the <a href='Metrics.html'>Sokrates metrics</a>. An alarm is defined with a desired range and tolerance.</li>
+</ul>
+ <a href="javascript:showHide('showMoreBlock_72');")>Learn more...</a><span id="showMoreBlock_72" style="display: none;">
+<ul>
+<li>For more insights in the value of trend analysis, Sokrates recommends reading the section "Explicitly link metrics to goals" in the article <a href='https://martinfowler.com/articles/useOfMetrics.html#ExplicitlyLinkMetricsToGoals' target='_blank'>An Appropriate Use of Metrics</a>, (MartinFowler.com), e.g.:</li>
+<ul>
+<li><i>"We would like our code to be less complex and easier to change. Therefore we should aim to write short methods (less than 15 lines) with a low conditional complexity (less than 20 is good). We should also aim to have a small handful of parameters (up to four) so that methods remain as focused as possible."</i></li>
+</ul>
+</ul>
+</span>
+</div></div>
+<div class='section'><div class='sectionHeader'>  <span class='sectionTitle'>Keep the system simple and easy to change</span>  <div class='sectionSubtitle'>Aim at keeping the system size modest (less than 200,000 LOC is good), duplication low (less than 5% is good), files small (no files longer than 1000 LOC is good), and units simple (no units with more than 25 decision points is good).</div></div><div class='sectionBody'>
+<div style="width: 100%; overflow-x: auto">
+<table>
+<th></th>
+<th>Status</th>
+<th>Metric</th>
+<th>Desired Range<br/>[from - to] ±tolerance</th>
+<th>Current Value</th>
+<th>Description</th>
+<tr>
+<td><svg height="22" width="22">
+<circle cx="11" cy="11" r="10" fill="darkgreen" /></svg></td>
+<td>OK</td>
+<td style="text-align: center">LINES_OF_CODE_MAIN</td>
+<td style="text-align: center">[0 - 200000] ±20000</td>
+<td style="text-align: center"><b>563</b></td>
+<td>Total number of lines of main code</td>
+</tr>
+<tr>
+<td><svg height="22" width="22">
+<circle cx="11" cy="11" r="10" fill="crimson" /></svg></td>
+<td>FAILED</td>
+<td style="text-align: center">DUPLICATION_PERCENTAGE</td>
+<td style="text-align: center">[0 - 5] ±1</td>
+<td style="text-align: center"><b>12.43</b></td>
+<td>System duplication</td>
+</tr>
+<tr>
+<td><svg height="22" width="22">
+<circle cx="11" cy="11" r="10" fill="darkgreen" /></svg></td>
+<td>OK</td>
+<td style="text-align: center">VERY_HIGH_RISK_FILE_SIZE_COUNT</td>
+<td style="text-align: center">[0 - 0] ±1</td>
+<td style="text-align: center"><b>0</b></td>
+<td>The number of very large files</td>
+</tr>
+<tr>
+<td><svg height="22" width="22">
+<circle cx="11" cy="11" r="10" fill="darkgreen" /></svg></td>
+<td>OK</td>
+<td style="text-align: center">CONDITIONAL_COMPLEXITY_VERY_HIGH_RISK_COUNT</td>
+<td style="text-align: center">[0 - 0] ±1</td>
+<td style="text-align: center"><b>0</b></td>
+<td>Number of very complex units</td>
+</tr>
+</table>
+</div>
+</div></div>
+</div>
+</body>
+</html>

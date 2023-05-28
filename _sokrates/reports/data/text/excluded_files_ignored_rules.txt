@@ -1,0 +1,47 @@
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Hidden files and folders
+path like ".*/[.][a-zA-Z0-9_]+.*"
+18 files:
+
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27_[Changes]/shelved.patch
+.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_11_27__Changes_.xml
+.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_13_08_[Changes]/shelved.patch
+.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_13_08__Changes_.xml
+.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_13_08__Changes_1.xml
+.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_11_40_[Changes]/shelved.patch
+.idea/shelf/Uncommitted_changes_before_Update_at_15_05_2023_11_40__Changes_.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
+FlowController/.idea/compiler.xml
+FlowController/.idea/workspace.xml
+WHModule/.idea/workspace.xml
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Git history
+path like ".*/git[-]history[.]txt"
+1 files:
+
+git-history.txt
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Too long lines (1000+ characters)
+1 files:
+
+.idea/shelf/Uncommitted_changes_before_Update_at_15-05-2023_13_08_[Changes]1/shelved.patch
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+

@@ -1,0 +1,22 @@
+[ {
+  "relativePath" : "AGVModule/src/test/java/org/example/AppTest.java",
+  "extension" : "java",
+  "linesOfCode" : 20,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "ASModule/src/test/java/org/example/AppTest.java",
+  "extension" : "java",
+  "linesOfCode" : 20,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "WHModule/src/test/java/org/example/AppTest.java",
+  "extension" : "java",
+  "linesOfCode" : 20,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+} ]

@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>function loadCurrentOperation()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">function loadCurrentOperation()</h3>
+<p style="margin-top: 4px">in <i>GUITest/js.js [1:9]</i></p>
+<ul>
+    <li><b>6</b> lines of code</li>
+    <li><b>1</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="js">
+function loadCurrentOperation() {
+    console.log(&quot;hi&quot;);
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+
+    };
+    xhttp.open(&quot;GET&quot;, &quot;http://localhost:8001/&quot; + document.getElementById(&quot;operation&quot;).value, true); // post istedet for get
+    xhttp.send();
+}
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

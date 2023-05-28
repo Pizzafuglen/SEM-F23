@@ -1,0 +1,3029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SEM-F23Metrics</title>
+  <style type="text/css" media="all">
+    body {
+      font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    table {
+      color: #333;
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    td, th {
+      border: 1px solid #CCC;
+      height: 30px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    th {
+      background: #F3F3F3;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    td {
+      background: #FFFFFF;
+      text-align: left;
+    }
+    h3 {
+      margin-top: 0
+    }
+    h1 {
+      margin-bottom: 6px;
+    }
+    p {
+      margin-top: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+    .reportSubtitle {
+      color: grey;
+    }
+    .group {
+      margin-bottom: 10px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+    }
+    .section {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 2px;
+      padding: 0;
+    }
+    .sectionHeader {
+      margin-bottom: 30px;
+      padding: 20px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+      background-color: lightskyblue;
+    }
+    .sectionTitle {
+      font-size: 140%;
+    }
+    .sectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSectionTitle {
+      font-size: 140%;
+    }
+    .subSectionSubtitle {
+      font-size: 90%; color: grey;
+    }
+    .subSection {
+      margin-bottom: 30px;
+      border: solid lightgrey 1px;
+      padding-top: 0;
+      padding-bottom: 0;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .subSectionHeader {
+      border: solid lightgrey 1px;
+      padding: 6px;
+      background-color: lightgrey;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 2px 9px 0 rgba(0, 0, 0, 0.19);
+    }
+    .sectionBody {
+      margin: 20px;
+    }
+.tab {
+ overflow: hidden;
+ border: 1px solid #ccc;
+ background-color: #f1f1f1;
+}
+.tab button {
+ font-family: Roboto, Vollkorn, Ubuntu, Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+ font-size: 100%;
+ background-color: inherit;
+ float: left;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 14px 16px;
+ transition: 0.3s;
+}
+.tab button:hover {
+ background-color: #ddd;
+}
+.tab button.active {
+ background-color: #ccc;
+}
+.tabcontent {
+ display: none;
+ padding: 6px 12px;
+ border: 1px solid #ccc;
+ overflow-y: auto;
+ border-top: none;
+}
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <script type="text/javascript">
+    function showHide(id) {
+      var e = document.getElementById(id);
+      e.style.display = (e.style.display == 'block') ? 'none' : 'block';
+    }
+    function showHideDisappear(id) {
+      var e = document.getElementById(id);
+      e.style.display = '';      var eTrigger = document.getElementById(id + '_trigger');
+      eTrigger.style.display = 'none';
+    }
+    function openTab(evt, tabName) {
+     var i, tabcontent, tablinks;
+     tabcontent = document.getElementsByClassName("tabcontent");
+     for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tablinks");
+     for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(tabName).style.display = "block";
+     evt.currentTarget.className += " active";
+    }
+  </script>
+  
+</head>
+
+<body><div id="report">
+
+
+<div style='font-size: 36px; margin-top: 15px;'><a href='index.html' style="font-size: 100%;text-decoration:none">
+<img style='transform: scale(0.8); height: 48px' valign='middle' src='https://zeljkoobrenovic.github.io/sokrates-media/icons/repository.png'>
+<div style='display: inline-block; vertical-align: middle'><div style='color: #bbbbbb; font-size: 60%;'>SEM-F23</div><div style='height: 34px; font-size: 100%'>Metrics</div></div></div>
+</a>
+</div>
+
+<p style="margin-top: 12px; color: grey">All numeric values measured by Sokrates.</p>
+<div class='section'><div class='sectionHeader'>  <span class='sectionTitle'>Intro</span></div><div class='sectionBody'>
+<ul>
+<li>Metrics are all numeric values measured by Sokrates.</li>
+<li>You can use these metrics to define <a href='Controls.html'>goals and controls</a>.</li>
+</ul>
+</div></div>
+<div class='section'><div class='sectionHeader'>  <span class='sectionTitle'>Metrics</span></div><div class='sectionBody'>
+<div style="width: 100%; overflow-x: auto">
+<table>
+<th>Metric</th>
+<th>Value</th>
+<tr>
+<td>
+<b>TOTAL_NUMBER_OF_FILES</b>
+</td>
+<td style="text-align: right">
+83
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_MAIN</b>
+</td>
+<td style="text-align: right">
+20
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_MAIN</b>
+</td>
+<td style="text-align: right">
+563
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_MAIN_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+18
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_MAIN_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+527
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_MAIN_EXT_HTML</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_MAIN_EXT_HTML</b>
+</td>
+<td style="text-align: right">
+21
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_MAIN_EXT_JS</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_MAIN_EXT_JS</b>
+</td>
+<td style="text-align: right">
+15
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_TEST</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_TEST</b>
+</td>
+<td style="text-align: right">
+60
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_TEST_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_TEST_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+60
+</td>
+</tr>
+<tr>
+<td>
+<b>TEST_VS_MAIN_LINES_OF_CODE_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+10.65
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_GENERATED</b>
+</td>
+<td style="text-align: right">
+10
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_GENERATED</b>
+</td>
+<td style="text-align: right">
+359
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_GENERATED_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+10
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_GENERATED_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+359
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_BUILD_AND_DEPLOYMENT</b>
+</td>
+<td style="text-align: right">
+4
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_BUILD_AND_DEPLOYMENT</b>
+</td>
+<td style="text-align: right">
+197
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_BUILD_AND_DEPLOYMENT_EXT_XML</b>
+</td>
+<td style="text-align: right">
+4
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_BUILD_AND_DEPLOYMENT_EXT_XML</b>
+</td>
+<td style="text-align: right">
+197
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_OTHER</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_OTHER</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_OTHER_EXT_MD</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_OTHER_EXT_MD</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_AGVMODULE</b>
+</td>
+<td style="text-align: right">
+5
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_AGVMODULE</b>
+</td>
+<td style="text-align: right">
+235
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_AGVMODULE_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+5
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_AGVMODULE_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+235
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_ASMODULE</b>
+</td>
+<td style="text-align: right">
+8
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_ASMODULE</b>
+</td>
+<td style="text-align: right">
+187
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_ASMODULE_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+8
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_ASMODULE_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+187
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_FLOWCONTROLLER</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_FLOWCONTROLLER</b>
+</td>
+<td style="text-align: right">
+34
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_FLOWCONTROLLER_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_FLOWCONTROLLER_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+34
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_GUITEST</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_GUITEST</b>
+</td>
+<td style="text-align: right">
+36
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_GUITEST_EXT_HTML</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_GUITEST_EXT_HTML</b>
+</td>
+<td style="text-align: right">
+21
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_GUITEST_EXT_JS</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_GUITEST_EXT_JS</b>
+</td>
+<td style="text-align: right">
+15
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_WHMODULE</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_WHMODULE</b>
+</td>
+<td style="text-align: right">
+71
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_DECOMPOSITION_PRIMARY_WHMODULE_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_DECOMPOSITION_PRIMARY_WHMODULE_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+71
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_DEPENDENCY_LINKS_DECOMPOSITION_PRIMARY</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_DEPENDENCIES_DECOMPOSITION_PRIMARY</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_PLACES_WITH_CYCLIC_DEPENDENCIES_DECOMPOSITION_PRIMARY</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_CONCERN_GENERAL_TODOS</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_CONCERN_GENERAL_TODOS</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_CONCERN_GENERAL_UNCLASSIFIED</b>
+</td>
+<td style="text-align: right">
+20
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_CONCERN_GENERAL_UNCLASSIFIED</b>
+</td>
+<td style="text-align: right">
+563
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_CONCERN_GENERAL_UNCLASSIFIED_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+18
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_CONCERN_GENERAL_UNCLASSIFIED_EXT_JAVA</b>
+</td>
+<td style="text-align: right">
+527
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_CONCERN_GENERAL_UNCLASSIFIED_EXT_HTML</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_CONCERN_GENERAL_UNCLASSIFIED_EXT_HTML</b>
+</td>
+<td style="text-align: right">
+21
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_FILES_CONCERN_GENERAL_UNCLASSIFIED_EXT_JS</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_CONCERN_GENERAL_UNCLASSIFIED_EXT_JS</b>
+</td>
+<td style="text-align: right">
+15
+</td>
+</tr>
+<tr>
+<td>
+<b>NEGLIGIBLE_RISK_FILE_SIZE_COUNT</b>
+</td>
+<td style="text-align: right">
+20
+</td>
+</tr>
+<tr>
+<td>
+<b>LOW_RISK_FILE_SIZE_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>MEDIUM_RISK_FILE_SIZE_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>HIGH_RISK_FILE_SIZE_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>VERY_HIGH_RISK_FILE_SIZE_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>NEGLIGIBLE_RISK_FILE_SIZE_LOC</b>
+</td>
+<td style="text-align: right">
+563
+</td>
+</tr>
+<tr>
+<td>
+<b>LOW_RISK_FILE_SIZE_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>MEDIUM_RISK_FILE_SIZE_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>HIGH_RISK_FILE_SIZE_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>VERY_HIGH_RISK_FILE_SIZE_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_UNITS</b>
+</td>
+<td style="text-align: right">
+44
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_IN_UNITS</b>
+</td>
+<td style="text-align: right">
+383
+</td>
+</tr>
+<tr>
+<td>
+<b>LINES_OF_CODE_OUTSIDE_UNITS</b>
+</td>
+<td style="text-align: right">
+180
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+129
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+33.68
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+28
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+160
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+41.78
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+13
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+94
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+24.54
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+32
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+17.68
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+5
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+91
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+50.28
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+7
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+58
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+32.04
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_AGVMODULE_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+54
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+43.55
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+13
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+34
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+27.42
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+36
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+29.03
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_ASMODULE_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+8
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+42.11
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+11
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+57.89
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_FLOWCONTROLLER_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+10
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_GUITEST_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+25
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+51.02
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+5
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+24
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+48.98
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_COMPONENT_WHMODULE_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+119
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+31.9
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+25
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+160
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+42.9
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+13
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+94
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+25.2
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JAVA_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+10
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_SIZE_EXTENSION_JS_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+325
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+84.86
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+42
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+58
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+15.14
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_HIGH_PLUS_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_HIGH_PLUS_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+123
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+67.96
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+12
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+58
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+32.04
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_AGVMODULE_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+124
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+17
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_ASMODULE_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+19
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_FLOWCONTROLLER_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+10
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_GUITEST_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+49
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+7
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_WHMODULE_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+315
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+84.45
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+39
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+58
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+15.55
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+2
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JAVA_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+10
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_NEGLIGIBLE_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_LOW_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_MEDIUM_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_VERY_HIGH_RISK_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>CONDITIONAL_COMPLEXITY_COMPONENT_JS_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_CHANGE_HISTORY_TOTAL_AGE_DAYS</b>
+</td>
+<td style="text-align: right">
+30
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_CHANGE_HISTORY_ACTIVE_DAYS</b>
+</td>
+<td style="text-align: right">
+10
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_CHANGE_HISTORY_WEEKS</b>
+</td>
+<td style="text-align: right">
+4
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_CHANGE_HISTORY_ESTIMATED_WORKING_DAYS</b>
+</td>
+<td style="text-align: right">
+20
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_NEGLIGIBLE_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+18
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_LOW_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_MEDIUM_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_VERY_HIGH_RISK_COUNT</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_NEGLIGIBLE_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+529
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_LOW_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_MEDIUM_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>FILE_AGE_VERY_HIGH_RISK_LOC</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>NUMBER_OF_CONTRIBUTORS</b>
+</td>
+<td style="text-align: right">
+6
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_DUPLICATES</b>
+</td>
+<td style="text-align: right">
+3
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_FILES_WITH_DUPLICATES</b>
+</td>
+<td style="text-align: right">
+6
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_DUPLICATED_LINES</b>
+</td>
+<td style="text-align: right">
+46
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_CLEANED_LINES</b>
+</td>
+<td style="text-align: right">
+370
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_PERCENTAGE</b>
+</td>
+<td style="text-align: right">
+12.43
+</td>
+</tr>
+<tr>
+<td>
+<b>UNIT_DUPLICATES_COUNT</b>
+</td>
+<td style="text-align: right">
+1
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_DUPLICATED_LINES_PRIMARY_ASMODULE</b>
+</td>
+<td style="text-align: right">
+25
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_CLEANED_LINES_PRIMARY_ASMODULE</b>
+</td>
+<td style="text-align: right">
+25
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_PERCENTAGE_PRIMARY_ASMODULE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_DUPLICATED_LINES_PRIMARY_WHMODULE</b>
+</td>
+<td style="text-align: right">
+15
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_CLEANED_LINES_PRIMARY_WHMODULE</b>
+</td>
+<td style="text-align: right">
+15
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_PERCENTAGE_PRIMARY_WHMODULE</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_DUPLICATED_LINES_PRIMARY_FLOWCONTROLLER</b>
+</td>
+<td style="text-align: right">
+6
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_CLEANED_LINES_PRIMARY_FLOWCONTROLLER</b>
+</td>
+<td style="text-align: right">
+6
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_PERCENTAGE_PRIMARY_FLOWCONTROLLER</b>
+</td>
+<td style="text-align: right">
+100
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_DUPLICATED_LINES_PRIMARY_AGVMODULE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_CLEANED_LINES_PRIMARY_AGVMODULE</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_PERCENTAGE_PRIMARY_AGVMODULE</b>
+</td>
+<td style="text-align: right">
+-
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_DUPLICATED_LINES_PRIMARY_GUITEST</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_CLEANED_LINES_PRIMARY_GUITEST</b>
+</td>
+<td style="text-align: right">
+0
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_PERCENTAGE_PRIMARY_GUITEST</b>
+</td>
+<td style="text-align: right">
+-
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_DUPLICATED_LINES_JAVA</b>
+</td>
+<td style="text-align: right">
+46
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_NUMBER_OF_CLEANED_LINES_JAVA</b>
+</td>
+<td style="text-align: right">
+340
+</td>
+</tr>
+<tr>
+<td>
+<b>DUPLICATION_PERCENTAGE_JAVA</b>
+</td>
+<td style="text-align: right">
+13.53
+</td>
+</tr>
+<tr>
+<td>
+<b>TOTAL_ANALYSIS_TIME_IN_MILLIS</b>
+</td>
+<td style="text-align: right">
+722
+</td>
+</tr>
+</table>
+</div>
+</div></div>
+</div>
+</body>
+</html>

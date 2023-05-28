@@ -1,0 +1,28 @@
+goal: Keep the system simple and easy to change
+control metric: LINES_OF_CODE_MAIN
+status: OK
+desired range: [0 - 200000] ±20000
+value: 563
+description: Total number of lines of main code
+
+goal: Keep the system simple and easy to change
+control metric: DUPLICATION_PERCENTAGE
+status: FAILED
+desired range: [0 - 5] ±1
+value: 12.432432432432432
+description: System duplication
+
+goal: Keep the system simple and easy to change
+control metric: VERY_HIGH_RISK_FILE_SIZE_COUNT
+status: OK
+desired range: [0 - 0] ±1
+value: 0
+description: The number of very large files
+
+goal: Keep the system simple and easy to change
+control metric: CONDITIONAL_COMPLEXITY_VERY_HIGH_RISK_COUNT
+status: OK
+desired range: [0 - 0] ±1
+value: 0
+description: Number of very complex units
+

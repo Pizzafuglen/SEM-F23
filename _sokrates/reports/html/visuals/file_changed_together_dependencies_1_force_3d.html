@@ -1,0 +1,458 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "size" : 10
+  }, {
+    "id" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "size" : 4
+  }, {
+    "id" : "[GUITest/html.html]",
+    "size" : 6
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "size" : 8
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "size" : 3
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "size" : 4
+  }, {
+    "id" : "[GUITest/js.js]",
+    "size" : 6
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "size" : 4
+  }, {
+    "id" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "size" : 4
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/ASServer.java]",
+    "size" : 2
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "size" : 4
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/ASHandler.java]",
+    "size" : 2
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "size" : 4
+  }, {
+    "id" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "size" : 8
+  }, {
+    "id" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "size" : 8
+  }, {
+    "id" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "size" : 3
+  }, {
+    "id" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "size" : 8
+  }, {
+    "id" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "size" : 4
+  } ],
+  "links" : [ {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 8
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 8
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 7
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 7
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 6
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 6
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 5
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 5
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 5
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "count" : 5
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 5
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 5
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 4
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 4
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 4
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 4
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "count" : 3
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVHandler.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "count" : 3
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 3
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "count" : 3
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/AGVController.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/js.js]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[GUITest/js.js]",
+    "count" : 2
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "[GUITest/js.js]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/js.js]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "[GUITest/js.js]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/js.js]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/DBhandler.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "[GUITest/html.html]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/html.html]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[AGVModule/src/main/java/org/AGV/HTTPServer.java]",
+    "target" : "[AGVModule/src/main/java/org/AGV/d.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "[GUITest/html.html]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/html.html]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/js.js]",
+    "target" : "[GUITest/html.html]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/html.html]",
+    "target" : "[GUITest/js.js]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/html.html]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[GUITest/html.html]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "[GUITest/html.html]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/html.html]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "[GUITest/js.js]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/js.js]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 2
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WSDLClient.java]",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/html.html]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "[GUITest/html.html]",
+    "count" : 2
+  }, {
+    "source" : "[GUITest/js.js]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client.java]",
+    "target" : "[GUITest/js.js]",
+    "count" : 2
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "count" : 2
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHHandler.java]",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "count" : 2
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[ASModule/src/main/java/org/example/ASHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/ASHandler.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/ASServer.java]",
+    "target" : "[ASModule/src/main/java/org/example/ASHandler.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/ASHandler.java]",
+    "target" : "[ASModule/src/main/java/org/example/ASServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback2.java]",
+    "count" : 1
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[ASModule/src/main/java/org/example/ASServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/ASServer.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "target" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "count" : 1
+  }, {
+    "source" : "[ASModule/src/main/java/org/example/Mqtt_Client2.java]",
+    "target" : "[ASModule/src/main/java/org/example/OnMessageCallback.java]",
+    "count" : 1
+  }, {
+    "source" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "target" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "count" : 1
+  }, {
+    "source" : "[WHModule/src/main/java/com/f23/javaserver/WHServer.java]",
+    "target" : "[FlowController/src/main/java/com/f23/javaserver/FlowHandler.java]",
+    "count" : 1
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

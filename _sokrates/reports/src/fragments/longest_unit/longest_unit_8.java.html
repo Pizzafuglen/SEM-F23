@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>public void handle()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public void handle()</h3>
+<p style="margin-top: 4px">in <i>AGVModule/src/main/java/org/AGV/AGVHandler.java [25:40]</i></p>
+<ul>
+    <li><b>12</b> lines of code</li>
+    <li><b>4</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public void handle(HttpExchange httpExchange) throws IOException { //This method handles the http exchange, by checking whether it is a GET or a POST request.
+        String requestParamValue = null;
+
+        if (&quot;GET&quot;.equals(httpExchange.getRequestMethod())) {
+            try {
+                requestParamValue = operation(httpExchange);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+        } else if (&quot;POST&quot;.equals(httpExchange)) {
+
+
+        }
+        handleResponse(httpExchange, requestParamValue); //It then uses both the return value of the way we handled our request, and the http exchange, to execute the method that actually handles the response.
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

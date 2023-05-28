@@ -1,0 +1,93 @@
+{
+  "title" : "Duplication",
+  "timestamp" : "2023-05-16 10:33:48",
+  "duplicates" : [ {
+    "blockSize" : 9,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "ASModule/src/main/java/org/example/ASHandler.java",
+        "extension" : "java",
+        "linesOfCode" : 22,
+        "components" : [ "primary::ASModule" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 13,
+      "startLine" : 20,
+      "endLine" : 31,
+      "cleanedStartLine" : 5,
+      "cleanedEndLine" : 13
+    }, {
+      "file" : {
+        "relativePath" : "WHModule/src/main/java/com/f23/javaserver/WHHandler.java",
+        "extension" : "java",
+        "linesOfCode" : 32,
+        "components" : [ "primary::WHModule" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 22,
+      "startLine" : 28,
+      "endLine" : 39,
+      "cleanedStartLine" : 14,
+      "cleanedEndLine" : 22
+    } ]
+  }, {
+    "blockSize" : 8,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "ASModule/src/main/java/org/example/OnMessageCallback.java",
+        "extension" : "java",
+        "linesOfCode" : 17,
+        "components" : [ "primary::ASModule" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 9,
+      "startLine" : 9,
+      "endLine" : 22,
+      "cleanedStartLine" : 2,
+      "cleanedEndLine" : 9
+    }, {
+      "file" : {
+        "relativePath" : "ASModule/src/main/java/org/example/OnMessageCallback2.java",
+        "extension" : "java",
+        "linesOfCode" : 17,
+        "components" : [ "primary::ASModule" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 9,
+      "startLine" : 9,
+      "endLine" : 23,
+      "cleanedStartLine" : 2,
+      "cleanedEndLine" : 9
+    } ]
+  }, {
+    "blockSize" : 6,
+    "duplicatedFileBlocks" : [ {
+      "file" : {
+        "relativePath" : "FlowController/src/main/java/com/f23/javaserver/FlowServer.java",
+        "extension" : "java",
+        "linesOfCode" : 23,
+        "components" : [ "primary::FlowController" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 13,
+      "startLine" : 18,
+      "endLine" : 25,
+      "cleanedStartLine" : 7,
+      "cleanedEndLine" : 12
+    }, {
+      "file" : {
+        "relativePath" : "WHModule/src/main/java/com/f23/javaserver/WHServer.java",
+        "extension" : "java",
+        "linesOfCode" : 23,
+        "components" : [ "primary::WHModule" ],
+        "concerns" : [ "::Unclassified" ]
+      },
+      "sourceFileCleanedLinesOfCode" : 13,
+      "startLine" : 18,
+      "endLine" : 26,
+      "cleanedStartLine" : 7,
+      "cleanedEndLine" : 12
+    } ]
+  } ],
+  "overallDuplication" : null
+}

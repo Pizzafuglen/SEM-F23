@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>public static void main()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public static void main()</h3>
+<p style="margin-top: 4px">in <i>AGVModule/src/main/java/org/AGV/d.java [11:33]</i></p>
+<ul>
+    <li><b>12</b> lines of code</li>
+    <li><b>2</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public static void main(String[] args) {
+        // Create an instance of HttpClient
+        CloseableHttpClient httpClient = HttpClients.createDefault();
+
+        // Create an instance of HttpGet request with the URL
+        HttpGet httpGet = new HttpGet(&quot;http://localhost:8082/v1/status/&quot;);
+
+        try {
+            // Execute the request and get the response
+            CloseableHttpResponse response = httpClient.execute(httpGet);
+
+            // Extract the JSON content from the response body
+            String json = EntityUtils.toString(response.getEntity());
+
+            // Print the JSON content to the console
+            System.out.println(json);
+
+            // Close the response
+            response.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>ASModule/src/main/java/org/example/Mqtt_Client2.java</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">ASModule/src/main/java/org/example/Mqtt_Client2.java (<b>44</b> lines of code) (<a href="Mqtt_Client2.java">raw</a>):</h3>
+<div id="editor">package org.example;
+
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
+
+public class Mqtt_Client2 {
+    public static void main(String[] args) {
+        String subTopic = &quot;emulator/operation&quot;;
+        String pubTopic = &quot;emulator/operation&quot;;
+        String content = &quot;A????3&quot;;
+        int qos = 2;
+        String broker = &quot;mqtt://localhost:1883/&quot;;
+        String clientId = &quot;client-1&quot;;
+        MemoryPersistence persistence = new MemoryPersistence();
+
+        try {
+            MqttClient client = new MqttClient(broker, clientId);
+
+            // MQTT connection option
+            MqttConnectOptions connOpts = new MqttConnectOptions();
+            // retain session
+            connOpts.setCleanSession(true);
+            // set callback
+            client.setCallback(new OnMessageCallback()); // ved ikke hvad den g&oslash;r
+            // establish a connection
+            System.out.println(&quot;Connecting to broker: &quot; + broker);
+            client.connect(connOpts);
+
+            System.out.println(&quot;Connected&quot;);
+
+            // Subscribe
+            client.subscribe(subTopic);
+
+
+            // Required parameters for message publishing
+            System.out.println(&quot;Publishing message: &quot; + content);
+            System.out.println(&quot;-----------------------&quot;);
+            MqttMessage message = new MqttMessage(content.getBytes());
+            message.setQos(qos);
+            client.publish(pubTopic, message);
+            System.out.println(&quot;Message published&quot;);
+
+            client.disconnect();
+            System.out.println(&quot;Disconnected&quot;);
+            client.close();
+            System.exit(0);
+        } catch (MqttException me) {
+            System.out.println(&quot;reason &quot; + me.getReasonCode());
+            System.out.println(&quot;msg &quot; + me.getMessage());
+            System.out.println(&quot;loc &quot; + me.getLocalizedMessage());
+            System.out.println(&quot;cause &quot; + me.getCause());
+            System.out.println(&quot;excep &quot; + me);
+            me.printStackTrace();
+        }
+    }
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/java");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

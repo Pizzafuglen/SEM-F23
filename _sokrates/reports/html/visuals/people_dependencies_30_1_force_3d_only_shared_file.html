@@ -1,0 +1,174 @@
+<head>
+    <style> body {
+        margin: 0;
+    } </style>
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+</head>
+
+<body>
+<div id="3d-graph"></div>
+
+<script>
+    const gData = {
+  "nodes" : [ {
+    "id" : "90039392+pizzafuglen@users.noreply.github.com",
+    "size" : 5
+  }, {
+    "id" : "91126091+vi-the@users.noreply.github.com",
+    "size" : 5
+  }, {
+    "id" : "91126094+harun-abdi@users.noreply.github.com",
+    "size" : 5
+  }, {
+    "id" : "92362718+miffan20@users.noreply.github.com",
+    "size" : 5
+  }, {
+    "id" : "crose19@student.sdu.dk",
+    "size" : 5
+  }, {
+    "id" : "anden21@student.sdu.dk",
+    "size" : 5
+  } ],
+  "links" : [ {
+    "source" : "90039392+pizzafuglen@users.noreply.github.com",
+    "target" : "crose19@student.sdu.dk",
+    "count" : 74
+  }, {
+    "source" : "crose19@student.sdu.dk",
+    "target" : "90039392+pizzafuglen@users.noreply.github.com",
+    "count" : 74
+  }, {
+    "source" : "anden21@student.sdu.dk",
+    "target" : "crose19@student.sdu.dk",
+    "count" : 74
+  }, {
+    "source" : "crose19@student.sdu.dk",
+    "target" : "anden21@student.sdu.dk",
+    "count" : 74
+  }, {
+    "source" : "90039392+pizzafuglen@users.noreply.github.com",
+    "target" : "anden21@student.sdu.dk",
+    "count" : 59
+  }, {
+    "source" : "anden21@student.sdu.dk",
+    "target" : "90039392+pizzafuglen@users.noreply.github.com",
+    "count" : 59
+  }, {
+    "source" : "90039392+pizzafuglen@users.noreply.github.com",
+    "target" : "91126094+harun-abdi@users.noreply.github.com",
+    "count" : 24
+  }, {
+    "source" : "91126094+harun-abdi@users.noreply.github.com",
+    "target" : "90039392+pizzafuglen@users.noreply.github.com",
+    "count" : 24
+  }, {
+    "source" : "91126094+harun-abdi@users.noreply.github.com",
+    "target" : "91126091+vi-the@users.noreply.github.com",
+    "count" : 23
+  }, {
+    "source" : "91126091+vi-the@users.noreply.github.com",
+    "target" : "91126094+harun-abdi@users.noreply.github.com",
+    "count" : 23
+  }, {
+    "source" : "crose19@student.sdu.dk",
+    "target" : "92362718+miffan20@users.noreply.github.com",
+    "count" : 23
+  }, {
+    "source" : "92362718+miffan20@users.noreply.github.com",
+    "target" : "crose19@student.sdu.dk",
+    "count" : 23
+  }, {
+    "source" : "90039392+pizzafuglen@users.noreply.github.com",
+    "target" : "91126091+vi-the@users.noreply.github.com",
+    "count" : 22
+  }, {
+    "source" : "91126091+vi-the@users.noreply.github.com",
+    "target" : "90039392+pizzafuglen@users.noreply.github.com",
+    "count" : 22
+  }, {
+    "source" : "anden21@student.sdu.dk",
+    "target" : "92362718+miffan20@users.noreply.github.com",
+    "count" : 21
+  }, {
+    "source" : "92362718+miffan20@users.noreply.github.com",
+    "target" : "anden21@student.sdu.dk",
+    "count" : 21
+  }, {
+    "source" : "90039392+pizzafuglen@users.noreply.github.com",
+    "target" : "92362718+miffan20@users.noreply.github.com",
+    "count" : 17
+  }, {
+    "source" : "92362718+miffan20@users.noreply.github.com",
+    "target" : "90039392+pizzafuglen@users.noreply.github.com",
+    "count" : 17
+  }, {
+    "source" : "91126094+harun-abdi@users.noreply.github.com",
+    "target" : "crose19@student.sdu.dk",
+    "count" : 9
+  }, {
+    "source" : "crose19@student.sdu.dk",
+    "target" : "91126094+harun-abdi@users.noreply.github.com",
+    "count" : 9
+  }, {
+    "source" : "91126094+harun-abdi@users.noreply.github.com",
+    "target" : "anden21@student.sdu.dk",
+    "count" : 8
+  }, {
+    "source" : "anden21@student.sdu.dk",
+    "target" : "91126094+harun-abdi@users.noreply.github.com",
+    "count" : 8
+  }, {
+    "source" : "91126091+vi-the@users.noreply.github.com",
+    "target" : "crose19@student.sdu.dk",
+    "count" : 7
+  }, {
+    "source" : "crose19@student.sdu.dk",
+    "target" : "91126091+vi-the@users.noreply.github.com",
+    "count" : 7
+  }, {
+    "source" : "91126091+vi-the@users.noreply.github.com",
+    "target" : "anden21@student.sdu.dk",
+    "count" : 6
+  }, {
+    "source" : "anden21@student.sdu.dk",
+    "target" : "91126091+vi-the@users.noreply.github.com",
+    "count" : 6
+  }, {
+    "source" : "91126094+harun-abdi@users.noreply.github.com",
+    "target" : "92362718+miffan20@users.noreply.github.com",
+    "count" : 6
+  }, {
+    "source" : "92362718+miffan20@users.noreply.github.com",
+    "target" : "91126094+harun-abdi@users.noreply.github.com",
+    "count" : 6
+  }, {
+    "source" : "91126091+vi-the@users.noreply.github.com",
+    "target" : "92362718+miffan20@users.noreply.github.com",
+    "count" : 5
+  }, {
+    "source" : "92362718+miffan20@users.noreply.github.com",
+    "target" : "91126091+vi-the@users.noreply.github.com",
+    "count" : 5
+  } ]
+}
+
+    const maxNodeSize = gData.nodes.map(n => n.size).reduce((a, b) => Math.max(a, b));
+    const maxCount = gData.links.map(l => l.count).reduce((a, b) => Math.max(a, b));
+
+    gData.links = gData.links.map(l => { return {source: l.target, target: l.source, count: l.count} });
+
+    const Graph = ForceGraph3D()
+    (document.getElementById('3d-graph'))
+        .graphData(gData)
+        .nodeRelSize(4)
+        .nodeVal(n => Math.max(20 * n.size / maxNodeSize, 0.001))
+        .nodeLabel(n => n.id + " (" + n.size + ")")
+        .nodeColor(n => n.id.startsWith("[") ? "skyblue" : "")
+        .linkDirectionalParticles(6)
+        .linkDirectionalParticleSpeed(d => d.count / maxCount * 0.01)
+        .linkOpacity(0.1)
+        .linkWidth(d => 3 * d.count / maxCount + 0.1);
+
+</script>
+</body>

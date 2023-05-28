@@ -1,0 +1,61 @@
+[ {
+  "key" : "general",
+  "concerns" : [ {
+    "name" : "TODOs",
+    "filesCount" : 0,
+    "linesOfCode" : 0,
+    "numberOfRegexLineMatches" : 0,
+    "fileCountPerExtension" : [ ],
+    "linesOfCodePerExtension" : [ ]
+  }, {
+    "name" : "Unclassified",
+    "filesCount" : 20,
+    "linesOfCode" : 563,
+    "numberOfRegexLineMatches" : 0,
+    "fileCountPerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 18,
+      "description" : [ ]
+    }, {
+      "name" : "  *.html",
+      "value" : 1,
+      "description" : [ ]
+    }, {
+      "name" : "  *.js",
+      "value" : 1,
+      "description" : [ ]
+    } ],
+    "linesOfCodePerExtension" : [ {
+      "name" : "  *.java",
+      "value" : 527,
+      "description" : [ ]
+    }, {
+      "name" : "  *.html",
+      "value" : 21,
+      "description" : [ ]
+    }, {
+      "name" : "  *.js",
+      "value" : 15,
+      "description" : [ ]
+    } ]
+  } ],
+  "concernsGroup" : null,
+  "fileCountPerConcern" : [ {
+    "name" : "TODOs",
+    "value" : 0,
+    "description" : [ ]
+  }, {
+    "name" : "Unclassified",
+    "value" : 20,
+    "description" : [ ]
+  } ],
+  "linesOfCodePerConcern" : [ {
+    "name" : "TODOs",
+    "value" : 0,
+    "description" : [ ]
+  }, {
+    "name" : "Unclassified",
+    "value" : 563,
+    "description" : [ ]
+  } ]
+} ]

@@ -1,0 +1,45 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="grey"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+
+
+
+    "90039392+pizzafuglen@users.noreply.github.com" -- "crose19@student.sdu.dk" [label=" 74 ", penwidth="10", color="#00688bFF"];
+    "anden21@student.sdu.dk" -- "crose19@student.sdu.dk" [label=" 74 ", penwidth="10", color="#00688bFF"];
+    "90039392+pizzafuglen@users.noreply.github.com" -- "anden21@student.sdu.dk" [label=" 59 ", penwidth="7", color="#00688bC9"];
+    "90039392+pizzafuglen@users.noreply.github.com" -- "91126094+harun-abdi@users.noreply.github.com" [label=" 24 ", penwidth="3", color="#00688b82"];
+    "91126094+harun-abdi@users.noreply.github.com" -- "91126091+vi-the@users.noreply.github.com" [label=" 23 ", penwidth="3", color="#00688b82"];
+    "crose19@student.sdu.dk" -- "92362718+miffan20@users.noreply.github.com" [label=" 23 ", penwidth="3", color="#00688b82"];
+    "90039392+pizzafuglen@users.noreply.github.com" -- "91126091+vi-the@users.noreply.github.com" [label=" 22 ", penwidth="2", color="#00688b70"];
+    "anden21@student.sdu.dk" -- "92362718+miffan20@users.noreply.github.com" [label=" 21 ", penwidth="2", color="#00688b70"];
+    "90039392+pizzafuglen@users.noreply.github.com" -- "92362718+miffan20@users.noreply.github.com" [label=" 17 ", penwidth="2", color="#00688b70"];
+    "91126094+harun-abdi@users.noreply.github.com" -- "crose19@student.sdu.dk" [label=" 9 ", penwidth="1", color="#00688b5E"];
+    "91126094+harun-abdi@users.noreply.github.com" -- "anden21@student.sdu.dk" [label=" 8 ", penwidth="1", color="#00688b5E"];
+    "91126091+vi-the@users.noreply.github.com" -- "crose19@student.sdu.dk" [label=" 7 ", penwidth="1", color="#00688b4C"];
+    "91126091+vi-the@users.noreply.github.com" -- "anden21@student.sdu.dk" [label=" 6 ", penwidth="1", color="#00688b4C"];
+    "91126094+harun-abdi@users.noreply.github.com" -- "92362718+miffan20@users.noreply.github.com" [label=" 6 ", penwidth="1", color="#00688b4C"];
+    "91126091+vi-the@users.noreply.github.com" -- "92362718+miffan20@users.noreply.github.com" [label=" 5 ", penwidth="1", color="#00688b4C"];
+
+}

@@ -1,0 +1,39 @@
+graph G {
+    compound="true"
+    rankdir="TB"
+    bgcolor="white"
+    fontname="Tahoma"
+
+    node [
+        fixedsize="false"
+        fontname="Tahoma"
+        color="white"
+        fillcolor="deepskyblue2"
+        fontcolor="black"
+        shape="box"
+        style="filled"
+        penwidth="1.0"
+    ]
+    edge [
+        fontname="Arial"
+        color="#00688b"
+        fontcolor="black"
+        fontsize="12"
+        arrowsize="0.5"
+        penwidth="1.0"
+    ]
+
+
+
+
+    "ASModule" -- "ASModule" [label=" 11 ", penwidth="10", color="#a0a0a0FF"];
+    "AGVModule" -- "AGVModule" [label=" 10 ", penwidth="9", color="#a0a0a0ED"];
+    "WHModule" -- "WHModule" [label=" 9 ", penwidth="8", color="#a0a0a0DB"];
+    "FlowController" -- "FlowController" [label=" 4 ", penwidth="3", color="#a0a0a082"];
+    "WHModule" -- "ASModule" [label=" 2 ", penwidth="1", color="#00688b5E"];
+    "GUITest" -- "ASModule" [label=" 2 ", penwidth="1", color="#00688b5E"];
+    "FlowController" -- "WHModule" [label=" 2 ", penwidth="1", color="#00688b5E"];
+    "WHModule" -- "GUITest" [label=" 2 ", penwidth="1", color="#00688b5E"];
+    "GUITest" -- "GUITest" [label=" 2 ", penwidth="1", color="#a0a0a05E"];
+
+}

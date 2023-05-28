@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>public static void handleGetRequest()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public static void handleGetRequest()</h3>
+<p style="margin-top: 4px">in <i>AGVModule/src/main/java/org/AGV/AGVController.java [71:79]</i></p>
+<ul>
+    <li><b>7</b> lines of code</li>
+    <li><b>1</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public static void handleGetRequest() throws IOException {
+        //GET request
+        Request request = new Request.Builder()
+                .url(SERVER_URL + &quot;/v1/status&quot;)
+                .build();
+
+        Response response = client.newCall(request).execute();
+        System.out.println(&quot;GET request response: &quot; + response.body().string());
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

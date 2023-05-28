@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>public static Connection getConnection()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public static Connection getConnection()</h3>
+<p style="margin-top: 4px">in <i>AGVModule/src/main/java/org/AGV/DBhandler.java [15:25]</i></p>
+<ul>
+    <li><b>11</b> lines of code</li>
+    <li><b>3</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public static Connection getConnection(String url, String user, String password) {
+        try {
+            if (c == null) {
+                Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);
+                c = DriverManager.getConnection(url, user, password);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return c;
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

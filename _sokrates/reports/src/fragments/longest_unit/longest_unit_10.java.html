@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>public static void main()</title>
+    <link rel="stylesheet" charset="UTF-8" href="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/styles/docco.min.css">
+    <script charset="UTF-8" type="application/javascript" src="https://d2bb1mtyn3kglb.cloudfront.net/lib/highlight/highlight.min.js"></script>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">public static void main()</h3>
+<p style="margin-top: 4px">in <i>ASModule/src/main/java/org/example/Test.java [10:26]</i></p>
+<ul>
+    <li><b>12</b> lines of code</li>
+    <li><b>2</b> McCabe index (conditional complexity)</li>
+</ul>
+<pre>
+<code class="java">
+    public static void main(String[] args) {
+        try {
+            MqttAsyncClient client = new MqttAsyncClient(&quot;tcp://localhost:1883/emulator/status&quot;, UUID.randomUUID().toString());
+
+            Callback cb = new Callback();
+            client.setCallback(cb);
+
+            IMqttToken t = client.connect();
+            t.waitForCompletion();
+
+            client.subscribe(&quot;&quot;,0 );
+
+        } catch (MqttException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+</code>
+</pre>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>

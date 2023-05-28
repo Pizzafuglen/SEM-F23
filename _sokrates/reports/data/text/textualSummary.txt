@@ -1,0 +1,68 @@
+Start of analysis
+Found 83 files
+20 are in the main's scope  (563 lines of code)
+  *.java: 18 files, (527 lines of code)
+  *.html: 1 files, (21 lines of code)
+  *.js: 1 files, (15 lines of code)
+3 are in the test's scope  (60 lines of code)
+  *.java: 3 files, (60 lines of code)
+10 are in the generated's scope  (359 lines of code)
+  *.java: 10 files, (359 lines of code)
+4 are in the build and deployment's scope  (197 lines of code)
+  *.xml: 4 files, (197 lines of code)
+1 are in the other's scope  (1 lines of code)
+  *.md: 1 files, (1 lines of code)
+Excluded from analyses 45 files
+Analysing dependencies...
+5 are in the DECOMPOSITION_primary\AGVModule's scope  (235 lines of code)
+  *.java: 5 files, (235 lines of code)
+8 are in the DECOMPOSITION_primary\ASModule's scope  (187 lines of code)
+  *.java: 8 files, (187 lines of code)
+2 are in the DECOMPOSITION_primary\FlowController's scope  (34 lines of code)
+  *.java: 2 files, (34 lines of code)
+2 are in the DECOMPOSITION_primary\GUITest's scope  (36 lines of code)
+  *.html: 1 files, (21 lines of code)
+  *.js: 1 files, (15 lines of code)
+3 are in the DECOMPOSITION_primary\WHModule's scope  (71 lines of code)
+  *.java: 3 files, (71 lines of code)
+  - "primary", found 0 dependencies (0 component dependencies)
+0 are in the CONCERN_general\TODOs's scope  (0 lines of code)
+20 are in the CONCERN_general\Unclassified's scope  (563 lines of code)
+  *.java: 18 files, (527 lines of code)
+  *.html: 1 files, (21 lines of code)
+  *.js: 1 files, (15 lines of code)
+Analysing units...
+Basic unit metrics...
+  - found 44 units (383 lines of code in units)
+Unit size 129 / 160 / 94 / 0 / 0
+Unit size per component:
+Unit Size Component AGVModule: 32 / 91 / 58 / 0 / 0
+Unit Size Component ASModule: 54 / 34 / 36 / 0 / 0
+Unit Size Component FlowController: 8 / 11 / 0 / 0 / 0
+Unit Size Component GUITest: 10 / 0 / 0 / 0 / 0
+Unit Size Component WHModule: 25 / 24 / 0 / 0 / 0
+Unit size per extension:
+Unit Size Extension java: 119 / 160 / 94 / 0 / 0
+Unit Size Extension js: 10 / 0 / 0 / 0 / 0
+Conditional complexity: 325 / 58 / 0 / 0 / 0
+Conditional complexity per component:
+Conditional Complexity Component AGVModule 123 / 58 / 0 / 0 / 0
+Conditional Complexity Component ASModule 124 / 0 / 0 / 0 / 0
+Conditional Complexity Component FlowController 19 / 0 / 0 / 0 / 0
+Conditional Complexity Component GUITest 10 / 0 / 0 / 0 / 0
+Conditional Complexity Component WHModule 49 / 0 / 0 / 0 / 0
+Conditional complexity per extension:
+Conditional Complexity Component java: 315 / 58 / 0 / 0 / 0
+Conditional Complexity Component js: 10 / 0 / 0 / 0 / 0
+Analysing duplication...
+  - found 3 duplicates (46 duplicated lines vs. 370 cleaned lines) in 6 files
+  - per component:primary
+     - "ASModule": 25 duplicated lines vs. 115 total lines
+     - "WHModule": 15 duplicated lines vs. 45 total lines
+     - "FlowController": 6 duplicated lines vs. 18 total lines
+     - "AGVModule": 0 duplicated lines vs. 162 total lines
+     - "GUITest": 0 duplicated lines vs. 30 total lines
+  - per extension:
+     - "java": 46 duplicated lines vs. 340 total lines
+Total analysis time: .72s
+

@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>ASModule/src/main/java/org/example/Test.java</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">ASModule/src/main/java/org/example/Test.java (<b>19</b> lines of code) (<a href="Test.java">raw</a>):</h3>
+<div id="editor">package org.example;
+
+import org.eclipse.paho.client.mqttv3.IMqttToken;
+import org.eclipse.paho.client.mqttv3.MqttAsyncClient;
+import org.eclipse.paho.client.mqttv3.MqttException;
+
+import java.util.UUID;
+
+public class Test {
+    public static void main(String[] args) {
+        try {
+            MqttAsyncClient client = new MqttAsyncClient(&quot;tcp://localhost:1883/emulator/status&quot;, UUID.randomUUID().toString());
+
+            Callback cb = new Callback();
+            client.setCallback(cb);
+
+            IMqttToken t = client.connect();
+            t.waitForCompletion();
+
+            client.subscribe(&quot;&quot;,0 );
+
+        } catch (MqttException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/java");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>

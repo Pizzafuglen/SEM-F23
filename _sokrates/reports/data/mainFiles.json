@@ -1,0 +1,141 @@
+[ {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/AGVController.java",
+  "extension" : "java",
+  "linesOfCode" : 46,
+  "unitsCount" : 3,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 29
+}, {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/AGVHandler.java",
+  "extension" : "java",
+  "linesOfCode" : 71,
+  "unitsCount" : 3,
+  "unitsMcCabeIndexSum" : 14,
+  "linesOfCodeInUnits" : 55
+}, {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/d.java",
+  "extension" : "java",
+  "linesOfCode" : 21,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 2,
+  "linesOfCodeInUnits" : 12
+}, {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/DBhandler.java",
+  "extension" : "java",
+  "linesOfCode" : 79,
+  "unitsCount" : 6,
+  "unitsMcCabeIndexSum" : 16,
+  "linesOfCodeInUnits" : 74
+}, {
+  "relativePath" : "AGVModule/src/main/java/org/AGV/HTTPServer.java",
+  "extension" : "java",
+  "linesOfCode" : 18,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 2,
+  "linesOfCodeInUnits" : 11
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/ASHandler.java",
+  "extension" : "java",
+  "linesOfCode" : 22,
+  "unitsCount" : 2,
+  "unitsMcCabeIndexSum" : 2,
+  "linesOfCodeInUnits" : 13
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/ASServer.java",
+  "extension" : "java",
+  "linesOfCode" : 36,
+  "unitsCount" : 3,
+  "unitsMcCabeIndexSum" : 6,
+  "linesOfCodeInUnits" : 24
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/Callback.java",
+  "extension" : "java",
+  "linesOfCode" : 15,
+  "unitsCount" : 3,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 6
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/Mqtt_Client.java",
+  "extension" : "java",
+  "linesOfCode" : 17,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 2,
+  "linesOfCodeInUnits" : 11
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/Mqtt_Client2.java",
+  "extension" : "java",
+  "linesOfCode" : 44,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 2,
+  "linesOfCodeInUnits" : 36
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/OnMessageCallback.java",
+  "extension" : "java",
+  "linesOfCode" : 17,
+  "unitsCount" : 3,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 11
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/OnMessageCallback2.java",
+  "extension" : "java",
+  "linesOfCode" : 17,
+  "unitsCount" : 3,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 11
+}, {
+  "relativePath" : "ASModule/src/main/java/org/example/Test.java",
+  "extension" : "java",
+  "linesOfCode" : 19,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 2,
+  "linesOfCodeInUnits" : 12
+}, {
+  "relativePath" : "FlowController/src/main/java/com/f23/javaserver/FlowHandler.java",
+  "extension" : "java",
+  "linesOfCode" : 11,
+  "unitsCount" : 1,
+  "unitsMcCabeIndexSum" : 2,
+  "linesOfCodeInUnits" : 4
+}, {
+  "relativePath" : "FlowController/src/main/java/com/f23/javaserver/FlowServer.java",
+  "extension" : "java",
+  "linesOfCode" : 23,
+  "unitsCount" : 2,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 15
+}, {
+  "relativePath" : "GUITest/html.html",
+  "extension" : "html",
+  "linesOfCode" : 21,
+  "unitsCount" : 0,
+  "unitsMcCabeIndexSum" : 0,
+  "linesOfCodeInUnits" : 0
+}, {
+  "relativePath" : "GUITest/js.js",
+  "extension" : "js",
+  "linesOfCode" : 15,
+  "unitsCount" : 3,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 10
+}, {
+  "relativePath" : "WHModule/src/main/java/com/f23/javaserver/WHHandler.java",
+  "extension" : "java",
+  "linesOfCode" : 32,
+  "unitsCount" : 2,
+  "unitsMcCabeIndexSum" : 5,
+  "linesOfCodeInUnits" : 23
+}, {
+  "relativePath" : "WHModule/src/main/java/com/f23/javaserver/WHServer.java",
+  "extension" : "java",
+  "linesOfCode" : 23,
+  "unitsCount" : 2,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 15
+}, {
+  "relativePath" : "WHModule/src/main/java/com/f23/javaserver/WSDLClient.java",
+  "extension" : "java",
+  "linesOfCode" : 16,
+  "unitsCount" : 3,
+  "unitsMcCabeIndexSum" : 3,
+  "linesOfCodeInUnits" : 11
+} ]

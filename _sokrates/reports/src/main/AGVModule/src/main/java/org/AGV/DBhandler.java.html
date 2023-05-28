@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>AGVModule/src/main/java/org/AGV/DBhandler.java</title>
+    <style type="text/css" media="screen">
+        #editor {
+            position: absolute;
+            top: 40px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body style="font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif">
+<h3 style="margin-bottom: 0">AGVModule/src/main/java/org/AGV/DBhandler.java (<b>79</b> lines of code) (<a href="DBhandler.java">raw</a>):</h3>
+<div id="editor">package org.AGV;
+
+import java.sql.*;
+
+public class DBhandler {
+    public static Connection c;
+
+    public static void main(String[] args) {
+        getConnection(&quot;jdbc:mysql://localhost:3306/&quot;, &quot;root&quot;, &quot;Vithe!098&quot;);
+        initialiseDatabase();
+        initialiseTable();
+    }
+
+    //DB connection
+    public static Connection getConnection(String url, String user, String password) {
+        try {
+            if (c == null) {
+                Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);
+                c = DriverManager.getConnection(url, user, password);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return c;
+    }
+
+    // Laver databasen
+// Tjekker om databasen findes, hvis ja s&aring; brug samme database, hvis nej s&aring; lav en database med det navn
+    public static void initialiseDatabase() {
+        Connection connection = getConnection(&quot;jdbc:mysql://localhost:3306/&quot;, &quot;***&quot;, &quot;***&quot;);
+
+        String checkDatabase = &quot;SHOW DATABASES LIKE 'ProductionLine';&quot;;
+        String useDatabase = &quot;USE ProductionLine&quot;;
+        String initializeDatabase = &quot;CREATE DATABASE ProductionLine&quot;;
+        try {
+            if (connection != null) { // check if connection is not null
+                ResultSet resultSet = connection.prepareStatement(checkDatabase).executeQuery();
+                if (resultSet.next()) {
+                    try {
+                        connection.prepareStatement(useDatabase).executeUpdate();
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
+                } else {
+                    try {
+                        connection.prepareStatement(initializeDatabase).executeUpdate();
+                    } catch (SQLException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+            } else {
+                System.out.println(&quot;Connection is null&quot;);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+
+    //Laver tabel
+    public static void initialiseTable() {
+        String initializerTable = &quot;CREATE TABLE AGV_table (\n&quot; +
+                &quot;id INT AUTO_INCREMENT PRIMARY KEY,\n&quot; +
+                &quot;program VARCHAR(255) NOT NULL,\n&quot; +
+                &quot;C_state INT NOT NULL,\n&quot; +
+                &quot;battery INT NOT NULL\n&quot; +
+                &quot;);&quot;;
+        try {
+            DBhandler.getConnection(&quot;jdbc:mysql://localhost:3306/ProductionLine&quot;, &quot;root&quot;, &quot;Vithe!098&quot;).prepareStatement(initializerTable).executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    // Send data TO Database
+    public static void setData(String program, int C_state, int battery) {
+        // Construct an SQL insert statement with the extracted values
+        String statement = &quot;INSERT INTO AGV_table (program, C_state, battery) &quot; +
+                &quot;VALUES ('&quot; + program + &quot;', '&quot; + C_state + &quot;', '&quot; + battery + &quot;');&quot;;
+        try {
+            // Execute the insert statement using the DBhandler class
+            DBhandler.getConnection(&quot;jdbc:mysql://localhost:3306/ProductionLine&quot;, &quot;root&quot;, &quot;Vithe!098&quot;).createStatement().executeUpdate(statement);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public static void resetDatabase(){
+        String statement = &quot;DROP TABLE ProductionLine;&quot;;
+        try {
+            DBhandler.getConnection(&quot;jdbc:mysql://localhost:3306/ProductionLine&quot;, &quot;***&quot;, &quot;***&quot;).createStatement().executeUpdate(statement);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    // Her skal GUI tage fra
+    /*
+    public static String getData() {
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        StringBuilder sb = new StringBuilder();
+        String statement = &quot;SELECT * FROM brewer_backlog ORDER BY time_started ASC LIMIT 10;&quot;;
+
+        try {
+            ps = getConnection(&quot;jdbc:mysql://localhost:3306/backlog&quot;, &quot;***&quot;, &quot;***&quot;).prepareStatement(statement);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                sb.append(rs.getString(1)).append(&quot;, &quot;).append(rs.getString(2)).append(&quot;, &quot;).append(rs.getString(3)).append(&quot;, &quot;).append(rs.getString(4)).append(&quot;, &quot;).append(rs.getString(5)).append(&quot;\n&quot;);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return sb.toString();
+    }*/
+}
+</div>
+<script src="https://www.zeljkoobrenovic.com/tools/common/lib/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.session.setMode("ace/mode/java");
+    editor.setTheme("ace/theme/xcode");
+    editor.setReadOnly(true);
+    editor.setOption("wrap", true);
+    editor.setPrintMarginColumn(120);
+</script>
+</body>
