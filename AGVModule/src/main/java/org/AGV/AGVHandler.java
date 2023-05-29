@@ -17,6 +17,8 @@ public class AGVHandler implements HttpHandler {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        System.out.println(requestParamValue);
+
         httpResponse(httpExchange, requestParamValue); //It then uses both the return value of the way we handled our request, and the http exchange, to execute the method that actually handles the response.
     }
 

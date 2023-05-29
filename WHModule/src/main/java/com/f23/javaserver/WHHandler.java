@@ -21,6 +21,7 @@ public class WHHandler implements HttpHandler {
         } else {
             reVal = "Value is null";
         }
+        System.out.println(reVal);
 
         httpResponse(he, reVal);
     }

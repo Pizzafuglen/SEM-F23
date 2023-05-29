@@ -47,7 +47,7 @@ public class AGVController {
         System.out.println("Program Name: " + programName);
         System.out.println("State: " + state);
 
-        DBhandler.setData(programName, state, battery);
+        //DBhandler.setData(programName, state, battery);
 
         return json;
     }

@@ -8,10 +8,20 @@ import java.net.*;
 public class FlowHttpClient {
     public static String ASStartProd(String prodId) {
         URL url;
+        StringBuilder content;
         try {
-            url = new URL("http://localhost:8001/3/startProd?" + prodId);
+            url = new URL("http://localhost:8003/3/startProd?" + prodId);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
 
             con.disconnect();
         } catch (IOException e) {
@@ -23,10 +33,20 @@ public class FlowHttpClient {
 
     public static String AGVMoveToAssemblyStation() {
         URL url;
+        StringBuilder content;
         try {
-            url = new URL("http://localhost:8001/2/moveToAssemblyStationOperation");
+            url = new URL("http://localhost:8002/2/moveToAssemblyStationOperation");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
 
             con.disconnect();
         } catch (IOException e) {
@@ -38,10 +58,20 @@ public class FlowHttpClient {
 
     public static String AGVMoveToWarehouse() {
         URL url;
+        StringBuilder content;
         try {
-            url = new URL("http://localhost:8001/2/moveToWarehouseOperation");
+            url = new URL("http://localhost:8002/2/moveToWarehouseOperation");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
 
             con.disconnect();
         } catch (IOException e) {
@@ -53,10 +83,20 @@ public class FlowHttpClient {
 
     public static String AGVPickAssemblyStation() {
         URL url;
+        StringBuilder content;
         try {
-            url = new URL("http://localhost:8001/2/pickAssemblyOperation");
+            url = new URL("http://localhost:8002/2/pickAssemblyOperation");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
 
             con.disconnect();
         } catch (IOException e) {
@@ -68,10 +108,20 @@ public class FlowHttpClient {
 
     public static String AGVPickWarehouse() {
         URL url;
+        StringBuilder content;
         try {
-            url = new URL("http://localhost:8001/2/pickWarehouseOperation");
+            url = new URL("http://localhost:8002/2/pickWarehouseOperation");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
 
             con.disconnect();
         } catch (IOException e) {
@@ -82,10 +132,20 @@ public class FlowHttpClient {
 
     public static String AGVPutAssemblyStation() {
         URL url;
+        StringBuilder content;
         try {
-            url = new URL("http://localhost:8001/2/putAssemblyOperation");
+            url = new URL("http://localhost:8002/2/putAssemblyOperation");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
 
             con.disconnect();
         } catch (IOException e) {
@@ -96,10 +156,20 @@ public class FlowHttpClient {
 
     public static String AGVPutWarehouse() {
         URL url;
+        StringBuilder content;
         try {
-            url = new URL("http://localhost:8001/2/putWarehouseOperation");
+            url = new URL("http://localhost:8002/2/putWarehouseOperation");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
+
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
 
             con.disconnect();
         } catch (IOException e) {
@@ -111,7 +181,7 @@ public class FlowHttpClient {
     public static String AGVMoveToCharger() {
         URL url;
         try {
-            url = new URL("http://localhost:8001/2/moveToChargerOperation");
+            url = new URL("http://localhost:8002/2/moveToChargerOperation");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
 
@@ -130,12 +200,21 @@ public class FlowHttpClient {
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
 
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
+
             con.disconnect();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        return "Put into tray" + trayId + " item " + itemName + " successfully";
+        return content.toString();
     }
 
     public static String WHPickTray(int trayId) {
@@ -146,12 +225,21 @@ public class FlowHttpClient {
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
 
+            BufferedReader in = new BufferedReader(
+                    new InputStreamReader(con.getInputStream()));
+            String inputLine;
+            content = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            in.close();
+
             con.disconnect();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        return "Picked tray" + trayId + " successfully";
+        return content.toString();
     }
 
     public static String WHGetInventory() {

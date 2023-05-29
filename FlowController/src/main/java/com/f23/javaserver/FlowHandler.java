@@ -37,7 +37,7 @@ public class FlowHandler implements HttpHandler {
 
             System.out.println(FlowHttpClient.AGVPutWarehouse());
 
-            System.out.println(FlowHttpClient.WHPutTray(1, "Complete drone"));
+            System.out.println(FlowHttpClient.WHPutTray(1, "Drone"));
 
             reVal = FlowHttpClient.WHGetInventory();
         } else if (he.getRequestURI().toString().contains("initProdDrone")) {
