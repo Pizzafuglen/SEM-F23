@@ -6,7 +6,7 @@ public class DBhandler {
     public static Connection c;
 
     public static void main(String[] args) {
-        getConnection("jdbc:mysql://localhost:3306/", "root", "Vithe!098");
+        getConnection("jdbc:mysql://localhost:3306/", "root", "***");
         initialiseDatabase();
         initialiseTable();
     }
@@ -67,7 +67,7 @@ public class DBhandler {
                 "battery INT NOT NULL\n" +
                 ");";
         try {
-            DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "root", "Vithe!098").prepareStatement(initializerTable).executeUpdate();
+            DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "root", "***").prepareStatement(initializerTable).executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -79,7 +79,7 @@ public class DBhandler {
                 "VALUES ('" + program + "', '" + C_state + "', '" + battery + "');";
         try {
             // Execute the insert statement using the DBhandler class
-            DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "root", "Vithe!098").createStatement().executeUpdate(statement);
+            DBhandler.getConnection("jdbc:mysql://localhost:3306/ProductionLine", "root", "***").createStatement().executeUpdate(statement);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
