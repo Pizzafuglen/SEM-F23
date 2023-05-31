@@ -5,24 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ad42c0e-2278-4b83-8271-f8080ecc6fe2" name="Changes" comment="Changes made to WHHandler.java and WSDLClient.java">
-      <change afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../AGVModule/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AGVModule/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AGVModule/src/main/java/org/AGV/AGVController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AGVModule/src/main/java/org/AGV/AGVController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AGVModule/src/main/java/org/AGV/AGVHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AGVModule/src/main/java/org/AGV/AGVHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AGVModule/target/classes/org/AGV/AGVController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AGVModule/target/classes/org/AGV/AGVController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AGVModule/target/classes/org/AGV/AGVHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AGVModule/target/classes/org/AGV/AGVHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/ASHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/src/main/java/org/example/ASHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AGVModule/src/main/java/org/AGV/DBhandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AGVModule/src/main/java/org/AGV/DBhandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ASModule/target/classes/org/example/ASHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FlowController/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FlowController/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlowController/src/main/java/com/f23/javaserver/FlowHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FlowController/src/main/java/com/f23/javaserver/FlowHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FlowController/src/main/java/com/f23/javaserver/FlowHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FlowController/src/main/java/com/f23/javaserver/FlowHttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/finished.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/productionInfo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/recipe.html" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/recipe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FrontEnd/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/../FrontEnd/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlowController/target/classes/com/f23/javaserver/FlowHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FlowController/target/classes/com/f23/javaserver/FlowHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlowController/target/classes/com/f23/javaserver/FlowHttpClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../FlowController/target/classes/com/f23/javaserver/FlowHttpClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/f23/javaserver/WHHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/f23/javaserver/WHHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/f23/javaserver/WHHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/f23/javaserver/WHHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,6 +159,7 @@
       <workItem from="1684752078933" duration="273000" />
       <workItem from="1684866976392" duration="561000" />
       <workItem from="1685355439934" duration="1935000" />
+      <workItem from="1685433024685" duration="1366000" />
     </task>
     <task id="LOCAL-00001" summary="Initial functionality created using wsimport&#10;- Remember to use the IES object as the base for all wsdl calls">
       <created>1682332485288</created>
